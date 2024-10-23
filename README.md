@@ -21,5 +21,3 @@ Um estudo da Royal Society for Public Health revelou que 70% dos jovens entre 14
 * Ilo Amy Saldanha
 * Rommel Vieira Carneiro
 * Walisson ferreira de Carvalho
-
-* [Markdown® Básico: Sintaxe, Uso &amp; Exemplos [Passo a Passo]](https://markdown.net.br/sintaxe-basica/)
