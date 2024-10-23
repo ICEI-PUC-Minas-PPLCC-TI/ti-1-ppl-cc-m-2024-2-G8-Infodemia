@@ -11,7 +11,6 @@ Informações básicas do projeto.
   * [Iara Lima Publio](https://github.com/iarapublio) 
   * [Leandro Rodrigues Marques](https://github.com/leandro-rodri) 
   * [Letícia Beatriz da Silva Lopes](https://github.com/lehsiilva) 
-  * [Mariana de Abreu Teles](https://github.com/marianadeabreu) 
   * [Rafael Georgetti Grossi](https://github.com/xendak) 
 
 A documentação do projeto é estruturada da seguinte forma:
