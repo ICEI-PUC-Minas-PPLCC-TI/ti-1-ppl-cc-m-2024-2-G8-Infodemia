@@ -1,8 +1,8 @@
 /* Estilos básicos */
 body {
     font-family: Arial, sans-serif;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 40;
+    margin-right: 40;
     padding: 0;
     background-color: #333; /* Fundo escuro */
     color: #fff; /* Texto branco */
@@ -23,75 +23,60 @@ footer {
     padding: 10px;
 }
 
-/* Layout de artigos em grid (3 em cima e 3 em baixo) */
+/* Layout de artigos */
 .artigos-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    flex-wrap: wrap;
     gap: 20px;
     padding: 20px;
+    justify-content: center;
 }
 
-.artigo-card {
-    background-color: #444; /* Cartões com cor mais escura */
+.noticia {
+    background-color: #444;
     padding: 20px;
+    margin: 10px;
     border-radius: 5px;
-    text-align: center;
+    width: 300px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    align-items: center;
 }
 
-.artigo-card img {
+.imagem-noticia img {
     max-width: 100%;
     height: auto;
+    border-radius: 5px;
     margin-bottom: 15px;
 }
 
-.artigo-card h2 {
-    color: #fff; /* Título em branco */
+.conteudo-noticia {
+    text-align: center;
+}
+
+.conteudo-noticia h2 {
+    color: #fff;
     font-size: 1.2em;
     margin-bottom: 10px;
 }
 
-.artigo-card p {
-    color: #ddd; /* Texto com cor mais clara */
+.conteudo-noticia p {
+    color: #ddd;
+    margin: 5px 0;
 }
 
 /* Estilos do botão "Ler Mais" */
 .btn {
     display: inline-block;
     padding: 10px 15px;
-    margin-top: 10px;
     background-color: #24f0c7; /* Cor do botão */
     color: white;
     text-decoration: none;
     border-radius: 5px;
     font-size: 1em;
-    transition: background-color 0.3s ease;
+    margin-top: 10px;
 }
 
 .btn:hover {
     background-color: #005f73; /* Cor ao passar o mouse */
-}
-
-/* Botão "Ler Mais Notícias" no canto inferior direito */
-.btn-leia-mais {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    padding: 15px 25px;
-    background-color: #24f0c7; /* Cor diferente para destacar */
-    color: white;
-    text-decoration: none;
-    border-radius: 50px;
-    font-size: 1.2em;
-    transition: background-color 0.3s ease;
-}
-
-.btn-leia-mais:hover {
-    background-color: #005f73; /* Cor ao passar o mouse */
-}
-
-.saiba {
-  color: #24f0c7;  
 }
