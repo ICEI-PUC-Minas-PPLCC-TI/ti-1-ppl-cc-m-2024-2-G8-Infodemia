@@ -1,7 +1,8 @@
 /* Estilos básicos */
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
+    margin-left: 40px;
+    margin-right: 40px;
     padding: 0;
     background-color: #333; /* Fundo escuro */
     color: #fff; /* Texto branco */
@@ -89,4 +90,8 @@ footer {
 
 .btn-leia-mais:hover {
     background-color: #005f73; /* Cor ao passar o mouse */
+}
+
+.saiba {
+  color: #24f0c7;  
 }

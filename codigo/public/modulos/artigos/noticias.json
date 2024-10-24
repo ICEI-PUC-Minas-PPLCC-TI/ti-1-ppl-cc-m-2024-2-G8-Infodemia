@@ -1,0 +1,29 @@
+{
+    "noticias": [
+      {
+        "titulo": "As múltiplas faces da infodemia",
+        "autor": "Luís Gonçalves, Leonardo Castro, Raquel Rachid, Marcelo Fornazin",
+        "data": "30 de setembro de 2024",
+        "descricao": "Neste artigo, revisamos partes da literatura acadêmica sobre a infodemia buscando preencher uma lacuna de estudos que descrevam a sua existência político-econômica, científica, sociotécnica e psicossocial em geral, ao mesmo tempo em que verifiquem como essa imbricação se encontra com a realidade brasileira. Nesse enquadramento, a infodemia emergiu como uma superabundância problemática de informações sobre saúde, capaz de comprometer seus cuidados individuais e coletivos e que integra conflitos sócio-econômicos e culturais relacionados ao capitalismo neoliberal e periférico. Por isso, encontramos distintas e até antagônicas formas de caracterizar e enfrentar a infodemia. Algumas delas contrastam com os princípios do SUS e da reforma sanitária, especialmente com relação à participação política dos sujeitos atingidos pela infodemia enquanto uma forma de enfrentar o fenômeno e os conflitos de que ela faz parte. Concluímos que, enquanto um fenômeno multideterminado, a infodemia deve continuar sendo pesquisada interdisciplinarmente de modo a contribuir com tal participação política.",
+        "imagem": "https://via.placeholder.com/150",
+        "link": "artigo1.html"
+      },
+      {
+        "titulo": "Impactos da Infodemia na Saúde Pública",
+        "autor": "Carlos Lima",
+        "data": "2 de setembro de 2024",
+        "descricao": "A infodemia tem impactos graves na saúde pública, contribuindo para a disseminação de mitos sobre vacinas...",
+        "imagem": "https://via.placeholder.com/150",
+        "link": "artigo2.html"
+      },
+      {
+        "titulo": "Combatendo a Infodemia: Ferramentas e Estratégias",
+        "autor": "Juliana Souza",
+        "data": "20 de setembro de 2024",
+        "descricao": "Este artigo apresenta ferramentas e estratégias que ajudam a combater a infodemia, como a checagem de fatos...",
+        "imagem": "https://via.placeholder.com/150",
+        "link": "artigo3.html"
+      }
+    ]
+  }
+  
