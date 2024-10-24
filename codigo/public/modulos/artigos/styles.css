@@ -1,0 +1,92 @@
+/* Estilos básicos */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #333; /* Fundo escuro */
+    color: #fff; /* Texto branco */
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 2em;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Layout de artigos em grid (3 em cima e 3 em baixo) */
+.artigos-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.artigo-card {
+    background-color: #444; /* Cartões com cor mais escura */
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.artigo-card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.artigo-card h2 {
+    color: #fff; /* Título em branco */
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.artigo-card p {
+    color: #ddd; /* Texto com cor mais clara */
+}
+
+/* Estilos do botão "Ler Mais" */
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    margin-top: 10px;
+    background-color: #24f0c7; /* Cor do botão */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #005f73; /* Cor ao passar o mouse */
+}
+
+/* Botão "Ler Mais Notícias" no canto inferior direito */
+.btn-leia-mais {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 15px 25px;
+    background-color: #24f0c7; /* Cor diferente para destacar */
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+}
+
+.btn-leia-mais:hover {
+    background-color: #005f73; /* Cor ao passar o mouse */
+}
