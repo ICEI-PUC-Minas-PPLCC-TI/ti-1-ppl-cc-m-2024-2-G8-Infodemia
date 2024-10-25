@@ -1,12 +1,13 @@
-function carregarArtigosIniciais() {
+function carregarMaisArtigos() {
     fetch('noticias.json')
         .then(response => response.json())
         .then(data => {
-            const container = document.getElementById('artigos-container');
+            const container = document.getElementById('mais-artigos-container');
 
-            const artigosIniciais = data.noticias.slice(0, 6);
+            // artigos adicionais
+            const artigosExtras = data.noticias.slice(6);
 
-            artigosIniciais.forEach((noticia, index) => {
+            artigosExtras.forEach((noticia, index) => {
                 const artigoCard = document.createElement('div');
                 artigoCard.classList.add('noticia');
                 
@@ -19,14 +20,15 @@ function carregarArtigosIniciais() {
                         <p><strong>Autor:</strong> ${noticia.autor}</p>
                         <p><strong>Data de Publicação:</strong> ${noticia.data}</p>
                         <p>${noticia.descricao.substring(0, 100)}...</p>
-                        <a href="artigo.html?id=${index + 1}" class="btn">Ler Mais</a>
+                        <a href="artigo.html?id=${index + 7}" class="btn">Ler Mais</a>
                     </div>
                 `;
 
                 container.appendChild(artigoCard);
             });
         })
-        .catch(error => console.error('Erro ao carregar os artigos iniciais:', error));
+        .catch(error => console.error('Erro ao carregar os artigos extras:', error));
 }
 
-window.onload = carregarArtigosIniciais;
+
+window.onload = carregarMaisArtigos;
