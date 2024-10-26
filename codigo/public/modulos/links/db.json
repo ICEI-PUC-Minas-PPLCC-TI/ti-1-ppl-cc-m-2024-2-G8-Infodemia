@@ -1,0 +1,23 @@
+{
+  "trustedLinksSection": {
+    "title": "Links confiáveis",
+    "links": [
+      {
+        "column": 1,
+        "items": [
+          { "label": "Lorem ipsum dolor sit amet 1", "url": "https://www.exemplo1.com" },
+          { "label": "Lorem ipsum dolor sit amet 2", "url": "https://www.exemplo2.com" },
+          { "label": "Lorem ipsum dolor sit amet 3", "url": "https://www.exemplo3.com" }
+        ]
+      },
+      {
+        "column": 2,
+        "items": [
+          { "label": "Lorem ipsum dolor sit amet 4", "url": "https://www.exemplo4.com" },
+          { "label": "Lorem ipsum dolor sit amet 5", "url": "https://www.exemplo5.com" },
+          { "label": "Lorem ipsum dolor sit amet 6", "url": "https://www.exemplo6.com" }
+        ]
+      }
+    ]
+  }
+}
