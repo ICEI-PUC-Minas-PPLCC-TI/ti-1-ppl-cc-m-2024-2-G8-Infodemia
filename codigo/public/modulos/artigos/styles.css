@@ -1,28 +1,27 @@
 body {
     font-family: Arial, sans-serif;
-    margin-left: 40;
-    margin-right: 40;
+    margin: 0 40px; 
     padding: 0;
     background-color: #333; 
     color: #fff; 
 }
 
-header {
+header, footer {
     background-color: #333;
     color: white;
-    padding: 20px;
     text-align: center;
+}
+
+header {
+    padding: 20px;
     font-size: 2em;
 }
 
 footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
     padding: 10px;
 }
 
-/* Layout de artigos */
+/* Layout dos artigos */
 .artigos-container {
     display: flex;
     flex-wrap: wrap;
@@ -34,12 +33,13 @@ footer {
 .noticia {
     background-color: #444;
     padding: 20px;
-    margin: 10px;
     border-radius: 5px;
     width: 300px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+    text-align: left;
+    position: relative;
 }
 
 .imagem-noticia img {
@@ -50,13 +50,16 @@ footer {
 }
 
 .conteudo-noticia {
-    text-align: center;
+    text-align: left;
+    flex-grow: 1; 
+    width: 100%;
+    padding-bottom: 50px; 
 }
 
 .conteudo-noticia h2 {
     color: #fff;
     font-size: 1.2em;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .conteudo-noticia p {
@@ -64,47 +67,66 @@ footer {
     margin: 5px 0;
 }
 
-/* botão "Ler Mais" */
-.btn {
-    display: inline-block;
-    padding: 10px 15px;
-    background-color: #24f0c7; 
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 1em;
-    margin-top: 40px;
-}
-
-.btn:hover {
-    background-color: #005f73; 
-}
-
-/* botão "Ver Mais Notícias"  */
-.btn-ver-mais {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
+/* Botões */
+.btn, .btn-ver-mais, .btn-voltar-fixo {
     padding: 10px 20px;
     background-color: #24f0c7;
     color: white;
     text-decoration: none;
-    border-radius: 50px;
+    border-radius: 5px;
     font-size: 1em;
     border: none;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
-.btn-ver-mais:hover {
+.btn:hover, .btn-ver-mais:hover, .btn-voltar-fixo:hover {
     background-color: #005f73;
 }
-/* "Ler Mais" */
+
+/* Botão "Ler Mais" canto inferior direito do card */
+.noticia .btn {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+/* Botão "Ver Mais Notícias" */
+.btn-ver-mais {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 50px;
+    z-index: 1000;
+}
+
+/*  "Ler Mais" */
 .link-saiba-mais {
     color: #24f0c7;
     text-decoration: underline;
     margin-left: 5px;
 }
+
 .link-saiba-mais:hover {
     color: #005f73;
+}
+
+/* Botão "Voltar" dentro do artigo */
+.botao-voltar-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* botão "Voltar" */
+.btn-voltar-fixo {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 5px;
+}
+#saiba-mais-link { /*Botão ler artigo completo*/
+    display: inline-block; 
+    margin-top: 20px;
+    margin-bottom: 10px; 
+    border-bottom: 2px solid #24f0c7; 
 }

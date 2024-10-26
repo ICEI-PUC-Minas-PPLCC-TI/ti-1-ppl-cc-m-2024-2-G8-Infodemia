@@ -18,7 +18,7 @@ function carregarArtigosIniciais() {
                         <h2>${noticia.titulo}</h2>
                         <p><strong>Autor:</strong> ${noticia.autor}</p>
                         <p><strong>Data de Publicação:</strong> ${noticia.data}</p>
-                        <p>${noticia.descricao.substring(0, 100)}...</p>
+                        
                         <a href="artigo.html?id=${index + 1}" class="btn">Ler Mais</a>
                     </div>
                 `;

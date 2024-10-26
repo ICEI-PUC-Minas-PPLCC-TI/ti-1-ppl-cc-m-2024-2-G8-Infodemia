@@ -4,7 +4,7 @@ function carregarMaisArtigos() {
         .then(data => {
             const container = document.getElementById('mais-artigos-container');
 
-            // artigos adicionais
+            // Seleciona apenas os artigos adicionais
             const artigosExtras = data.noticias.slice(6);
 
             artigosExtras.forEach((noticia, index) => {
@@ -19,7 +19,6 @@ function carregarMaisArtigos() {
                         <h2>${noticia.titulo}</h2>
                         <p><strong>Autor:</strong> ${noticia.autor}</p>
                         <p><strong>Data de Publicação:</strong> ${noticia.data}</p>
-                        <p>${noticia.descricao.substring(0, 100)}...</p>
                         <a href="artigo.html?id=${index + 7}" class="btn">Ler Mais</a>
                     </div>
                 `;
@@ -29,6 +28,5 @@ function carregarMaisArtigos() {
         })
         .catch(error => console.error('Erro ao carregar os artigos extras:', error));
 }
-
 
 window.onload = carregarMaisArtigos;

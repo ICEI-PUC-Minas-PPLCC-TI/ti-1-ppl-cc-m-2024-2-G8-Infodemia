@@ -13,10 +13,14 @@ function carregarArtigo() {
                 const noticia = data.noticias[artigoId - 1]; 
                 
                 if (noticia) {
+                    // Atualiza o conteúdo da página com os dados da notícia
                     document.getElementById('titulo-artigo').textContent = noticia.titulo;
                     document.getElementById('autor-artigo').textContent = noticia.autor;
                     document.getElementById('data-artigo').textContent = noticia.data;
                     document.getElementById('conteudo-artigo').textContent = noticia.descricao;
+
+                    // Atualiza o link "Para ler mais, clique aqui"
+                    document.getElementById('saiba-mais-link').href = noticia.saiba_mais;
                 } else {
                     document.getElementById('conteudo-artigo').textContent = 'Artigo não encontrado.';
                 }
@@ -30,4 +34,5 @@ function carregarArtigo() {
     }
 }
 
+// Carregar o artigo quando a página for carregada
 window.onload = carregarArtigo;
