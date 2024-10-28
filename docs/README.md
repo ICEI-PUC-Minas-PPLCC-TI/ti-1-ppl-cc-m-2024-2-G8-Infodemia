@@ -8,7 +8,7 @@ Informações básicas do projeto.
 
   * [Diego Henrique Xavier dos Santos](https://github.com/Diego-Hxs) 
   * [Guilherme Henrique Soares França](https://github.com/beltrano) 
-  * [Iara Lima Publio](https://github.com/iarapublio) 
+  * [Iara Lima Publio](https://github.com/iarapublio)
   * [Leandro Rodrigues Marques](https://github.com/leandro-rodri) 
   * [Letícia Beatriz da Silva Lopes](https://github.com/lehsiilva) 
   * [Rafael Georgetti Grossi](https://github.com/xendak) 
