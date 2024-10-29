@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         <h2>${ebook.titulo}</h2>
                         <p class="ebook-author">${ebook.autores}</p>
                         <p class="ebook-summary">${ebook.sinopse}</p>
-                        <a href="#" class="download-button">Download</a>
+                        <a href="#" class="download-button">Saiba Mais</a>
                     </div>
                 `;
 
