@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 ebookDiv.classList.add("ebook");
 
                 ebookDiv.innerHTML = `
-                    <img src="images.jpeg" alt="${ebook.titulo}">
+                    <img src="${ebook.capa}" alt="${ebook.titulo}">
                     <div class="ebook-content">
                         <h2>${ebook.titulo}</h2>
                         <p class="ebook-author">${ebook.autores}</p>
