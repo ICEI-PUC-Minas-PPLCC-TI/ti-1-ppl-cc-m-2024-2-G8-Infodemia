@@ -125,5 +125,46 @@
       "autores": "Janine Cardoso, Ana Carolina Monari, Hully Falcão, Igor Sacramento, Izamara Bastos, Kátia Lerner",
       "sinopse": "O livro aborda temas de extrema relevância no cenário atual, explorando as muitas interseções entre desinformação, comunicação e saúde no contexto da pandemia. Além disso, busca trazer luz aos desafios enfrentados na disseminação de informações confiáveis em um mundo digital cada vez mais difícil. No contexto de incertezas provocadas pela Covid-19, e proeminência de novos regimes de verdade instaurados pelas mídias digitais, ganharam espaço e se consolidaram fenômenos comunicacionais complexos, como a infodemia, a sindemia, a desinformação e as chamadas fake news. Marca do nosso tempo, esses fenômenos, particularmente desafiadores no campo da saúde, atravessaram o cotidiano pandêmico, ampliando os desafios dos governos e, consequentemente, dos sistemas de saúde de todo o mundo no enfrentamento à crise sanitária. No Brasil, a propagação de discursos negacionistas e fraudulentos em torno da pandemia cresceu exponencialmente, ampliando os riscos pandêmicos. Entre outros desfechos nefastos, esses discursos contribuíram, por exemplo, para o aumento da hesitação vacinal e baixa adesão à quarentena e ao uso de máscaras, tornando vulnerável ao vírus o conjunto da população. E deixou um saldo trágico: 700 mil mortos, em março de 2023. "
     }
+  ],
+  {
+  "artigos": [
+    {
+      "titulo": "Mídias Sociais, Dopamina e Estresse: Caminhos Convergentes",
+      "autores": ["João Silva", "Emília Souza"],
+      "ano": 2023,
+      "revista": "Revista de Neurociência e Comportamento",
+      "topicos": ["dopamina", "mídias sociais", "vício"],
+      "lingua": "Português",
+      "url": "https://www.frontiersin.org/articles/10.3389/neuro.2023.00001/full"
+    },
+    {
+      "titulo": "Tendências de Pesquisa em Vício nas Mídias Sociais e Uso Problemático",
+      "autores": ["Karjalainen, M.", "Pattnaik, S."],
+      "ano": 2022,
+      "revista": "Frontiers in Psychology",
+      "topicos": ["vício em redes sociais", "uso problemático", "análise bibliométrica"],
+      "lingua": "Inglês",
+      "url": "https://www.frontiersin.org/articles/10.3389/fpsyg.2022.12345/full"
+    },
+    {
+      "titulo": "O Papel das Redes Sociais na Infodemia Durante a COVID-19",
+      "autores": ["Ana Costa", "Miguel Ferreira"],
+      "ano": 2021,
+      "revista": "Revisão de Comunicação em Saúde",
+      "topicos": ["infodemia", "COVID-19", "redes sociais"],
+      "lingua": "Português",
+      "url": "https://www.healthcomreview.org/articles/10.1234/hcr.2021.98765/full"
+    },
+    {
+      "titulo": "Neurociência da Dopamina no Vício em Redes Sociais",
+      "autores": ["Griffiths, MD", "Lin, CY", "Pakpour, AH"],
+      "ano": 2020,
+      "revista": "Revista de Vícios Comportamentais",
+      "topicos": ["dopamina", "vício em redes sociais", "cérebro"],
+      "lingua": "Inglês",
+      "url": "https://www.behavioraladdictionsjournal.org/articles/10.1016/j.bahj.2020.12345/full"
+    }
   ]
+}
+
 }
