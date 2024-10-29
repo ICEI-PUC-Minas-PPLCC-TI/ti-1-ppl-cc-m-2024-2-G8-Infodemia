@@ -1,10 +1,10 @@
 function carregarArtigosIniciais() {
-    fetch('noticias.json')
+    fetch('artigos.json')
         .then(response => response.json())
         .then(data => {
             const container = document.getElementById('artigos-container');
 
-            const artigosIniciais = data.noticias.slice(0, 6);
+            const artigosIniciais = data.artigos.slice(0, 6);
 
             artigosIniciais.forEach((noticia, index) => {
                 const artigoCard = document.createElement('div');

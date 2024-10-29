@@ -1,11 +1,11 @@
 function carregarMaisArtigos() {
-    fetch('noticias.json')
+    fetch('artigos.json')
         .then(response => response.json())
         .then(data => {
             const container = document.getElementById('mais-artigos-container');
 
             // Seleciona apenas os artigos adicionais
-            const artigosExtras = data.noticias.slice(6);
+            const artigosExtras = data.artigos.slice(6);
 
             artigosExtras.forEach((noticia, index) => {
                 const artigoCard = document.createElement('div');

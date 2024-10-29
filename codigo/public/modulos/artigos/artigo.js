@@ -7,10 +7,10 @@ function carregarArtigo() {
     const artigoId = getArticleIdFromUrl();
 
     if (artigoId) {
-        fetch('noticias.json')
+        fetch('artigos.json')
             .then(response => response.json())
             .then(data => {
-                const noticia = data.noticias[artigoId - 1]; 
+                const noticia = data.artigos[artigoId - 1]; 
                 
                 if (noticia) {
                     // Atualiza o conteúdo da página com os dados da notícia
