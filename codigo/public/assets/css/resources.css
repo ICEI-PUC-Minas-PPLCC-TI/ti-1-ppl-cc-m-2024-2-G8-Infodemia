@@ -63,11 +63,11 @@ nav ul li a:hover {
 }
 
 .notification-icon::before {
-    background-image: url('notif.png'); 
+    background-image: url('../images/ebooks/notif.png'); 
 }
 
 .user-icon::before {
-    background-image: url('bendericon.png'); 
+    background-image: url('../images/ebooks/bendericon.png'); 
 }
 
 main {
