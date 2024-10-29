@@ -10,7 +10,7 @@
       },
       {
         "titulo": "O papel da alfabetização em mídias sociais no gerenciamento da infodemia",
-        "link": "https://www.frontiersin.org/articles/10.3389/fpsyg.2022.905579/full",
+        "link": "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2022.905579/full",
         "fonte": "Frontiers",
         "data": "2022-03-18",
         "lingua": "Português",
@@ -18,19 +18,19 @@
       },
       {
         "titulo": "O impacto das redes sociais na saúde mental durante a pandemia de COVID-19",
-        "link": "https://www.theguardian.com/world/2020/apr/26/social-media-mental-health-coronavirus-pandemic",
+        "link": "https://www.theguardian.com/society/2024/mar/23/how-covid-lockdowns-hit-mental-health-of-teenage-boys-hardest",
         "fonte": "The Guardian",
         "data": "2020-04-26",
         "lingua": "Inglês",
         "autor": "Alexandra Topping"
       },
       {
-        "titulo": "Como as redes sociais contribuem para a crise de saúde mental dos jovens",
-        "link": "https://www.bbc.com/news/health-49891046",
-        "fonte": "BBC News",
+        "titulo": "Redes sociais têm efeito mínimo no bem-estar de adolescentes, diz pesquisa de Oxford com 12 mil jovens",
+        "link": "https://www.bbc.com/portuguese/salasocial-48185025",
+        "fonte": "BBC News Brasil",
         "data": "2019-10-15",
-        "lingua": "Inglês",
-        "autor": "BBC News"
+        "lingua": "Português",
+        "autor": "BBC News Brasil"
       }
     ]
   }
