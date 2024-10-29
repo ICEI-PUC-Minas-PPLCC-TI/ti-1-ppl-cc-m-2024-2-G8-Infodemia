@@ -1,0 +1,37 @@
+{
+    "noticias": [
+      {
+        "titulo": "Como as redes sociais afetam a saúde mental dos adolescentes",
+        "link": "https://www.yalemedicine.org/news/social-media-teen-mental-health-a-parents-guide",
+        "fonte": "Yale Medicine",
+        "data": "2022-10-15",
+        "lingua": "Português",
+        "autor": "Equipe Yale Medicine"
+      },
+      {
+        "titulo": "O papel da alfabetização em mídias sociais no gerenciamento da infodemia",
+        "link": "https://www.frontiersin.org/articles/10.3389/fpsyg.2022.905579/full",
+        "fonte": "Frontiers",
+        "data": "2022-03-18",
+        "lingua": "Português",
+        "autor": "Frontiers in Psychology"
+      },
+      {
+        "titulo": "O impacto das redes sociais na saúde mental durante a pandemia de COVID-19",
+        "link": "https://www.theguardian.com/world/2020/apr/26/social-media-mental-health-coronavirus-pandemic",
+        "fonte": "The Guardian",
+        "data": "2020-04-26",
+        "lingua": "Inglês",
+        "autor": "Alexandra Topping"
+      },
+      {
+        "titulo": "Como as redes sociais contribuem para a crise de saúde mental dos jovens",
+        "link": "https://www.bbc.com/news/health-49891046",
+        "fonte": "BBC News",
+        "data": "2019-10-15",
+        "lingua": "Inglês",
+        "autor": "BBC News"
+      }
+    ]
+  }
+  
