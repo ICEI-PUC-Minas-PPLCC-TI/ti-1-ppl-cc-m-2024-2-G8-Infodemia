@@ -63,11 +63,11 @@ nav ul li a:hover {
 }
 
 .notification-icon::before {
-    background-image: url('181539.png'); 
+    background-image: url('../images/ebooks/notif.png'); 
 }
 
 .user-icon::before {
-    background-image: url('png-transparent-bender-leela-philip-j-fry-computer-icons-symbol-bender-logo-cartoon-fictional-character-thumbnail.png'); 
+    background-image: url('../images/ebooks/bendericon.png'); 
 }
 
 main {
