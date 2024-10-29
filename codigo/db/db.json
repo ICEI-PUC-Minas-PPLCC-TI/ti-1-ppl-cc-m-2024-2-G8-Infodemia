@@ -126,45 +126,38 @@
       "sinopse": "O livro aborda temas de extrema relevância no cenário atual, explorando as muitas interseções entre desinformação, comunicação e saúde no contexto da pandemia. Além disso, busca trazer luz aos desafios enfrentados na disseminação de informações confiáveis em um mundo digital cada vez mais difícil. No contexto de incertezas provocadas pela Covid-19, e proeminência de novos regimes de verdade instaurados pelas mídias digitais, ganharam espaço e se consolidaram fenômenos comunicacionais complexos, como a infodemia, a sindemia, a desinformação e as chamadas fake news. Marca do nosso tempo, esses fenômenos, particularmente desafiadores no campo da saúde, atravessaram o cotidiano pandêmico, ampliando os desafios dos governos e, consequentemente, dos sistemas de saúde de todo o mundo no enfrentamento à crise sanitária. No Brasil, a propagação de discursos negacionistas e fraudulentos em torno da pandemia cresceu exponencialmente, ampliando os riscos pandêmicos. Entre outros desfechos nefastos, esses discursos contribuíram, por exemplo, para o aumento da hesitação vacinal e baixa adesão à quarentena e ao uso de máscaras, tornando vulnerável ao vírus o conjunto da população. E deixou um saldo trágico: 700 mil mortos, em março de 2023. "
     }
   ],
-  {
-  "artigos": [
+  "noticias": [
     {
-      "titulo": "Mídias Sociais, Dopamina e Estresse: Caminhos Convergentes",
-      "autores": ["João Silva", "Emília Souza"],
-      "ano": 2023,
-      "revista": "Revista de Neurociência e Comportamento",
-      "topicos": ["dopamina", "mídias sociais", "vício"],
+      "titulo": "Como as redes sociais afetam a saúde mental dos adolescentes",
+      "link": "https://www.yalemedicine.org/news/social-media-teens-mental-health",
+      "fonte": "Yale Medicine",
+      "data": "2022-10-15",
       "lingua": "Português",
-      "url": "https://www.frontiersin.org/articles/10.3389/neuro.2023.00001/full"
+      "autor": "Equipe Yale Medicine"
     },
     {
-      "titulo": "Tendências de Pesquisa em Vício nas Mídias Sociais e Uso Problemático",
-      "autores": ["Karjalainen, M.", "Pattnaik, S."],
-      "ano": 2022,
-      "revista": "Frontiers in Psychology",
-      "topicos": ["vício em redes sociais", "uso problemático", "análise bibliométrica"],
-      "lingua": "Inglês",
-      "url": "https://www.frontiersin.org/articles/10.3389/fpsyg.2022.12345/full"
-    },
-    {
-      "titulo": "O Papel das Redes Sociais na Infodemia Durante a COVID-19",
-      "autores": ["Ana Costa", "Miguel Ferreira"],
-      "ano": 2021,
-      "revista": "Revisão de Comunicação em Saúde",
-      "topicos": ["infodemia", "COVID-19", "redes sociais"],
+      "titulo": "O papel da alfabetização em mídias sociais no gerenciamento da infodemia",
+      "link": "https://www.frontiersin.org/articles/10.3389/fpsyg.2022.905579/full",
+      "fonte": "Frontiers",
+      "data": "2022-03-18",
       "lingua": "Português",
-      "url": "https://www.healthcomreview.org/articles/10.1234/hcr.2021.98765/full"
+      "autor": "Frontiers in Psychology"
     },
     {
-      "titulo": "Neurociência da Dopamina no Vício em Redes Sociais",
-      "autores": ["Griffiths, MD", "Lin, CY", "Pakpour, AH"],
-      "ano": 2020,
-      "revista": "Revista de Vícios Comportamentais",
-      "topicos": ["dopamina", "vício em redes sociais", "cérebro"],
+      "titulo": "O impacto das redes sociais na saúde mental durante a pandemia de COVID-19",
+      "link": "https://www.theguardian.com/world/2020/apr/26/social-media-mental-health-coronavirus-pandemic",
+      "fonte": "The Guardian",
+      "data": "2020-04-26",
       "lingua": "Inglês",
-      "url": "https://www.behavioraladdictionsjournal.org/articles/10.1016/j.bahj.2020.12345/full"
+      "autor": "Alexandra Topping"
+    },
+    {
+      "titulo": "Como as redes sociais contribuem para a crise de saúde mental dos jovens",
+      "link": "https://www.bbc.com/news/health-49891046",
+      "fonte": "BBC News",
+      "data": "2019-10-15",
+      "lingua": "Inglês",
+      "autor": "BBC News"
     }
   ]
-}
-
 }
