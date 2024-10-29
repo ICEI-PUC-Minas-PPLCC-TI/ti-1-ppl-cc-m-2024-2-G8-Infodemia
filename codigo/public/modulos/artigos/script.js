@@ -1,10 +1,11 @@
 function carregarArtigosIniciais() {
-    fetch('artigos.json')
+    fetch('http://localhost:3000/artigos')
         .then(response => response.json())
         .then(data => {
             const container = document.getElementById('artigos-container');
 
-            const artigosIniciais = data.artigos.slice(0, 6);
+            // Seleciona os primeiros 6 artigos
+            const artigosIniciais = data.slice(0, 6); 
 
             artigosIniciais.forEach((noticia, index) => {
                 const artigoCard = document.createElement('div');
@@ -18,7 +19,6 @@ function carregarArtigosIniciais() {
                         <h2>${noticia.titulo}</h2>
                         <p><strong>Autor:</strong> ${noticia.autor}</p>
                         <p><strong>Data de Publicação:</strong> ${noticia.data}</p>
-                        
                         <a href="artigo.html?id=${index + 1}" class="btn">Ler Mais</a>
                     </div>
                 `;

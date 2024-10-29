@@ -7,10 +7,11 @@ function carregarArtigo() {
     const artigoId = getArticleIdFromUrl();
 
     if (artigoId) {
-        fetch('artigos.json')
+        fetch('http://localhost:3000/artigos')
             .then(response => response.json())
             .then(data => {
-                const noticia = data.artigos[artigoId - 1]; 
+                // Verifica se o índice existe no array
+                const noticia = data[artigoId - 1]; 
                 
                 if (noticia) {
                     // Atualiza o conteúdo da página com os dados da notícia
