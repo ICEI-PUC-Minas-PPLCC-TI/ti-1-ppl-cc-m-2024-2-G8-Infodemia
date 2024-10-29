@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
     fetch("http://localhost:3000/ebooks")
         .then(response => response.json())
         .then(ebooks => {
-            
+        
             ebooks.forEach(ebook => {
                 const ebookDiv = document.createElement("div");
                 ebookDiv.classList.add("ebook");
@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         <h2>${ebook.titulo}</h2>
                         <p class="ebook-author">${ebook.autores}</p>
                         <p class="ebook-summary">${ebook.sinopse}</p>
-                        <a href="#" class="download-button">Saiba Mais</a>
+                        <a href="${ebook.link}" class="download-button" target="_blank">Saiba Mais</a>
                     </div>
                 `;
 
