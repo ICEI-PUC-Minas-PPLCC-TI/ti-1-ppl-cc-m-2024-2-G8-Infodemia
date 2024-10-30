@@ -3,22 +3,20 @@ function carregarArtigosIniciais() {
         .then(response => response.json())
         .then(data => {
             const container = document.getElementById('artigos-container');
-
-            // Seleciona os primeiros 6 artigos
             const artigosIniciais = data.slice(0, 6); 
 
-            artigosIniciais.forEach((noticia, index) => {
+            artigosIniciais.forEach((artigo, index) => {
                 const artigoCard = document.createElement('div');
-                artigoCard.classList.add('noticia');
+                artigoCard.classList.add('artigo');
                 
                 artigoCard.innerHTML = `
-                    <div class="imagem-noticia">
-                        <img src="${noticia.imagem}" alt="Imagem do Artigo">
+                    <div class="imagem-artigo">
+                        <img src="${artigo.imagem}" alt="Imagem do Artigo">
                     </div>
-                    <div class="conteudo-noticia">
-                        <h2>${noticia.titulo}</h2>
-                        <p><strong>Autor:</strong> ${noticia.autor}</p>
-                        <p><strong>Data de Publicação:</strong> ${noticia.data}</p>
+                    <div class="conteudo-artigo">
+                        <h2>${artigo.titulo}</h2>
+                        <p><strong>Autor:</strong> ${artigo.autor}</p>
+                        <p><strong>Data de Publicação:</strong> ${artigo.data}</p>
                         <a href="artigo.html?id=${index + 1}" class="btn">Ler Mais</a>
                     </div>
                 `;

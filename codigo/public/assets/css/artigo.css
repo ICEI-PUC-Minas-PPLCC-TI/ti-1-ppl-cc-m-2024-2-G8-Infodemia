@@ -30,7 +30,7 @@ footer {
     justify-content: center;
 }
 
-.noticia {
+.artigo {
     background-color: #444;
     padding: 20px;
     border-radius: 5px;
@@ -42,27 +42,27 @@ footer {
     position: relative;
 }
 
-.imagem-noticia img {
+.imagem-artigo img {
     max-width: 100%;
     height: auto;
     border-radius: 5px;
     margin-bottom: 15px;
 }
 
-.conteudo-noticia {
+.conteudo-artigo {
     text-align: left;
     flex-grow: 1; 
     width: 100%;
     padding-bottom: 50px; 
 }
 
-.conteudo-noticia h2 {
+.conteudo-artigo h2 {
     color: #fff;
     font-size: 1.2em;
     margin-bottom: 10px;
 }
 
-.conteudo-noticia p {
+.conteudo-artigo p {
     color: #ddd;
     margin: 5px 0;
 }
@@ -85,7 +85,7 @@ footer {
 }
 
 /* Botão "Ler Mais" canto inferior direito do card */
-.noticia .btn {
+.artigo .btn {
     position: absolute;
     bottom: 20px;
     right: 20px;

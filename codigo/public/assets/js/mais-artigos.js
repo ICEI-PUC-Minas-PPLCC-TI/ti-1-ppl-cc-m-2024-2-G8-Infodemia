@@ -3,25 +3,21 @@ function carregarMaisArtigos() {
         .then(response => response.json())
         .then(data => {
             const container = document.getElementById('mais-artigos-container');
-
-            // Verifica se existem artigos e se o container foi encontrado
             if (data.length > 0 && container) {
-                // Obtém os artigos adicionais, começando do índice 6
-                const artigosExtras = data.slice(6); // Pega os artigos a partir do índice 6
+                const artigosExtras = data.slice(6);
                 artigosExtras.forEach((artigo, index) => {
                     const artigoCard = document.createElement('div');
-                    artigoCard.classList.add('noticia');
+                    artigoCard.classList.add('artigo');
                     
                     artigoCard.innerHTML = `
-                        <div class="imagem-noticia">
+                        <div class="imagem-artigo">
                             <img src="${artigo.imagem}" alt="Imagem do Artigo">
                         </div>
-                        <div class="conteudo-noticia">
+                        <div class="conteudo-artigo">
                             <h2>${artigo.titulo}</h2>
                             <p><strong>Autor:</strong> ${artigo.autor}</p>
                             <p><strong>Data de Publicação:</strong> ${artigo.data}</p>
-                            <a href="artigo.html?id=${index + 7}" class="btn">Ler Mais</a> 
-                            <!-- O link agora direciona para artigo.html com o ID correto -->
+                            <a href="artigo.html?id=${index + 7}" class="btn">Ler Mais</a>
                         </div>
                     `;
 
@@ -40,5 +36,4 @@ function carregarMaisArtigos() {
         });
 }
 
-// Carregar os artigos quando a página for carregada
 window.onload = carregarMaisArtigos;

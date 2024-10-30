@@ -10,18 +10,15 @@ function carregarArtigo() {
         fetch('http://localhost:3000/artigos')
             .then(response => response.json())
             .then(data => {
-                // Verifica se o índice existe no array
-                const noticia = data[artigoId - 1]; 
+                const artigo = data[artigoId - 1]; 
                 
-                if (noticia) {
-                    // Atualiza o conteúdo da página com os dados da notícia
-                    document.getElementById('titulo-artigo').textContent = noticia.titulo;
-                    document.getElementById('autor-artigo').textContent = noticia.autor;
-                    document.getElementById('data-artigo').textContent = noticia.data;
-                    document.getElementById('conteudo-artigo').textContent = noticia.descricao;
-
-                    // Atualiza o link "Para ler mais, clique aqui"
-                    document.getElementById('saiba-mais-link').href = noticia.saiba_mais;
+                if (artigo) {
+                    document.getElementById('titulo-artigo').textContent = artigo.titulo;
+                    document.getElementById('autor-artigo').textContent = artigo.autor;
+                    document.getElementById('data-artigo').textContent = artigo.data;
+                    document.getElementById('decricao-artigo').textContent = artigo.descricao; // Aqui é a descrição
+                    document.getElementById('conteudo-artigo').innerHTML = artigo.conteudo; // Carrega o conteúdo do artigo
+                    document.getElementById('saiba-mais-link').href = artigo.saiba_mais; // Link para ler mais
                 } else {
                     document.getElementById('conteudo-artigo').textContent = 'Artigo não encontrado.';
                 }
