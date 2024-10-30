@@ -63,11 +63,11 @@ nav ul li a:hover {
 }
 
 .notification-icon::before {
-    background-image: url('181539.png'); 
+    background-image: url('../images/ebooks/notif.png'); 
 }
 
 .user-icon::before {
-    background-image: url('png-transparent-bender-leela-philip-j-fry-computer-icons-symbol-bender-logo-cartoon-fictional-character-thumbnail.png'); 
+    background-image: url('../images/ebooks/bendericon.png'); 
 }
 
 main {
@@ -138,6 +138,83 @@ main {
 
 .download-button:hover {
     background-color: #17a2b8;
+}
+
+/*CSS Videos*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(46, 46, 46, 1);
+}
+
+/* Títulos da página */
+.titulo {
+    color: #ffffff;
+    margin-left: 80px;
+    font-size: 40px;
+}
+
+/* Estilização para o container de vídeo */
+#videoContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Cartão de vídeo */
+.video-card {
+    width: 320px;
+    background-color: rgba(38, 38, 38, 1);
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Título do vídeo */
+.video-card h2 {
+    font-size: 18px;
+    color: #ffffff;
+    margin: 12px 0;
+}
+
+/* Descrição */
+.video-card p {
+    font-size: 12px;
+    color: #ffffff;
+    margin: 8px 0;
+}
+
+/* Estilo do iframe */
+.video-card iframe {
+    width: 100%;
+    height: 180px;
+    border-radius: 4px;
+    border: none;
+    background-color: #000000;
+}
+
+/* Botão de "Veja Mais" */
+.video-card button {
+    background-color: rgba(0, 199, 190, 1);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.video-card button:hover {
+    background-color: rgb(0, 160, 152);
+}
+
+/* Estilo para tags */
+.tags {
+    color: white; /* Cor das tags */
+    font-size: 12px;
+    margin-top: 10px;
 }
 
 
