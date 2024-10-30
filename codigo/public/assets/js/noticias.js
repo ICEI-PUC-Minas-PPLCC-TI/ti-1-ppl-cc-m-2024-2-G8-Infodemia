@@ -26,4 +26,4 @@ function exibirNoticias(noticias) {
         
         container.appendChild(noticiaDiv);
     });
-}
+} 
