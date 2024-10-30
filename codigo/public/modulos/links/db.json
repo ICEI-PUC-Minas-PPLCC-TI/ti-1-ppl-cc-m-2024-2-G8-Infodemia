@@ -5,17 +5,17 @@
       {
         "column": 1,
         "items": [
-          { "label": "Lorem ipsum dolor sit amet 1", "url": "https://www.exemplo1.com" },
-          { "label": "Lorem ipsum dolor sit amet 2", "url": "https://www.exemplo2.com" },
-          { "label": "Lorem ipsum dolor sit amet 3", "url": "https://www.exemplo3.com" }
+          { "label": "G1", "url": "https://g1.globo.com" },
+          { "label": "UOL", "url": "https://www.uol.com.br" },
+          { "label": "Folha de S.Paulo", "url": "https://www.folha.uol.com.br" }
         ]
       },
       {
         "column": 2,
         "items": [
-          { "label": "Lorem ipsum dolor sit amet 4", "url": "https://www.exemplo4.com" },
-          { "label": "Lorem ipsum dolor sit amet 5", "url": "https://www.exemplo5.com" },
-          { "label": "Lorem ipsum dolor sit amet 6", "url": "https://www.exemplo6.com" }
+          { "label": "O Estado de S. Paulo", "url": "https://www.estadao.com.br" },
+          { "label": "Jornal do Brasil", "url": "https://www.jb.com.br" },
+          { "label": "Exame", "url": "https://www.exame.com" }
         ]
       }
     ]
