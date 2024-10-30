@@ -11,7 +11,7 @@ function carregarArtigosIniciais() {
                 
                 artigoCard.innerHTML = `
                     <div class="imagem-artigo">
-                        <img src="${artigo.imagem}" alt="Imagem do Artigo">
+                        <img src="${artigo.imagem}" alt="imagens-artigos">
                     </div>
                     <div class="conteudo-artigo">
                         <h2>${artigo.titulo}</h2>
