@@ -1,4 +1,4 @@
-fetch('noticias.json')  // Chama o arquivo JSON
+fetch('/noticias')  // Chama o arquivo JSON
     .then(response => {
         if (!response.ok) {
             throw new Error('Network response was not ok');
@@ -6,7 +6,8 @@ fetch('noticias.json')  // Chama o arquivo JSON
         return response.json();
     })
     .then(data => {
-        exibirNoticias(data.noticias);
+        
+        exibirNoticias(data);
     })
     .catch(error => console.error('Erro ao carregar o JSON:', error));
 
