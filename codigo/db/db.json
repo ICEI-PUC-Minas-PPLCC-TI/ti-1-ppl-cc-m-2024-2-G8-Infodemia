@@ -188,6 +188,27 @@
       "autor": "BBC News"
     }
   ],
+  "trustedLinksSection": {
+    "title": "Links confiáveis",
+    "links": [
+      {
+        "column": 1,
+        "items": [
+          { "label": "G1", "url": "https://g1.globo.com" },
+          { "label": "UOL", "url": "https://www.uol.com.br" },
+          { "label": "Folha de S.Paulo", "url": "https://www.folha.uol.com.br" }
+        ]
+      },
+      {
+        "column": 2,
+        "items": [
+          { "label": "O Estado de S. Paulo", "url": "https://www.estadao.com.br" },
+          { "label": "Jornal do Brasil", "url": "https://www.jb.com.br" },
+          { "label": "Exame", "url": "https://www.exame.com" }
+        ]
+      }
+    ]
+  },
   "artigos": [
     {
       "titulo": "As múltiplas faces da infodemia",
