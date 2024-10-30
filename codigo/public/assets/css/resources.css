@@ -140,6 +140,7 @@ main {
     background-color: #17a2b8;
 }
 
+
 @media (max-width: 768px) {
     .ebook-grid {
         grid-template-columns: 1fr; 
@@ -158,4 +159,40 @@ main {
         text-align: center;
     }
 }
+#detalhes-container {
+    padding: 20px;
+}
 
+.detalhes-livro {
+    display: flex;
+    gap: 20px;
+}
+
+.livro-capa img {
+    width: 300px;
+    border-radius: 5px;
+}
+
+.livro-info {
+    max-width: 600px;
+}
+
+.botao-detalhes {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.livro-info p + p {
+    margin-top: 15px; 
+}
+
+
+.botao-detalhes {
+    margin-top: 20px; 
+}
