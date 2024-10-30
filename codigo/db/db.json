@@ -24,80 +24,37 @@
   ],
   "videos": [
     {
-      "id": "1",
-      "titulo": "How Dopamine Drives Your Decisions",
-      "descricao": "Entenda como a dopamina influencia suas escolhas diárias e o impacto no comportamento humano.",
-      "url": "https://www.youtube.com/watch?v=vOSYmLER664",
-      "thumbnail": "https://img.youtube.com/vi/vOSYmLER664/0.jpg",
-      "canal": {
-        "nome": "TEDx Talks"
-      },
-      "data_publicacao": "2019-11-07",
-      "duracao": "10:01",
+      "title": "Infodemia e saúde mental",
+      "url": "https://www.youtube.com/embed/_S0t1jvN-N0?si=cw6tAYiLTRPhsJlJ",
+      "description": "Explore a infodemia e seu impacto na saúde mental. O vídeo aborda como a sobrecarga de informações pode causar ansiedade e estresse, além de oferecer dicas para filtrar dados e promover um ambiente digital saudável, ajudando a preservar o bem-estar mental.",
       "tags": [
-        "dopamina",
-        "decisões",
-        "comportamento",
-        "TEDx"
-      ],
-      "lingua": "inglês"
-    },
-    {
-      "id": "2",
-      "titulo": "A dopamina e as redes sociais",
-      "descricao": "Neste vídeo, Drauzio Varella explora como as redes sociais afetam a liberação de dopamina e a saúde mental.",
-      "url": "https://www.youtube.com/watch?v=feeruC_acq8",
-      "thumbnail": "https://img.youtube.com/vi/feeruC_acq8/0.jpg",
-      "canal": {
-        "nome": "Drauzio Varella"
-      },
-      "data_publicacao": "2021-09-15",
-      "duracao": "8:32",
-      "tags": [
-        "dopamina",
-        "redes sociais",
         "saúde mental",
-        "vício"
-      ],
-      "lingua": "português"
-    },
-    {
-      "id": "3",
-      "titulo": "Infodemia: Excesso de Informação e o Impacto na Saúde Mental",
-      "descricao": "Entenda como o excesso de informações pode sobrecarregar o cérebro e prejudicar a saúde mental.",
-      "url": "https://www.youtube.com/watch?v=NKufxsENVg8",
-      "thumbnail": "https://img.youtube.com/vi/NKufxsENVg8/0.jpg",
-      "canal": {
-        "nome": "TV Brasil"
-      },
-      "data_publicacao": "2023-01-20",
-      "duracao": "13:20",
-      "tags": [
         "infodemia",
-        "saúde mental",
-        "dopamina",
-        "informação"
-      ],
-      "lingua": "português"
+        "ansiedade",
+        "estresse"
+      ]
     },
     {
-      "id": "4",
-      "titulo": "A internet e o vício em dopamina: Um ciclo perigoso",
-      "descricao": "Este vídeo discute como o uso excessivo da internet afeta o cérebro e leva ao vício em dopamina.",
-      "url": "https://www.youtube.com/watch?v=JhTUk_tCj-Q",
-      "thumbnail": "https://img.youtube.com/vi/JhTUk_tCj-Q/0.jpg",
-      "canal": {
-        "nome": "Insperiência"
-      },
-      "data_publicacao": "2022-05-05",
-      "duracao": "9:45",
+      "title": "Como o excesso de informações está destruindo seu cérebro",
+      "url": "https://www.youtube.com/embed/OnDq1rWyORQ?si=LSeeyOZ2dW8WH34c",
+      "description": "Explore como o excesso de informações pode prejudicar a saúde do seu cérebro. Este vídeo discute os efeitos da sobrecarga informativa, incluindo perda de foco e estresse mental, e oferece estratégias para gerenciar melhor as informações do dia a dia, ajudando você a preservar sua saúde cognitiva.",
       "tags": [
-        "internet",
-        "vício",
-        "dopamina",
-        "tecnologia"
-      ],
-      "lingua": "português"
+        "cérebro",
+        "sobre carga informativa",
+        "foco",
+        "saúde cognitiva"
+      ]
+    },
+    {
+      "title": "Você precisa forçar seu cérebro a fazer coisas difíceis",
+      "url": "https://www.youtube.com/embed/txWaYeehdvQ?si=R12irowOLbDu1j-J",
+      "description": "Aprenda como desafiar seu cérebro com tarefas difíceis pode aprimorar suas habilidades e aumentar sua resiliência. Este vídeo oferece dicas práticas para incorporar esses desafios na sua rotina e liberar seu potencial.",
+      "tags": [
+        "desafios",
+        "resiliência",
+        "habilidades",
+        "crescimento pessoal"
+      ]
     }
   ],
   "ebooks": [
