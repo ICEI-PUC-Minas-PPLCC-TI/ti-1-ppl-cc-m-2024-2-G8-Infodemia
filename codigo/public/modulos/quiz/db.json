@@ -1,0 +1,105 @@
+{
+  "quizzes": [
+    {
+      "id": "1",
+      "title": "Quiz 1: Fundamentos da Infodemia",
+      "completed": true,
+      "img": "./assets/fakenews.png"
+    },
+    {
+      "id": "2",
+      "title": "Quiz 2: Verificação de Fontes",
+      "completed": true,
+      "img": "./assets/besmart.png"
+    },
+    {
+      "id": "3",
+      "title": "Quiz 3: Redes Sociais e Desinformação",
+      "completed": false,
+      "img": "./assets/socialmedia.png"
+    },
+    {
+      "id": "4",
+      "title": "Quiz 4: Fact-Checking",
+      "completed": false,
+      "img": "./assets/factcheck.png"
+    },
+    {
+      "id": "5",
+      "title": "Quiz 5: Viés de Confirmação",
+      "completed": false,
+      "img": "./assets/ignorance.png"
+    },
+    {
+      "id": "6",
+      "title": "Quiz 6: Análise Crítica",
+      "completed": false,
+      "img": "./assets/critical.png"
+    },
+    {
+      "id": "7",
+      "title": "Quiz 7: Combate à Desinformação",
+      "completed": false,
+      "img": "./assets/misinfo.png"
+    },
+    {
+      "id": "8",
+      "title": "Quiz 8: Seguraça Digital",
+      "completed": false,
+      "img": "./assets/digitalsecurity.png"
+    },
+    {
+      "id": "9",
+      "title": "Quiz 9: Ética na Internet",
+      "completed": true,
+      "img": "./assets/internetethics.png"
+    }
+  ],
+  "progress": [
+    {
+      "quizId": 1,
+      "completed": true,
+      "id": "9bbe"
+    },
+    {
+      "quizId": 2,
+      "completed": false,
+      "id": "36a3"
+    },
+    {
+      "quizId": 3,
+      "completed": false,
+      "id": "0e34"
+    },
+    {
+      "quizId": 4,
+      "completed": false,
+      "id": "8d05"
+    },
+    {
+      "quizId": 5,
+      "completed": false,
+      "id": "5803"
+    },
+    {
+      "quizId": 6,
+      "completed": false,
+      "id": "ffec"
+    },
+    {
+      "quizId": 7,
+      "completed": true,
+      "id": "2e8c"
+    },
+    {
+      "quizId": 8,
+      "completed": false,
+      "id": "b054"
+    },
+    {
+      "quizId": 9,
+      "completed": false,
+      "id": "eb95"
+    }
+  ]
+}
