@@ -1,1 +1,32 @@
-file
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Vídeos</title>
+    <link rel="stylesheet" href="noticias.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Cadastro de Vídeos</h1>
+    </header>
+
+    <form id="video-form">
+        <label for="title">Título:</label>
+        <input type="text" id="title" name="title" required>
+        
+        <label for="url">URL do Vídeo:</label>
+        <input type="url" id="url" name="url" required>
+        
+        <label for="description">Descrição:</label>
+        <textarea id="description" name="description" required></textarea>
+        
+        <label for="tags">Tags (separadas por vírgula):</label>
+        <input type="text" id="tags" name="tags" required>
+        
+        <button type="submit">Adicionar Vídeo</button>
+    </form>
+
+    <script src="cadastro.js"></script>
+</body>
+</html>
