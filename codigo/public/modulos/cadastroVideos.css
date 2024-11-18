@@ -1,32 +1,30 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro de Vídeos</title>
-    <link rel="stylesheet" href="noticias.css">
-</head>
-<body>
-    <header class="header">
-        <h1>Cadastro de Vídeos</h1>
-    </header>
+form {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgb(22, 22, 22);
+    border-radius: 8px;
+}
 
-    <form id="video-form">
-        <label for="title">Título:</label>
-        <input type="text" id="title" name="title" required>
-        
-        <label for="url">URL do Vídeo:</label>
-        <input type="url" id="url" name="url" required>
-        
-        <label for="description">Descrição:</label>
-        <textarea id="description" name="description" required></textarea>
-        
-        <label for="tags">Tags (separadas por vírgula):</label>
-        <input type="text" id="tags" name="tags" required>
-        
-        <button type="submit">Adicionar Vídeo</button>
-    </form>
+form label {
+    display: block;
+    margin-bottom: 8px;
+}
 
-    <script src="cadastro.js"></script>
-</body>
-</html>
+form input, form textarea, form button {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+form button {
+    background-color: #2196F3;
+    color: white;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #1976D2;
+}
