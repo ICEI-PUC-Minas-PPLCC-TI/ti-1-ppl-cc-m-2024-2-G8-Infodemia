@@ -1,17 +1,16 @@
-// Selecionar o formulário
 const form = document.getElementById('video-form');
 
-// Event Listener para o envio do formulário
+// envio do formulário
 form.addEventListener('submit', function(event) {
     event.preventDefault();
 
-    // Captura os dados do formulário
+    // Pega os dados do formulário
     const title = document.getElementById('title').value;
     const url = document.getElementById('url').value;
     const description = document.getElementById('description').value;
     const tags = document.getElementById('tags').value.split(',').map(tag => tag.trim());
 
-    // Estrutura do novo vídeo
+    // video novo
     const newVideo = {
         title,
         url,
@@ -19,7 +18,7 @@ form.addEventListener('submit', function(event) {
         tags
     };
 
-    // Envia para o JSON Server
+    // Envia pro JSON Server
     fetch('http://localhost:3000/videos', {
         method: 'POST',
         headers: {
@@ -32,7 +31,7 @@ form.addEventListener('submit', function(event) {
             throw new Error('Erro ao adicionar vídeo');
         }
         alert('Vídeo adicionado com sucesso!');
-        form.reset(); // Limpa o formulário
+        form.reset(); // limpa o formulário
     })
     .catch(error => console.error('Erro:', error));
 });
