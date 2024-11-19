@@ -28,7 +28,7 @@ form.addEventListener('submit', function(event) {
     })
     .then(response => {
         if (!response.ok) {
-            throw new Error('Erro ao adicionar vídeo');
+            throw new Error('errro ao adicionar video');
         }
         alert('Vídeo adicionado com sucesso!');
         form.reset(); // limpa o formulário
