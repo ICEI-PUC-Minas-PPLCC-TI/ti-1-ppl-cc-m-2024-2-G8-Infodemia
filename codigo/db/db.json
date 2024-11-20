@@ -57,6 +57,43 @@
       ]
     }
   ],
+  "faqs": [
+    {
+      "id": 1,
+      "pergunta": "O que é a infodemia?",
+      "resposta": "Infodemia é o excesso de informações, algumas precisas e outras não, que dificulta a tomada de decisões e gera confusão entre as pessoas."
+    },
+    {
+      "id": 2,
+      "pergunta": "Como posso filtrar informações de qualidade?",
+      "resposta": "É importante verificar a fonte das informações, buscar fontes confiáveis e sempre conferir dados com diferentes perspectivas antes de acreditar em uma informação."
+    },
+    {
+      "id": 3,
+      "pergunta": "Quais são os efeitos da infodemia na saúde mental?",
+      "resposta": "A sobrecarga de informações pode aumentar o nível de estresse e ansiedade, pois as pessoas ficam sobrecarregadas e sem saber em quem confiar."
+    },
+    {
+      "id": 4,
+      "pergunta": "Como identificar notícias falsas?",
+      "resposta": "Verifique a fonte, procure por erros de escrita, leia além do título e confirme a informação em outros meios confiáveis."
+    },
+    {
+      "id": 5,
+      "pergunta": "O que fazer ao encontrar uma informação suspeita?",
+      "resposta": "Não compartilhe imediatamente. Pesquise, cheque fontes confiáveis e, se necessário, informe outras pessoas sobre a suspeita."
+    },
+    {
+      "id": 6,
+      "pergunta": "Quais setores são mais impactados pela infodemia?",
+      "resposta": "A saúde, a política e a economia são setores frequentemente afetados pela disseminação de informações imprecisas."
+    },
+    {
+      "id": 7,
+      "pergunta": "Como ensinar crianças a lidar com a infodemia?",
+      "resposta": "Incentive o pensamento crítico, mostre a importância de verificar fontes e discuta o impacto de notícias falsas com exemplos simples."
+    }
+  ],
   "ebooks": [
     {
       "capa": "./assets/images/ebooks/LivroInfodemia.jpg",
