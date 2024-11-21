@@ -74,3 +74,76 @@ h1 {
 .podcast-controls button:hover {
   background-color: #777; /* Cor ao passar o mouse nos botões */
 }
+
+/* Estilo para links */
+a {
+  padding: 10px 20px;
+  background-color: #24f0c7; /* Fundo verde */
+  color: #fff; /* Cor do texto */
+  text-decoration: none; /* Remove sublinhado */
+  border-radius: 5px;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+}
+
+a:hover {
+  background-color: #005f73; /* Cor verde escuro ao passar o mouse */
+}
+
+/* Botão "Ver Mais Podcasts" fixo no inferior direito */
+.btn-ver-mais {
+  position: fixed;
+  bottom: 20px; /* Distância da parte inferior da página */
+  right: 20px; /* Distância do lado direito da página */
+  background-color: #24f0c7; /* Cor de fundo verde */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 1em;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+
+.btn-ver-mais:hover {
+  background-color: #005f73; /* Cor ao passar o mouse */
+}
+
+/* Botão "Voltar" fixo no inferior direito (para "Mais Podcasts") */
+.btn-voltar-direita {
+  position: fixed;
+  bottom: 20px; /* Distância da parte inferior da página */
+  right: 20px; /* Distância do lado direito da página */
+  background-color: #24f0c7; /* Cor de fundo verde */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1em;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+
+.btn-voltar-direita:hover {
+  background-color: #005f73; /* Cor ao passar o mouse */
+}
+
+/* Botão "Voltar" centralizado na parte inferior da página (para "Detalhes do Podcast") */
+.btn-voltar-inferior {
+  position: fixed;
+  bottom: 20px; /* Distância da parte inferior da página */
+  left: 50%; /* Alinha ao centro horizontal */
+  transform: translateX(-50%); /* Centraliza o botão */
+  background-color: #24f0c7; /* Cor de fundo verde */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1em;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+
+.btn-voltar-inferior:hover {
+  background-color: #005f73; /* Cor ao passar o mouse */
+}
