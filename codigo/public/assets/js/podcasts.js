@@ -1,4 +1,4 @@
-// Função para carregar os 4 primeiros podcasts na página principal
+// Página principal
 function carregarPodcasts() {
   fetch('/podcasts')
     .then(response => {
@@ -36,7 +36,7 @@ function carregarPodcasts() {
     });
 }
 
-// Função para carregar os podcasts restantes na página "Mais Podcasts"
+// Página "Mais Podcasts"
 function carregarMaisPodcasts() {
   fetch('/podcasts')
     .then(response => {
@@ -74,7 +74,7 @@ function carregarMaisPodcasts() {
     });
 }
 
-// Função para carregar os detalhes do podcast na página "Detalhes"
+// Página "Detalhes"
 function carregarDetalhesPodcast() {
   const urlParams = new URLSearchParams(window.location.search);
   const indicePodcast = urlParams.get('indice');
@@ -107,7 +107,6 @@ function carregarDetalhesPodcast() {
     });
 }
 
-// Gerenciamento das funções no carregamento da página
 window.onload = () => {
   if (window.location.pathname === '/mais-podcasts.html') {
     carregarMaisPodcasts();

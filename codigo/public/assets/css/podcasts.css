@@ -1,6 +1,6 @@
 body {
-  background-color: #222; /* Cor de fundo geral */
-  color: #fff; /* Cor do texto */
+  background-color: #222; 
+  color: #fff; 
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 20px;
@@ -10,13 +10,13 @@ h1 {
   font-size: 88px;
   margin-bottom: 20px;
   color: #fff;
-  text-align: center; /* Centraliza o título */
+  text-align: center; 
 }
 
 .container {
   max-width: 600px;
   margin: 0 auto;
-  background-color: #333; /* Fundo do painel de podcasts */
+  background-color: #333; 
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -28,36 +28,36 @@ h1 {
   justify-content: space-between;
   margin-bottom: 15px;
   padding: 10px;
-  background-color: #444; /* Fundo de cada item */
+  background-color: #444; 
   border-radius: 5px;
   transition: background-color 0.3s;
 }
 
 .podcast-item:hover {
-  background-color: #555; /* Cor ao passar o mouse */
+  background-color: #555; 
 }
 
 .podcast-item img {
-  width: 50px; /* Tamanho do ícone */
+  width: 50px; 
   height: 50px;
   border-radius: 5px;
   margin-right: 15px;
 }
 
 .podcast-details p:last-child {
-  max-height: 100px; /* Altura máxima */
-  overflow-y: auto; /* Adiciona rolagem vertical se necessário */
-  font-size: 14px; /* Tamanho da fonte */
-  color: #666; /* Cor cinza */
+  max-height: 100px; 
+  overflow-y: auto; 
+  font-size: 14px; 
+  color: #666; 
 }
 
 .podcast-controls {
   display: flex;
-  gap: 10px; /* Espaço entre os botões */
+  gap: 10px; 
 }
 
 .podcast-controls button {
-  background-color: #666; /* Fundo dos botões */
+  background-color: #666; 
   border: none;
   color: #fff;
   width: 30px;
@@ -72,30 +72,28 @@ h1 {
 }
 
 .podcast-controls button:hover {
-  background-color: #777; /* Cor ao passar o mouse nos botões */
+  background-color: #777; 
 }
 
-/* Estilo para links */
 a {
   padding: 10px 20px;
-  background-color: #24f0c7; /* Fundo verde */
-  color: #fff; /* Cor do texto */
-  text-decoration: none; /* Remove sublinhado */
+  background-color: #24f0c7; 
+  color: #fff; 
+  text-decoration: none; 
   border-radius: 5px;
   font-size: 1em;
   transition: background-color 0.3s ease;
 }
 
 a:hover {
-  background-color: #005f73; /* Cor verde escuro ao passar o mouse */
+  background-color: #005f73; 
 }
 
-/* Botão "Ver Mais Podcasts" fixo no inferior direito */
 .btn-ver-mais {
   position: fixed;
-  bottom: 20px; /* Distância da parte inferior da página */
-  right: 20px; /* Distância do lado direito da página */
-  background-color: #24f0c7; /* Cor de fundo verde */
+  bottom: 20px; 
+  right: 20px; 
+  background-color: #24f0c7; 
   color: white;
   padding: 10px 20px;
   border-radius: 50px;
@@ -106,15 +104,14 @@ a:hover {
 }
 
 .btn-ver-mais:hover {
-  background-color: #005f73; /* Cor ao passar o mouse */
+  background-color: #005f73; 
 }
 
-/* Botão "Voltar" fixo no inferior direito (para "Mais Podcasts") */
 .btn-voltar-direita {
   position: fixed;
-  bottom: 20px; /* Distância da parte inferior da página */
-  right: 20px; /* Distância do lado direito da página */
-  background-color: #24f0c7; /* Cor de fundo verde */
+  bottom: 20px; 
+  right: 20px; 
+  background-color: #24f0c7; 
   color: white;
   padding: 10px 20px;
   border-radius: 5px;
@@ -125,16 +122,15 @@ a:hover {
 }
 
 .btn-voltar-direita:hover {
-  background-color: #005f73; /* Cor ao passar o mouse */
+  background-color: #005f73; 
 }
 
-/* Botão "Voltar" centralizado na parte inferior da página (para "Detalhes do Podcast") */
 .btn-voltar-inferior {
   position: fixed;
-  bottom: 20px; /* Distância da parte inferior da página */
-  left: 50%; /* Alinha ao centro horizontal */
-  transform: translateX(-50%); /* Centraliza o botão */
-  background-color: #24f0c7; /* Cor de fundo verde */
+  bottom: 20px; 
+  left: 50%; 
+  transform: translateX(-50%); 
+  background-color: #24f0c7; 
   color: white;
   padding: 10px 20px;
   border-radius: 5px;
@@ -145,5 +141,5 @@ a:hover {
 }
 
 .btn-voltar-inferior:hover {
-  background-color: #005f73; /* Cor ao passar o mouse */
+  background-color: #005f73; 
 }
