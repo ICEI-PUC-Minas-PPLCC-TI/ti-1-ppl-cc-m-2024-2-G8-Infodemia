@@ -1,5 +1,5 @@
 function carregarArtigosIniciais() {
-    fetch('http://localhost:3000/artigos')
+    fetch('/artigos')
         .then(response => response.json())
         .then(data => {
             const container = document.getElementById('artigos-container');

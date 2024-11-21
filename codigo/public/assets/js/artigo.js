@@ -7,7 +7,7 @@ function carregarArtigo() {
     const artigoId = getArticleIdFromUrl();
 
     if (artigoId) {
-        fetch('http://localhost:3000/artigos')
+        fetch('/artigos')
             .then(response => response.json())
             .then(data => {
                 const artigo = data[artigoId - 1]; 

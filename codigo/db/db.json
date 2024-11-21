@@ -329,5 +329,79 @@
       "link": "artigos.html",
       "saiba_mais": "https://rbbd.febab.org.br/rbbd/article/view/1606"
     }
+  ],
+  "podcasts": [
+    {
+      "titulo": "Infodemia Parte I - Tornando-se fonte primária de informação",
+      "descricao": "Elas se proliferam mais rápido do que qualquer vírus de que se tem notícia. Em questão de segundos, podem atravessar cidades, países e oceanos, gerando caos e comprometendo vidas. As fake news sempre nos preocuparam, mas, nos tempos atuais, pedem um alerta ainda maior, pois aumentaram sua dimensão e alcance. O cenário é tão preocupante que a OMS deu ao fenômeno o nome oficial de 'infodemia'. Uma das vacinas para elas é fazer com que as informações verdadeiras cheguem diretamente à população, com clareza e transparência. Nessa série especial do Podcast, vamos discutir o assunto e dar sugestões de meios para organizações tornarem isso possível.",
+      "link": "https://open.spotify.com/episode/1rCg3YmsGCjNbQ5K1cr8RS?si=5yITE1MRQV2kRyfWDfM8tg&nd=1&dlsi=c89400dd24984e0a",
+      "autor": "Aline Castro",
+      "podcast":"Comunicação Pública: Guia de Sobrevivência",
+      "data": "27 de abr. de 2020",
+      "duracao": "21min 41s"
+    },
+    {
+      "titulo": "Infodemia Parte II - Linguagem Simples e UX Design na comunicação pública",
+      "descricao": "Todos nós andamos cansados e sobrecarregados de informação. Além de utilizar os meios mais práticos e mais diretos para falar com a população (como vimos no episódio #8), é muito importante que saibamos ser muito claros e didáticos em nossos textos e demais produções comunicativas. Nesse episódio, vamos falar de UX design (User experience ou experiência do usuário), de Visual Law e também da técnica da linguagem simples aplicada à comunicação pública.",
+      "link": "https://open.spotify.com/episode/3UhSjxbjJprtvcfCRHXKBK?si=qr7VqYJZSMy8kmUBUhIH3Q&nd=1&dlsi=dfef54f1b1814836",
+      "autor": "Aline Castro",
+      "podcast":"Comunicação Pública: Guia de Sobrevivência",
+      "data": "11 de mai. de 2020",
+      "duracao": "26min 23s"
+    },
+    {
+      "titulo": "Infodemia Parte III - Requisitos e práticas contra a desinformação",
+      "descricao": "A melhor vacina que temos contra o coronavírus nesse momento é a informação factual e de utilidade pública. Neste terceiro episódio do especial sobre Infodemia, o pesquisador Antonio Lassance enumera requisitos para uma comunicação efetivamente pública e para ações contra as notícias fraudulentas. Também vamos conhecer com funciona uma agência de checagem de notícias (um dos instrumentos que temos contra a desinformação) com a Natália Leal, da Agência Lupa.",
+      "link": "https://open.spotify.com/episode/1yj41owVI6VNFJbwjWlAoA?si=C9UkKARnR36JD4TXZxIW9g&nd=1&dlsi=0d41157601164a64",
+      "autor": "Aline Castro",
+      "podcast":"Comunicação Pública: Guia de Sobrevivência",
+      "data": "25 de mai. de 2020",
+      "duracao": "21min 1s"
+    },
+    {
+      "titulo": "Infodemia e Fake News nas Redes Sociais",
+      "descricao": "Neste episódio do Let’s Talk, recebemos a doutora em Administração pela FGV EAESP, Mel Girão, para discutir um tema crucial: os limites da desinformação digital.Com base em sua tese de doutorado, Mel explora como as fake news surgem, os perigos que representam e as precauções que tanto a sociedade quanto as empresas devem adotar para se proteger.Ouça agora mesmo essa discussão sobre o impacto das fake news no ambiente digital!",
+      "link": "https://open.spotify.com/episode/2PSbXc7RbmAhkX32vlCiZ8?si=8K0fFc7ZSgid6MD2T3UsKw&nd=1&dlsi=235a3df5903840dc",
+      "autor": "Let’s Talk - FGV EAESP",
+      "podcast":"Let’s Talk - FGV EAESP",
+      "data": "26 de ago.",
+      "duracao": "36min 4s"
+    },
+    {
+      "titulo": "Produto Final.I.C 2020 Desinformação e Infodemia",
+      "descricao": "I.C 2020 DESINFORMAÇÃO E INFODEMIA MANUELA SAVARIS, NINA FRANZOLOSO, GEÓRGIA NICOLINI E ISABELLE PAESE",
+      "link": "https://open.spotify.com/episode/3WZ2Om9EtAL7FiAe1iaFCb?si=xeA16fwCTUeg_Iw-RHkLaw",
+      "autor": "Manuela Savaris",
+      "podcast":"Desinformação e Fake News",
+      "data": "14 de dez. de 2020",
+      "duracao": "4min 49s"
+    },
+    {
+      "titulo": "Infodemia e desordem informacional",
+      "descricao": "No episódio 13, Pietra Vaz Diógenes da Silva fala sobre desordem informacional, infodemia e fake news, e como estas coisas afetam diretamente a vida de todos. Ela conta também como é ser mestranda durante uma pandemia, e dá dicas a quem pensa em estudar esses assuntos, mas é de outra área do conhecimento, como ela, que é do Direito.",
+      "link": "https://open.spotify.com/episode/1LQmTr3RRaNKYS7EAHIzvQ?si=gwr4bMejQa2RNwQo-pjKuw&nd=1&dlsi=bd3dac3c49be4199",
+      "autor": "Revista AtoZ",
+      "podcast":"Revista AtoZ",
+      "data": "29 de out. de 2021",
+      "duracao": "29min 29s"
+    },
+    {
+      "titulo": "Infodemia e Fake News com Theillyson Lima e Hugo Damasceno",
+      "descricao": "A desinformação é um assunto muito presente no nosso dia a dia, que para muitas pessoas passa desapercebido. Nesse episódio o professor e mestre em comunicação e cultura Theillyson Lima e o professor e mestre em psicologia Hogo Damasceno social discutem sobre o bombardeio de informação.",
+      "link": "https://open.spotify.com/episode/5hl3NYXo2WmqrTO0yWrXsU?si=9BvAjGkiQqirdmUn5rw2xQ",
+      "autor": "Podcast no Ar",
+      "podcast":"Podcast no Ar",
+      "data": "6 de dez. de 2022",
+      "duracao": "24min 30s"
+    },
+    {
+      "titulo": "Fake News e Infodemia c/ Georges Abboud",
+      "descricao": "Neste episódio inédito com convidado, trouxemos o professor doutor and advogado and irmão da Rosa, Georges  Abboud para discutir um tema no qual ele é especialista: as fake news. Teve também discussão sobre infodemia em meio à pandemia, além de repercutir o efeito disso tudo na nossa tão jovem democracia. Fácil não é, você bem sabe. Mas tá pra lá de incrível. Aperta o play e vem com a gente!",
+      "link": "https://open.spotify.com/episode/7vVLvT6xgw0MvzV5jbwyqJ?si=L8pbbnEGRHmK2Q7XQudz8w&nd=1&dlsi=642e9544942849e1",
+      "autor": "Se fosse Fácil Era Exatas",
+      "podcast":"Se fosse Fácil Era Exatas",
+      "data": "4 de jul. de 2020",
+      "duracao": "1h 26min"
+    }
   ]
 }
