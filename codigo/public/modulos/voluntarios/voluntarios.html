@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Voluntários</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/voluntarios.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Cadastro de Voluntários</h1>
+
+        <form id="form-cadastro">
+            <div class="form-group">
+                <label for="nome">Nome Completo</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+
+            <div class="form-group">
+                <label for="idade">Idade</label>
+                <input type="text" id="idade" name="idade" required>
+            </div>
+
+            <div class="form-group">
+                <label for="area">Área de Atuação</label>
+                <select id="area" name="area" required>
+                    <option value="">Selecione a área</option>
+                    <option value="Psicologia">Psicologia</option>
+                    <option value="Saúde">Saúde</option>
+                    <option value="Educação">Educação</option>
+                    <option value="Tecnologia">Tecnologia</option>
+                    <option value="Comunicação">Comunicação</option>
+                    <option value="Outros">Outros</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="especialidade">Especialidade</label>
+                <input type="text" id="especialidade" name="especialidade" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="telefone">Telefone</label>
+                <input type="text" id="telefone" name="telefone" required>
+            </div>
+
+            <div class="form-group">
+                <label for="certificacoes">Certificações</label>
+                <input type="text" id="certificacoes" name="certificacoes" placeholder="Separar por vírgula">
+            </div>
+
+            <button type="submit">Candidatar</button>
+        </form>
+    </div>
+ <script src="../../assets/js/voluntarios.js"></script>
+</body>
+
+</html>
