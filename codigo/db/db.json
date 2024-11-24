@@ -522,20 +522,6 @@
         "Formação em Terapia Cognitivo-Comportamental",
         "Curso de Primeiros Socorros Psicológicos"
       ]
-    },
-    {
-      "id": "7764",
-      "nome": "Teste",
-      "idade": "18",
-      "area": "Psicologia",
-      "especialidade": "Teste",
-      "contato": {
-        "email": "teste@gmail.com",
-        "telefone": "111111111111"
-      },
-      "certificacoes": [
-        "Teste"
-      ]
     }
   ]
 }

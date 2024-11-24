@@ -1,0 +1,71 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #000;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#voluntarios-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.voluntario-card {
+    padding: 15px;
+    background: rgba(176, 186, 195, 0.4);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.voluntario-card h2 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.voluntario-card p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button.edit {
+    background: #ffc107;
+    color: #fff;
+}
+
+button.delete {
+    background: #dc3545;
+    color: #fff;
+}
