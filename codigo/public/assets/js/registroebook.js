@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
         })
             .then(response => {
                 if (response.ok) {
-                    ebookForm.reset();
+                    window.location.href="/resources.html"
                 } else {
                     console.error("Erro ao registrar e-book.");
                 }
