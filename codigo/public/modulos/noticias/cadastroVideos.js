@@ -1,37 +1,96 @@
-const form = document.getElementById('video-form');
+onst API_URL = '/videos'; // Endpoint da API REST para os vídeos
 
-// envio do formulário
-form.addEventListener('submit', function(event) {
+// Carrega todos os vídeos ao inicializar
+async function loadVideos() {
+    const response = await fetch(API_URL);
+    if (!response.ok) {
+        console.error('Erro ao carregar vídeos:', response.statusText);
+        return;
+    }
+    const videos = await response.json();
+    displayVideos(videos);
+}
+
+// Exibe a lista de vídeos
+function displayVideos(videos) {
+    const container = document.getElementById('videos');
+    container.innerHTML = '';
+    videos.forEach(video => {
+        const videoDiv = document.createElement('div');
+        videoDiv.className = 'video';
+        videoDiv.innerHTML = `
+            <h3>${video.title}</h3>
+            <p>${video.description}</p>
+            <a href="${video.url}" target="_blank">Assistir</a>
+            <p><strong>Tags:</strong> ${video.tags.join(', ')}</p>
+            <button class="edit" onclick="editVideo('${video.id}')">Editar</button>
+            <button onclick="deleteVideo('${video.id}')">Excluir</button>
+        `;
+        container.appendChild(videoDiv);
+    });
+}
+
+// Salva ou atualiza um vídeo
+async function saveVideo(event) {
     event.preventDefault();
 
-    // Pega os dados do formulário
-    const title = document.getElementById('title').value;
-    const url = document.getElementById('url').value;
-    const description = document.getElementById('description').value;
-    const tags = document.getElementById('tags').value.split(',').map(tag => tag.trim());
-
-    // video novo
-    const newVideo = {
-        title,
-        url,
-        description,
-        tags
+    const id = document.getElementById('video-id').value;
+    const video = {
+        title: document.getElementById('title').value,
+        url: document.getElementById('url').value,
+        description: document.getElementById('description').value,
+        tags: document.getElementById('tags').value.split(',').map(tag => tag.trim()),
     };
 
-    // Envia pro JSON Server
-    fetch('http://localhost:3000/videos', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(newVideo)
-    })
-    .then(response => {
-        if (!response.ok) {
-            throw new Error('errro ao adicionar video');
-        }
-        alert('Vídeo adicionado com sucesso!');
-        form.reset(); // limpa o formulário
-    })
-    .catch(error => console.error('Erro:', error));
+    const method = id ? 'PUT' : 'POST';
+    const endpoint = id ? ${API_URL}/${id} : API_URL;
+
+    const response = await fetch(endpoint, {
+        method,
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(video),
+    });
+
+    if (!response.ok) {
+        console.error('Erro ao salvar vídeo:', response.statusText);
+        return;
+    }
+
+    document.getElementById('video-form').reset();
+    loadVideos();
+}
+
+// Exclui um vídeo
+async function deleteVideo(id) {
+    const response = await fetch(${API_URL}/${id}, { method: 'DELETE' });
+    if (!response.ok) {
+        console.error('Erro ao excluir vídeo:', response.statusText);
+        return;
+    }
+    loadVideos();
+}
+
+// Preenche o formulário para edição
+async function editVideo(id) {
+    const response = await fetch(${API_URL}/${id});
+    if (!response.ok) {
+        console.error('Erro ao carregar vídeo para edição:', response.statusText);
+        return;
+    }
+
+    const video = await response.json();
+    document.getElementById('video-id').value = video.id;
+    document.getElementById('title').value = video.title;
+    document.getElementById('url').value = video.url;
+    document.getElementById('description').value = video.description;
+    document.getElementById('tags').value = video.tags.join(', ');
+}
+
+// Listeners
+document.getElementById('video-form').addEventListener('submit', saveVideo);
+document.getElementById('cancel-btn').addEventListener('click', () => {
+    document.getElementById('video-form').reset();
 });
+
+// Inicialização
+loadVideos();
