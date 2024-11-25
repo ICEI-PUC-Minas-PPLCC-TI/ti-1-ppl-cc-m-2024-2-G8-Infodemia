@@ -11,7 +11,7 @@ function carregarLivro() {
             .then(response => response.json())
             .then(data => {
                 
-                const ebook = data[ebookId - 1]; 
+                const ebook = data.find(b => b.id == ebookId); 
                 
                 if (ebook) {
                     document.getElementById("capa-livro").src = ebook.capa;
