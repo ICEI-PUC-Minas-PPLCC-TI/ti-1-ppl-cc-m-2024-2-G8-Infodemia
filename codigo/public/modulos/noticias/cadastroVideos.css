@@ -1,30 +1,81 @@
-form {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
+body {
+    background-color: rgb(50, 50, 50);
+    color: #faf2f2;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
     background-color: rgb(22, 22, 22);
+    padding: 20px 0;
+}
+
+form {
+    background-color: rgb(22, 22, 22);
+    padding: 20px;
     border-radius: 8px;
+    max-width: 600px;
+    margin: 20px auto;
 }
 
 form label {
     display: block;
-    margin-bottom: 8px;
+    margin: 10px 0 5px;
 }
 
-form input, form textarea, form button {
+form input, form textarea {
     width: 100%;
-    margin-bottom: 20px;
     padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
     border-radius: 5px;
-    border: none;
 }
 
 form button {
     background-color: #2196F3;
-    color: branco;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
     cursor: pointer;
 }
 
 form button:hover {
     background-color: #1976D2;
+}
+
+#videos-container {
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.video {
+    background-color: rgb(22, 22, 22);
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.video h3 {
+    margin: 0 0 10px;
+}
+
+.video button {
+    margin-right: 10px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.video button.edit {
+    background-color: #4CAF50;
+}
+
+.video button:hover {
+    opacity: 0.8;
 }
