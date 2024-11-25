@@ -264,3 +264,22 @@ main {
 #ebook-form button:hover {
     background-color: #0056b3;
 }
+.delete-button {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #ffffff;
+    background-color: #ff0000;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: auto; 
+}
+
+.delete-button:hover {
+    background-color: #b81717;
+}
+.button-group{
+
+    display: flex;
+    gap: 12px;
+}

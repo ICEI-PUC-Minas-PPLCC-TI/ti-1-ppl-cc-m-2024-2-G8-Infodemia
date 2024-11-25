@@ -16,7 +16,10 @@ document.addEventListener("DOMContentLoaded", () => {
                         <h2>${ebook.titulo}</h2>
                         <p class="ebook-author">${ebook.autores}</p>
                         <p class="ebook-summary">${ebook.sinopse}</p>
-                        <a href="detalhes.html?id=${ebook.id}" class="download-button" >Saiba Mais</a>
+                        <div class="button-group">
+                            <a href="detalhes.html?id=${ebook.id}" class="download-button" >Saiba Mais</a>
+                            <a class="delete-button ">Deletar</a>
+                        </div>
                     </div>
                 `;
 
