@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registrar Ebook</title>
+        <link rel="stylesheet" href="assets/css/resources.css">
+    </head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="paginainicial.html">Página Inicial</a></li>
+                <li><a href="informaçoes.html">Informações</a></li>
+                <li><a href="resources.html">Recursos</a></li>
+                <li><a href="ferramentas.html">Ferramentas</a></li>
+                <li><a href="comunidade.html">Comunidade</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Registrar E-Books</h1>
+
+
+        <form id="ebook-form">
+            <label for="titulo">Título:</label>
+            <input type="text" id="titulo" name="titulo" required>
+
+            <label for="autores">Autores:</label>
+            <input type="text" id="autores" name="autores" required>
+
+            <label for="sinopse">Sinopse:</label>
+            <textarea id="sinopse" name="sinopse" required></textarea>
+
+            <label for="link">Link do Ebook:</label>
+            <input type="url" id="link" name="link" required>
+
+            <label for="tema">Tema:</label>
+            <input type="text" id="tema" name="tema" required>
+
+            <label for="publicacao">Publicação:</label>
+            <input type="text" id="publicacao" name="publicacao" required>
+
+            <label for="paginas">Páginas:</label>
+            <input type="number" id="paginas" name="paginas" required>
+
+            <label for="idioma">Idioma:</label>
+            <input type="text" id="idioma" name="idioma" required>
+
+            <label for="editora">Editora:</label>
+            <input type="text" id="editora" name="editora" required>
+
+            <label for="capa">URL da Capa:</label>
+            <input type="url" id="capa" name="capa" required>
+
+            <button type="submit" >Registrar E-Book</button>
+        </form>
+
+
+    </main>
+    <script src="registroebook.js"></script>
+</body>
+</html>

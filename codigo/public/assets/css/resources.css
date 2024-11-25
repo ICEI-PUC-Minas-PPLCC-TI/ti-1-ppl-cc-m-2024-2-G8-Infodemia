@@ -218,3 +218,49 @@ main {
     background-color: #0056b3;
     transform: scale(1.05);
 }
+#ebook-form {
+    max-width: 500px; 
+    margin: 0 auto; 
+    padding: 20px;
+    background-color: #f9f9f9; 
+    border: 1px solid #ccc; 
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+#ebook-form label {
+    color: #1c1c1e;
+    display: block; 
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+#ebook-form input, 
+#ebook-form textarea, 
+#ebook-form button {
+    width: 100%; 
+    padding: 10px;
+    margin-bottom: 15px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    font-size: 16px;
+    box-sizing: border-box; 
+}
+
+#ebook-form textarea {
+    resize: vertical; 
+    height: 100px; 
+}
+
+#ebook-form button {
+    background-color: #007BFF; 
+    color: #fff; 
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#ebook-form button:hover {
+    background-color: #0056b3;
+}
