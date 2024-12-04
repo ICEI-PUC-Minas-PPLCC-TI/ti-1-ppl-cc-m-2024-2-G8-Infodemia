@@ -72,12 +72,19 @@ nav ul li a:hover {
 
 main {
     padding: 40px;
+    display: inline-block;
+    align-items: center;
 }
 
+.videos {
+    diplay: inline-block;
+    padding: 40px;
+}
 .ebooks h1 {
     font-size: 36px;
     margin-bottom: 30px;
     color: #ffffff;
+    padding: 60px;
 }
 
 .ebook-grid {
@@ -87,7 +94,7 @@ main {
 }
 
 .ebook {
-    display: flex;
+    display: center;
     background-color: #2b2b2d;
     padding: 20px;
     border-radius: 8px;
