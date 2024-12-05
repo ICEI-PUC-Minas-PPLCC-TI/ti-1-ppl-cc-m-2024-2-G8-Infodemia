@@ -1,0 +1,522 @@
+/*Geral*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #2E2E2E;
+    color: #FFFFFF;
+    margin: 0px 160px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    color: #00C7BE;
+}
+
+.header-icons {
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    background-color: #555;
+    border-radius: 50%;
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo {
+    font-size: 30px;
+    margin: 40px 0px;
+}
+
+main {
+    display: inline-block;
+    align-items: center;
+}
+
+/*Ebooks*/
+.ebooks h1 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #FFFFFF;
+    padding: 60px;
+}
+
+.ebook-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.ebook {
+    background-color: #262626;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    color: #FFFFFF;
+    min-height: 350px;
+    justify-content: space-between;
+}
+
+.ebook img {
+    width: 120px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.ebook-content {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.ebook h2 {
+    font-size: 20px;
+    margin-bottom: 8px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.ebook-author {
+    font-size: 14px;
+    color: #00C7BE;
+    margin-bottom: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.ebook-summary {
+    font-size: 14px;
+    color: #FFFFFF;
+    margin-bottom: 15px;
+    height: 500px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.download-button {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #FFFFFF;
+    background-color: #00C7BE;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: auto;
+}
+
+.download-button:hover {
+    background-color: #00A59D;
+}
+
+@media (max-width: 768px) {
+    .ebook-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .ebook {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .ebook img {
+        margin: 0 0 15px 0;
+    }
+
+    .ebook-content {
+        text-align: center;
+    }
+}
+
+#detalhes-container {
+    padding: 20px;
+}
+
+.detalhes-livro {
+    display: flex;
+    gap: 20px;
+}
+
+.livro-capa img {
+    width: 300px;
+    border-radius: 5px;
+}
+
+.livro-info {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+}
+
+.botao-detalhes {
+    background-color: #00C7BE;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.livro-info p+p {
+    margin-top: 15px;
+}
+
+.botao-detalhes {
+    margin-top: 20px;
+}
+
+.register-ebook-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #00C7BE;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.register-ebook-button:hover {
+    background-color: #00c7bdbe;
+    transform: scale(1.05);
+}
+
+#ebook-form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#ebook-form label {
+    color: #1c1c1e;
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+#ebook-form input,
+#ebook-form textarea,
+#ebook-form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+#ebook-form textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+#ebook-form button {
+    background-color: #00C7BE;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#ebook-form button:hover {
+    background-color: #009B96;
+}
+
+.delete-button {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #ffffff;
+    background-color: #FF0000;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: auto;
+}
+
+.delete-button:hover {
+    background-color: #B81717;
+}
+
+.button-group {
+    display: flex;
+    gap: 12px;
+}
+
+/*Videos*/
+#videoContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.video-card {
+    background-color: #262626;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+}
+
+.video-card h2 {
+    font-size: 18px;
+    color: #FFFFFF;
+    margin: 0;
+    padding-bottom: 12px;
+}
+
+.video-card p {
+    font-size: 14px;
+    color: #FFFFFF;
+    margin: 8px 0;
+}
+
+.video-card iframe {
+    width: 100%;
+    height: 180px;
+    border-radius: 4px;
+    border: none;
+    background-color: #000000;
+}
+
+.video-card button {
+    background-color: #00C7BE;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.tags {
+    color: #FFFFFF;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.add-video-button {
+    position: fixed;
+    width: 162px;
+    bottom: 80px;
+    right: 20px;
+    background-color: #00C7BE;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.add-video-button:hover {
+    background-color: #00c7bdb0;
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    #videoContainer {
+        grid-template-columns: 1fr;
+    }
+
+    .add-video-button {
+        bottom: 70px;
+    }
+}
+
+/*Links*/
+.trusted-links {
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.trusted-links h2 {
+    font-family: 'Fredoka One', sans-serif;
+    font-size: 49px;
+    font-weight: 400;
+    line-height: 130%;
+    color: #FFFFFF;
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+.links-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-items: stretch;
+}
+
+.link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 10px 0px;
+    height: 64px;
+    background-color: #262626;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-family: 'Fredoka One', sans-serif;
+    font-size: 24px;
+    transition: background-color 0.3s;
+}
+
+.link:hover {
+    background-color: #00C7BE;
+}
+
+@media (max-width: 1200px) {
+    .link {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .links-container {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .link {
+        width: 100%;
+        max-width: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .trusted-links h2 {
+        font-size: 36px;
+    }
+
+    .link {
+        font-size: 20px;
+        height: 56px;
+
+    }
+}
+
+/*FAQ*/
+#faqContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #2E2E2E;
+    border-radius: 10px;
+}
+
+.faq-card {
+    background-color: #262626;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.faq-card h2 {
+    font-size: 18px;
+    color: #FFFFFF;
+    margin: 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-card h2 .material-icons {
+    font-size: 24px;
+    color: #FFFFFF;
+    transition: transform 0.5s ease;
+}
+
+.faq-card p {
+    display: none;
+    font-size: 14px;
+    color: #FFFFFF;
+    margin: 8px 0;
+}
+
+.error-message {
+    color: #FF0000;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    #faqContainer {
+        padding: 15px;
+    }
+
+    .faq-card {
+        padding: 12px;
+    }
+
+    .faq-card h2 {
+        font-size: 16px;
+    }
+
+    .faq-card p {
+        font-size: 12px;
+    }
+}
