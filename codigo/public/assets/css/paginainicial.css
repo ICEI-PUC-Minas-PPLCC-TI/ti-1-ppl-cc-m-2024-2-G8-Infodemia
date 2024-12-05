@@ -1,74 +1,108 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #2d2d2d; 
-    color: #f1f1f1; 
+    background-color: #2d2d2d;
+    color: #f1f1f1;
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
     height: 100vh;
-    flex-direction: column;
+    box-sizing: border-box;
 }
 
 header {
-    background-color: #1a1a1a; 
+    background-color: #1a1a1a;
     color: white;
     text-align: center;
-    padding: 30px 0;
-    width: 200%;
+    padding: 20px 0;
+    width: 100%;
+    border-bottom: 2px solid #333;
 }
 
 section {
     margin: 20px;
-    padding: 20px;
-    background-color: #333; 
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); 
+    padding: 40px;
+    background-color: #333;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
     border-radius: 8px;
-    width: 80%;
+    width: 90%;
+    height: 70%; 
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    gap: 20px;
 }
 
 .text-content {
     flex: 1;
-    padding-right: 20px; 
+    padding-right: 20px;
+    font-size: 1.2em; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    height: 100%;
 }
 
 .image-content {
-    flex: 0 0 400px; 
-    padding-left: 20px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; 
 }
 
 h1 {
-    color: #e1e1e1; 
+    color: #e1e1e1;
 }
 
 h2 {
-    color: #ddd; 
+    color: #ddd;
+    font-size: 2em;
+    margin-bottom: 10px;
 }
 
 p {
-    font-size: 1.1em;
-    line-height: 1.6;
-    color: #f1f1f1; 
+    font-size: 1.2em;
+    line-height: 1.8;
+    color: #f1f1f1;
 }
 
 a {
-    color: #007bff; 
+    color: #007bff;
     text-decoration: none;
     font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 a:hover {
     text-decoration: underline;
+    color: white;
+    background-color: #007bff;
+    padding: 2px 5px;
+    border-radius: 3px;
 }
 
 img {
     max-width: 100%;
-    width: 100%; 
-    height: auto; 
+    height: auto;
     border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+
+@media (max-width: 768px) {
+    section {
+        flex-direction: column;
+        height: auto; 
+    }
+
+    .text-content {
+        padding-right: 0;
+    }
+
+    .image-content {
+        padding-left: 0;
+    }
 }
