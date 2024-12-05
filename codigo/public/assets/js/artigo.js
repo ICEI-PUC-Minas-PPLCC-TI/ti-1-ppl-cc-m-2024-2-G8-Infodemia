@@ -16,9 +16,9 @@ function carregarArtigo() {
                     document.getElementById('titulo-artigo').textContent = artigo.titulo;
                     document.getElementById('autor-artigo').textContent = artigo.autor;
                     document.getElementById('data-artigo').textContent = artigo.data;
-                    document.getElementById('decricao-artigo').textContent = artigo.descricao; // Aqui é a descrição
-                    document.getElementById('conteudo-artigo').innerHTML = artigo.conteudo; // Carrega o conteúdo do artigo
-                    document.getElementById('saiba-mais-link').href = artigo.saiba_mais; // Link para ler mais
+                    document.getElementById('decricao-artigo').textContent = artigo.descricao; 
+                    document.getElementById('conteudo-artigo').innerHTML = artigo.conteudo; 
+                    document.getElementById('saiba-mais-link').href = artigo.saiba_mais; 
                 } else {
                     document.getElementById('conteudo-artigo').textContent = 'Artigo não encontrado.';
                 }
