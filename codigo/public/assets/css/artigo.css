@@ -6,13 +6,21 @@ body {
     color: #fff; 
 }
 
-header, footer {
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+}
+
+.titulo, footer {
     background-color: #333;
     color: white;
     text-align: center;
 }
 
-header {
+.titulo {
     padding: 20px;
     font-size: 2em;
 }
