@@ -63,11 +63,11 @@ nav ul li a:hover {
 }
 
 .notification-icon::before {
-    background-image: url('../images/ebooks/notif.png'); 
+    background-image: url('../images/ebooks/notif.png');
 }
 
 .user-icon::before {
-    background-image: url('../images/ebooks/bendericon.png'); 
+    background-image: url('../images/ebooks/bendericon.png');
 }
 
 main {
@@ -80,6 +80,7 @@ main {
     display: inline-block;
     padding: 40px;
 }
+
 .ebooks h1 {
     font-size: 36px;
     margin-bottom: 30px;
@@ -89,7 +90,7 @@ main {
 
 .ebook-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); 
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
 }
 
@@ -111,7 +112,7 @@ main {
 .ebook-content {
     text-align: left;
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
 }
 
 .ebook h2 {
@@ -133,28 +134,29 @@ main {
 }
 
 .download-button {
-    display: inline-block;
+    background-color: rgba(0, 199, 190, 1);
+    color: white;
     padding: 10px 20px;
-    color: #ffffff;
-    background-color: #1dcaff;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-    margin-top: auto; 
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px;
+    transition: background-color 0.3s;
 }
 
 .download-button:hover {
-    background-color: #17a2b8;
+    background-color: rgb(0, 160, 152);
 }
 
 
 @media (max-width: 768px) {
     .ebook-grid {
-        grid-template-columns: 1fr; 
+        grid-template-columns: 1fr;
     }
 
     .ebook {
-        flex-direction: column; 
+        flex-direction: column;
         text-align: center;
     }
 
@@ -166,6 +168,7 @@ main {
         text-align: center;
     }
 }
+
 #detalhes-container {
     padding: 20px;
 }
@@ -197,14 +200,15 @@ main {
     margin-top: 10px;
 }
 
-.livro-info p + p {
-    margin-top: 15px; 
+.livro-info p+p {
+    margin-top: 15px;
 }
 
 
 .botao-detalhes {
-    margin-top: 20px; 
+    margin-top: 20px;
 }
+
 .register-ebook-button {
     position: fixed;
     bottom: 20px;
@@ -225,43 +229,44 @@ main {
     background-color: #0056b3;
     transform: scale(1.05);
 }
+
 #ebook-form {
-    max-width: 500px; 
-    margin: 0 auto; 
+    max-width: 500px;
+    margin: 0 auto;
     padding: 20px;
-    background-color: #f9f9f9; 
-    border: 1px solid #ccc; 
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 #ebook-form label {
     color: #1c1c1e;
-    display: block; 
+    display: block;
     font-weight: bold;
     margin-bottom: 8px;
 }
 
-#ebook-form input, 
-#ebook-form textarea, 
+#ebook-form input,
+#ebook-form textarea,
 #ebook-form button {
-    width: 100%; 
+    width: 100%;
     padding: 10px;
-    margin-bottom: 15px; 
-    border: 1px solid #ccc; 
-    border-radius: 4px; 
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
     font-size: 16px;
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
 #ebook-form textarea {
-    resize: vertical; 
-    height: 100px; 
+    resize: vertical;
+    height: 100px;
 }
 
 #ebook-form button {
-    background-color: #007BFF; 
-    color: #fff; 
+    background-color: #007BFF;
+    color: #fff;
     font-weight: bold;
     border: none;
     cursor: pointer;
@@ -271,6 +276,7 @@ main {
 #ebook-form button:hover {
     background-color: #0056b3;
 }
+
 .delete-button {
     display: inline-block;
     padding: 10px 20px;
@@ -279,13 +285,14 @@ main {
     border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
-    margin-top: auto; 
+    margin-top: auto;
 }
 
 .delete-button:hover {
     background-color: #b81717;
 }
-.button-group{
+
+.button-group {
 
     display: flex;
     gap: 12px;
