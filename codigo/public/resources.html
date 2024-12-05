@@ -5,11 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-books</title>
-    <link rel="stylesheet" href="/codigo/public/assets/css/resource.css">
+
+    <link rel="stylesheet" href="./assets/css/recursos.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
+
     <header>
         <nav>
             <ul>
@@ -17,7 +19,6 @@
                 <li><a href="informaçoes.html">Informações</a></li>
                 <li><a href="resources.html">Recursos</a></li>
                 <li><a href="ferramentas.html">Ferramentas</a></li>
-
             </ul>
         </nav>
         <div class="header-icons">
@@ -25,33 +26,53 @@
             <div class="icon user-icon" title="Perfil"></div>
         </div>
     </header>
-    <h1 class="titulo">Ebook</h1>
+
+ 
     <main id="ebookGrid" class="ebook-grid">
-        <a href="registroebook.html" class="register-ebook-button">Registrar E-Books</a>
+
+        <section class="content">
+
+        </section>
+
     </main>
+
+    <div class="register-section">
+        <a href="registroebook.html" class="register-ebook-button">Registrar E-Books</a>
+    </div>
+
     <section class="videos">
         <h1 class="titulo">Vídeos</h1>
-        <div id="videoContainer"></div>
-        <a href="/codigo/public/" class="add-video-button">Adicionar Vídeo</a>
-    </section>
-    <section class="trusted-links">
-        <h1 class="titulo" id="section-title">Links confiáveis</h1>
-        <div class="links-container">
-            <div class="column" id="column1"></div>
-            <div class="column" id="column2"></div>
+        <div id="videoContainer">
+
         </div>
     </section>
 
-    <section>
-        <h1 class="titulo">&nbsp Perguntas Frequentes</h1>
-        <div id="faqContainer"></div>
+
+    <section class="trusted-links">
+        <h2 id="section-title">Links confiáveis</h2>
+        <div class="links-container">
+            <div class="column" id="column1">
+
+            </div>
+            <div class="column" id="column2">
+ 
+            </div>
+        </div>
     </section>
+
+
+    <section>
+        <h1 class="titulo">Perguntas Frequentes</h1>
+        <div id="faqContainer">
+
+        </div>
+    </section>
+
 
     <script src="./assets/js/videos.js"></script>
     <script src="./assets/js/links.js"></script>
     <script src="./assets/js/resources.js"></script>
     <script src="./assets/js/FAQ.js"></script>
-
 </body>
 
 </html>
