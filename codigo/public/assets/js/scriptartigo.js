@@ -1,13 +1,17 @@
 function carregarArtigosIniciais() {
-    fetch('/artigos')
-        .then(response => response.json())
+    fetch('http://localhost:3000/artigos')
+        .then(response => {
+          if (!response.ok) throw new Error('Erro ao acessar os dados');
+              return response.json();
+        })
         .then(data => {
-            const container = document.getElementById('artigos-container');
+            const container = document.getElementById('mais-artigos-container');
+            container.innerHTML = '';
             const artigosIniciais = data.slice(0, 6); 
 
             artigosIniciais.forEach((artigo, index) => {
                 const artigoCard = document.createElement('div');
-                artigoCard.classList.add('artigo');
+                artigoCard.className = 'artigo';
                 
                 artigoCard.innerHTML = `
                     <div class="imagem-artigo">
@@ -27,4 +31,3 @@ function carregarArtigosIniciais() {
         .catch(error => console.error('Erro ao carregar os artigos iniciais:', error));
 }
 
-window.onload = carregarArtigosIniciais;

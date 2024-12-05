@@ -1,4 +1,4 @@
-fetch('/noticias')  // Chama o arquivo JSON
+fetch('http://localhost:3000/noticias')
     .then(response => {
         if (!response.ok) {
             throw new Error('Network response was not ok');

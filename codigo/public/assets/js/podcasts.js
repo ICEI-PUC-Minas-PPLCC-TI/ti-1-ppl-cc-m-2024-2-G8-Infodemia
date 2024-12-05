@@ -1,6 +1,6 @@
 // Página principal
 function carregarPodcasts() {
-  fetch('/podcasts')
+  fetch('http://localhost:3000/podcasts')
     .then(response => {
       if (!response.ok) throw new Error('Erro ao acessar os dados');
       return response.json();
@@ -13,7 +13,7 @@ function carregarPodcasts() {
       if (podcastsParaExibir.length > 0) {
         podcastsParaExibir.forEach((podcast, index) => {
           const podcastCard = document.createElement('div');
-          podcastCard.classList.add('podcast-item');
+          podcastCard.className = 'podcast-item';
 
           podcastCard.innerHTML = `
             <div class="podcast-details">
@@ -115,4 +115,6 @@ window.onload = () => {
   } else {
     carregarPodcasts();
   }
+
+  carregarArtigosIniciais();
 };

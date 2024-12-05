@@ -1,43 +1,59 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Artigos Educativos - Infodemia</title>
-    <link rel="stylesheet" href="assets/css/artigo.css">
+    <link rel="stylesheet" href="./assets/css/artigo.css">
     <link rel="stylesheet" href="./assets/css/podcasts.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./modulos/noticias/noticias.css">
+  </head>
+  <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="paginainicial.html">Página Inicial</a></li>
-                <li><a href="informaçoes.html">Informações</a></li>
-                <li><a href="resources.html">Recursos</a></li>
-                <li><a href="ferramentas.html">Ferramentas</a></li>
+      <nav>
+        <ul>
+          <li><a href="paginainicial.html">Página Inicial</a></li>
+          <li><a href="informaçoes.html">Informações</a></li>
+          <li><a href="resources.html">Recursos</a></li>
+          <li><a href="ferramentas.html">Ferramentas</a></li>
 
-            </ul>
-        </nav>
+        </ul>
+      </nav>
     </header>
-    <p class ="titulo">
-        <h1>Artigos Educativos</h1>
-    </p>
 
-    <section class="artigos-container" id="artigos-container">
+
+    <!--artigos-->
+    <section class="s-artigo" id="s-artigo">
+      <h1>Artigos Educativos</h1>
+      <div class="artigos-container">
+        <div id="mais-artigos-container"></div>
+      </div>
+      <script src="assets/js/scriptartigo.js"></script>
     </section>
-    
-    <div class="ver-mais-container">
-        <a href="mais-artigos.html" id="btn-ver-mais" class="btn-ver-mais">Ver Mais Artigos</a>
-    </div>
-    <section>
-        <h1>Podcasts</h1>
-        <div class="container">
-          <div id="mais-podcasts-container"></div>
-        </div>
-      </section>
 
-    <script src="assets/js/scriptartigo.js"></script>
+    <!--podcasts-->
+    <section class="s-podcasts" id="s-podcasts">
+      <h1>Podcasts</h1>
+      <div class="podcasts-container">
+        <div id="mais-podcasts-container"></div>
+      </div>
+      <script src="assets/js/podcasts.js"></script>
+    </section>
 
-    
-</body>
+    <section class='s-noticias' id='s-noticias'>
+
+      <header class="noticias-header">
+        <h1>Notícias</h1>
+      </header>
+
+      <div id="noticias-container"></div>
+
+      <script src="./modulos/noticias/noticias.js"></script>
+
+    </section>
+    <footer>
+      <p>© 2024 Infodemia - Todos os direitos reservados</p>
+    </footer>
+
+  </body>
 </html>
