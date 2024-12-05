@@ -1,7 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     fetchQuizzes();
     createBarChart();
-    //fetchProgress();
 });
 
 // Fetch quizzes and display them
@@ -12,17 +11,6 @@ async function fetchQuizzes() {
         displayQuizzes(quizzes.slice(0, 9));
     } catch (error) {
         console.error("Error fetching quizzes:", error);
-    }
-}
-
-// Fetch progress data and render the doughnut chart
-async function fetchProgress() {
-    try {
-        const response = await fetch('http://localhost:3000/progress');
-        const progressData = await response.json();
-        renderDoughnutChart(progressData.slice(0, 9));
-    } catch (error) {
-        console.error("Error fetching progress:", error);
     }
 }
 
@@ -49,7 +37,6 @@ function displayQuizzes(quizzes) {
                 buttonStyle = "style='background-color: #f4433660;'";
             }
         }
-        //const buttonLabel = quiz.completed ? "REALIZADO" : "REALIZAR";
         const buttonHandler = `onclick="startQuiz(${quiz.id})"`;
 
         quizCard.innerHTML = `
@@ -61,7 +48,6 @@ function displayQuizzes(quizzes) {
     });
 }
 
-// Updated startQuiz function to handle navigation
 async function startQuiz(quizId) {
     try {
         window.location.href = `quiz.html?id=${quizId}`;
@@ -71,10 +57,11 @@ async function startQuiz(quizId) {
 }
 
 async function createBarChart() {
-    const response = await fetch('http://localhost:3000/quizzes');
+    const response = await fetch('http://localhost:3000/quizzes'); // this will be changed to a single function later on
     const quizzes = await response.json();
 
     // Categories and their counts
+    // static for now.
     const categories = {
         Videos: 5,
         Noticias: 2,

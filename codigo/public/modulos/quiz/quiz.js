@@ -37,24 +37,18 @@ async function loadQuiz(quizId) {
 
         let selectedAnswerIndex = quiz.lastAnswer ? quiz.lastAnswer.selectedAnswer : null;
 
-        // Add click handlers for answer options
         const answerOptions = document.querySelectorAll('.answer-option');
         answerOptions.forEach((option, index) => {
             option.addEventListener('click', () => {
-                // Remove selection from all options
                 answerOptions.forEach(opt => opt.classList.remove('selected'));
-                // Add selection to clicked option
                 option.classList.add('selected');
                 selectedAnswerIndex = index;
-
-                // Reset all answer-specific classes
                 answerOptions.forEach(opt => {
                     opt.classList.remove('correct', 'incorrect');
                 });
             });
         });
 
-        // Add save handler
         document.querySelector('.return-button').addEventListener('click', async () => {
              window.location.href = 'index.html';
         });
@@ -69,14 +63,12 @@ async function loadQuiz(quizId) {
             
             // Show feedback
             feedbackElement.classList.add('visible');
-            //feedbackElement.style.height = '50px';
             feedbackElement.textContent = isCorrect
                 ? `Correto! ${quiz.questions.answers[selectedAnswerIndex].explanation}`
                 : `Incorreto. ${quiz.questions.answers[selectedAnswerIndex].explanation}`;
             feedbackElement.className = `answer-feedback visible ${isCorrect ? 'correct' : 'incorrect'}`;
 
             try {
-                // Update quiz completion status
                 await fetch(`http://localhost:3000/quizzes/${quizId}`, {
                     method: 'PATCH',
                     headers: {
