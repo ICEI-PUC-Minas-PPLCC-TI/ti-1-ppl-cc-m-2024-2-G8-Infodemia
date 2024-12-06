@@ -1,25 +1,28 @@
 {
   "usuarios": [
     {
-      "id": "1",
+      "id": 1,
       "login": "admin",
       "senha": "123",
       "nome": "Administrador do Sistema",
-      "email": "admin@abc.com"
+      "email": "admin@abc.com",
+      "role": "admin"
     },
     {
-      "id": "2",
+      "id": 2,
       "login": "user",
       "senha": "123",
       "nome": "Usuario Comum",
-      "email": "user@abc.com"
+      "email": "user@abc.com",
+      "role": "user"
     },
     {
+      "id": 3,
       "login": "rommel",
       "senha": "123",
       "nome": "Rommel",
       "email": "rommel@gmail.com",
-      "id": "3"
+      "role": "user"
     }
   ],
   "videos": [
