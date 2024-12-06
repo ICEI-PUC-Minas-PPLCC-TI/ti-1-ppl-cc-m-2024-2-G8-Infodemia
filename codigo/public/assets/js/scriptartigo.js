@@ -1,5 +1,5 @@
 function carregarArtigosIniciais() {
-    fetch('http://localhost:3000/artigos')
+    fetch('/artigos')
         .then(response => {
           if (!response.ok) throw new Error('Erro ao acessar os dados');
               return response.json();
@@ -7,7 +7,7 @@ function carregarArtigosIniciais() {
         .then(data => {
             const container = document.getElementById('mais-artigos-container');
             container.innerHTML = '';
-            const artigosIniciais = data.slice(0, 6); 
+            const artigosIniciais = data.slice(0, 8); 
 
             artigosIniciais.forEach((artigo, index) => {
                 const artigoCard = document.createElement('div');

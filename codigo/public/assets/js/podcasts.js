@@ -1,6 +1,6 @@
 // Página principal
 function carregarPodcasts() {
-  fetch('http://localhost:3000/podcasts')
+  fetch('/podcasts')
     .then(response => {
       if (!response.ok) throw new Error('Erro ao acessar os dados');
       return response.json();
