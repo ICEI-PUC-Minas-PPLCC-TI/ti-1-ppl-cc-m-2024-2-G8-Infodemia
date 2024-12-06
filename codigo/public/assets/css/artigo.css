@@ -57,13 +57,6 @@ nav ul li a:hover {
     background-size: cover;
 }
 
-.notification-icon::before {
-    background-image: url('../images/ebooks/notif.png');
-}
-
-.user-icon::before {
-    background-image: url('../images/ebooks/bendericon.png');
-}
 
 #mais-artigos-container {
     display: flex;
@@ -111,7 +104,7 @@ nav ul li a:hover {
     position: absolute;
     bottom: 15px; 
     right: 15px; 
-    padding: 8px 16px; /* Botão um pouco menor */
+    padding: 8px 16px; 
     font-size: 0.85rem;
 }
 /* Botões */
@@ -162,18 +155,18 @@ nav ul li a:hover {
 /* Responsividade */
 @media (max-width: 768px) {
     .artigo {
-        flex: 1 1 calc(45% - 20px); /* Ajusta para 2 colunas em telas médias */
+        flex: 1 1 calc(45% - 20px); 
     }
 }
 
 @media (max-width: 480px) {
     .artigo {
-        flex: 1 1 100%; /* Artigos ocupam 100% em telas pequenas */
+        flex: 1 1 100%; 
         max-width: 100%;
     }
 
     .artigo .btn {
-        position: absolute; /* Botão permanece no canto em telas pequenas */
+        position: absolute; 
         bottom: 15px;
         right: 15px;
     }
