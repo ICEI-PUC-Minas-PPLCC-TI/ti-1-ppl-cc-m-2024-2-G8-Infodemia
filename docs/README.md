@@ -3,7 +3,7 @@
 Informações básicas do projeto.
 
 * **Projeto:** Dopamina em tempos de Infodemia
-* **Repositório GitHub:** [T1-1-PPL-CC-M-2024-2-Ghost](https://github.com/ICEI-PUC-Minas-PPLCC-TI/ti-1-ppl-cc-m-2024-2-ghost)
+* **Repositório GitHub:** [T1-1-PPL-CC-M-2024-2-Ghost](https://github.com/ICEI-PUC-Minas-PPLCC-TI/ti-1-ppl-cc-m-2024-2-G8-Infodemia)
 * **Membros da equipe:**
 
   * [Diego Henrique Xavier dos Santos](https://github.com/Diego-Hxs) 
@@ -252,7 +252,7 @@ Uma parte do site com artigos, notícias e podcasts para informar o usuário.
 
 # Metodologia
 
-Detalhes sobre a organização do grupo e o ferramental empregado.
+No nosso grupo, adotamos uma metodologia colaborativa com foco em comunicação eficiente e divisão de responsabilidades. Realizávamos reuniões semanais por chamada no Discord, onde discutíamos o progresso das tarefas, identificávamos desafios e definíamos os próximos passos do projeto. Além disso, mantínhamos uma comunicação contínua e ágil através do WhatsApp, permitindo trocas rápidas de informações, alinhamento de ideias e suporte mútuo entre os membros. Essa abordagem híbrida, aliando encontros estruturados a uma comunicação instantânea, garantiu a organização do trabalho e o engajamento de todos.
 
 ## Ferramentas
 
@@ -273,3 +273,231 @@ Durante as etapas de Entendimento e Product Discovery, o grupo realizou todo o t
 | Apresentação | Guilherme e Iara | 
 | Design - Wireframe | Letícia, Leandro e Mariana | 
 | Documentação | Diego e Rafael |
+
+# Solução Implementada
+
+Nossa solução para enfrentar os desafios da infodemia foi desenvolver um site que combina conteúdos informativos e ferramentas interativas para ajudar os usuários a se manterem bem informados e a gerenciar melhor o fluxo de informações. O site oferece artigos confiáveis, guias práticos e recursos educacionais que explicam como identificar notícias falsas e interpretar dados corretamente. Além disso, inclui funcionalidades como listas de fontes seguras, dicas de organização digital e ferramentas de planejamento pessoal, ajudando os usuários a administrar o tempo e evitar sobrecarga informacional. Dessa forma, o projeto visa empoderar as pessoas com conhecimento e estratégias para navegar no cenário informativo de maneira crítica e eficiente.
+
+## Vídeo do Projeto
+
+O vídeo a seguir traz uma apresentação do problema que a equipe está tratando e a proposta de solução. ⚠️ EXEMPLO ⚠️
+
+[![Vídeo do projeto](images/video.png)](https://www.youtube.com/embed/70gGoFyGeqQ)
+
+> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
+>
+> O video de apresentação é voltado para que o público externo possa conhecer a solução. O formato é livre, sendo importante que seja apresentado o problema e a solução numa linguagem descomplicada e direta.
+>
+> Inclua um link para o vídeo do projeto.
+
+## Funcionalidades
+
+Esta seção apresenta as funcionalidades da solução.Info
+
+##### Funcionalidade 1 - Cadastro de Contatos ⚠️ EXEMPLO ⚠️
+
+Permite a inclusão, leitura, alteração e exclusão de contatos para o sistema
+
+* **Estrutura de dados:** [Contatos](#ti_ed_contatos)
+* **Instruções de acesso:**
+  * Abra o site e efetue o login
+  * Acesse o menu principal e escolha a opção Cadastros
+  * Em seguida, escolha a opção Contatos
+* **Tela da funcionalidade**:
+
+![Tela de Funcionalidade](images/exemplo-funcionalidade.png)
+
+> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
+>
+> Apresente cada uma das funcionalidades que a aplicação fornece tanto para os usuários quanto aos administradores da solução.
+>
+> Inclua, para cada funcionalidade, itens como: (1) titulos e descrição da funcionalidade; (2) Estrutura de dados associada; (3) o detalhe sobre as instruções de acesso e uso.
+
+## Estruturas de Dados
+
+Registro dos usuários do sistema utilizados para login e para o perfil do sistema
+
+```json
+  {
+    "id": 1,
+    "login": "admin",
+    "senha": "123",
+    "nome": "Administrador do Sistema",
+    "email": "admin@abc.com",
+    "role": "admin"
+  }
+  
+```
+
+Registro de vídeos informativos fornecidos no site 
+
+```json
+  {
+    "title": "Infodemia e saúde mental",
+    "url": "https://www.youtube.com/embed/_S0t1jvN-N0?si=cw6tAYiLTRPhsJlJ",
+    "description": "Explore a infodemia e seu impacto na saúde mental. O vídeo aborda como a sobrecarga de informações pode causar ansiedade e estresse, além de oferecer dicas para filtrar dados e promover um ambiente digital saudável, ajudando a preservar o bem-estar mental.",
+    "tags": [
+    "saúde mental",
+    "infodemia",
+    "ansiedade",
+    "estresse"
+    ],
+    "id": "f745"
+  }
+  
+```
+
+Registro de FAQS de perguntas dos usuários 
+
+```json
+  {
+    "id": "1",
+    "pergunta": "O que é a infodemia?",
+    "resposta": "Infodemia é o excesso de informações, algumas precisas e outras não, que dificulta a tomada de decisões e gera confusão entre as pessoas."
+  }
+  
+```
+
+Registro de eBooks informativos
+
+```json
+  {
+    "capa": "./assets/images/ebooks/LivroInfodemia.jpg",
+    "titulo": "Infodemia",
+    "autores": "Geras Barseghyan",
+    "sinopse": "Infodemia é um livro filosófico e psicológico que explora como o comportamento humano e o mundo mental interior evolue em meio à infodemia generalizada (uma grande quantidade de notícias falsas, corrosivas e opressivas). Vivemos numa era de vastos fluxos de informação. Diariamente, ingerimos quantidades abundantes de informações e negatividade, muitas vezes inconscientes do seu impacto corrosivo no nosso bem-estar mental. Baseado nas realidades contemporâneas, o livro investiga como a infodemia influencia as relações humanas e quais consequências devastadoras ela pode ter.",
+    "link": "https://www.amazon.com.br/Infodemia-English-Geras-Barseghyan-ebook/dp/B0D9SQYYGS?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&s=digital-text&sr=1-2",
+    "tema": "Filosofia, Psicologia, Sociologia",
+    "publicacao": "19 de Julho de 2024 ",
+    "paginas": "195",
+    "idioma": "Inglês",
+    "editora": "Própria autoria",
+    "id": "1"
+  }
+  
+```
+
+Registro de notícias 
+
+```json
+  {
+    "titulo": "Como as redes sociais afetam a saúde mental dos adolescentes",
+    "link": "https://www.yalemedicine.org/news/social-media-teens-mental-health",
+    "fonte": "Yale Medicine",
+    "data": "2022-10-15",
+    "lingua": "Português",
+    "autor": "Equipe Yale Medicine",
+    "id": "4e20"
+  }
+  
+```
+
+Registro de artigos informativos
+
+```json
+  {
+    "titulo": "As múltiplas faces da infodemia",
+    "autor": "Luís Gonçalves, Leonardo Castro, Raquel Rachid, Marcelo Fornazin.",
+    "data": "30 Setembro 2024.",
+    "descricao": "Neste artigo, revisamos partes da literatura acadêmica sobre a infodemia buscando preencher uma lacuna de estudos que descrevam a sua existência político-econômica, científica, sociotécnica e psicossocial em geral, ao mesmo tempo em que verifiquem como essa imbricação se encontra com a realidade brasileira. Nesse enquadramento, a infodemia emergiu como uma superabundância problemática de informações sobre saúde, capaz de comprometer seus cuidados individuais e coletivos e que integra conflitos sócio-econômicos e culturais relacionados ao capitalismo neoliberal e periférico. Por isso, encontramos distintas e até antagônicas formas de caracterizar e enfrentar a infodemia. Algumas delas contrastam com os princípios do SUS e da reforma sanitária, especialmente com relação à participação política dos sujeitos atingidos pela infodemia enquanto uma forma de enfrentar o fenômeno e os conflitos de que ela faz parte. Concluímos que, enquanto um fenômeno multideterminado, a infodemia deve continuar sendo pesquisada interdisciplinarmente de modo a contribuir com tal participação política.",
+    "imagem": "./assets/images/artigos/artigo1.jpeg",
+    "link": "artigo.html",
+    "saiba_mais": "https://www.reciis.icict.fiocruz.br/index.php/reciis/article/view/3796",
+    "id": "9c65"
+  }
+  
+```
+
+Registro de podcasts informativos
+
+```json
+  {
+    "titulo": "Infodemia Parte I - Tornando-se fonte primária de informação",
+    "descricao": "Elas se proliferam mais rápido do que qualquer vírus de que se tem notícia. Em questão de segundos, podem atravessar cidades, países e oceanos, gerando caos e comprometendo vidas. As fake news sempre nos preocuparam, mas, nos tempos atuais, pedem um alerta ainda maior, pois aumentaram sua dimensão e alcance. O cenário é tão preocupante que a OMS deu ao fenômeno o nome oficial de 'infodemia'. Uma das vacinas para elas é fazer com que as informações verdadeiras cheguem diretamente à população, com clareza e transparência. Nessa série especial do Podcast, vamos discutir o assunto e dar sugestões de meios para organizações tornarem isso possível.",
+    "link": "https://open.spotify.com/episode/1rCg3YmsGCjNbQ5K1cr8RS?si=5yITE1MRQV2kRyfWDfM8tg&nd=1&dlsi=c89400dd24984e0a",
+    "autor": "Aline Castro",
+    "podcast": "Comunicação Pública: Guia de Sobrevivência",
+    "data": "27 de abr. de 2020",
+    "duracao": "21min 41s",
+    "id": "baf2"
+  }
+  
+```
+
+Registro de quizzes e perguntas para o usuário 
+
+```json
+  {
+"id": "1",
+    "title": "Quiz 1: Fundamentos da Infodemia",
+    "completed": true,
+    "img": "./assets/images/fakenews.png",
+    "lastAnswer": {
+    "selectedAnswer": 0,
+    "isCorrect": true,
+    "timestamp": "2024-12-05T01:49:01.403Z"
+    },
+    "questions": {
+    "question": "Qual é o principal impacto da infodemia na sociedade atual?",
+    "answers": [
+        {
+        "text": "Sobrecarga de informações que dificulta a identificação de fontes confiáveis",
+        "correct": true,
+        "explanation": "A infodemia causa uma sobrecarga informacional que torna difícil distinguir fontes confiáveis de desinformação."
+        },
+        {
+        "text": "Aumento do número de usuários de redes sociais",
+        "correct": false,
+        "explanation": "Embora relacionado, este não é o principal impacto da infodemia."
+        },
+        {
+        "text": "Melhoria na velocidade de transmissão de dados",
+        "correct": false,
+        "explanation": "A velocidade de transmissão não é um impacto direto da infodemia."
+        },
+        {
+        "text": "Redução do consumo de notícias online",
+        "correct": false,
+        "explanation": "Na verdade, a infodemia está associada ao aumento, não à redução, do consumo de informações."
+        }
+    ]
+    }
+  }
+  
+```
+
+## Módulos e APIs
+
+Esta seção apresenta os módulos e APIs utilizados na solução
+
+**Images**:
+
+* Unsplash - [https://unsplash.com/](https://unsplash.com/) ⚠️ EXEMPLO ⚠️
+
+**Fonts:**
+
+* Icons Font Face - [https://fontawesome.com/](https://fontawesome.com/) ⚠️ EXEMPLO ⚠️
+
+**Scripts:**
+
+* jQuery - [http://www.jquery.com/](http://www.jquery.com/) ⚠️ EXEMPLO ⚠️
+* Bootstrap 4 - [http://getbootstrap.com/](http://getbootstrap.com/) ⚠️ EXEMPLO ⚠️
+
+> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
+>
+> Apresente os módulos e APIs utilizados no desenvolvimento da solução. Inclua itens como: (1) Frameworks, bibliotecas, módulos, etc. utilizados no desenvolvimento da solução; (2) APIs utilizadas para acesso a dados, serviços, etc.
+
+# Referências
+
+As referências utilizadas no trabalho foram:
+
+* SOBRENOME, Nome do autor. Título da obra. 8. ed. Cidade: Editora, 2000. 287 p ⚠️ EXEMPLO ⚠️
+
+> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
+>
+> Inclua todas as referências (livros, artigos, sites, etc) utilizados no desenvolvimento do trabalho.
+>
+> **Orientações**:
+>
+> - [Formato ABNT](https://www.normastecnicas.com/abnt/trabalhos-academicos/referencias/)
+> - [Referências Bibliográficas da ABNT](https://comunidade.rockcontent.com/referencia-bibliografica-abnt/)
