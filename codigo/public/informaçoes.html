@@ -1,57 +1,61 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Artigos Educativos - Infodemia</title>
-    <link rel="stylesheet" href="./assets/css/artigo.css">
-    <link rel="stylesheet" href="./assets/css/podcasts.css">
-    <link rel="stylesheet" href="./modulos/noticias/noticias.css">
-  </head>
-  <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="paginainicial.html">Página Inicial</a></li>
-          <li><a href="informaçoes.html">Informações</a></li>
-          <li><a href="resources.html">Recursos</a></li>
-          <li><a href="ferramentas.html">Ferramentas</a></li>
 
-        </ul>
-      </nav>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Artigos Educativos - Infodemia</title>
+  <link rel="stylesheet" href="./assets/css/artigo.css">
+  <link rel="stylesheet" href="./assets/css/podcasts.css">
+  <link rel="stylesheet" href="./modulos/noticias/noticias.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="paginainicial.html">Página Inicial</a></li>
+        <li><a href="informaçoes.html">Informações</a></li>
+        <li><a href="resources.html">Recursos</a></li>
+        <li><a href="ferramentas.html">Ferramentas</a></li>
+      </ul>
+    </nav>
+    <button id="logoutButton" class="logout-button" onclick="logout()">Logout</button>
+
+  </header>
+
+
+  <!--artigos-->
+  <section class="s-artigo" id="s-artigo">
+    <h2>Artigos Educativos</h2>
+    <div class="artigos-container">
+      <div id="mais-artigos-container"></div>
+    </div>
+    <script src="assets/js/scriptartigo.js"></script>
+  </section>
+
+  <!--podcasts-->
+  <section class="s-podcasts" id="s-podcasts">
+    <br>
+    <h2>Podcasts</h2>
+    <div class="podcasts-container">
+      <div id="mais-podcasts-container"></div>
+    </div>
+    <script src="assets/js/podcasts.js"></script>
+  </section>
+
+  <section class='s-noticias' id='s-noticias'>
+
+    <header class="noticias-header">
+      <h1>Notícias</h1>
     </header>
 
+    <div id="noticias-container"></div>
 
-    <!--artigos-->
-    <section class="s-artigo" id="s-artigo">
-      <h2>Artigos Educativos</h2>
-      <div class="artigos-container">
-        <div id="mais-artigos-container"></div>
-      </div>
-      <script src="assets/js/scriptartigo.js"></script>
-    </section>
+    <script src="./modulos/noticias/noticias.js"></script>
 
-    <!--podcasts-->
-    <section class="s-podcasts" id="s-podcasts">
-      <br>
-      <h2>Podcasts</h2>
-      <div class="podcasts-container">
-        <div id="mais-podcasts-container"></div>
-      </div>
-      <script src="assets/js/podcasts.js"></script>
-    </section>
+  </section>
+  <script src="assets/js/logout.js"></script>
+</body>
 
-    <section class='s-noticias' id='s-noticias'>
-
-      <header class="noticias-header">
-        <h1>Notícias</h1>
-      </header>
-
-      <div id="noticias-container"></div>
-
-      <script src="./modulos/noticias/noticias.js"></script>
-
-    </section>
-
-  </body>
 </html>

@@ -306,3 +306,18 @@ h1, h2 {
     background-color: rgba(244, 67, 54, 0.1);
     border: 1px solid #f44336;
 }
+.logout-button {
+    background-color: #f44336;
+
+    color: white;
+
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.logout-button:hover {
+    background-color: #d32f2f;
+
+}

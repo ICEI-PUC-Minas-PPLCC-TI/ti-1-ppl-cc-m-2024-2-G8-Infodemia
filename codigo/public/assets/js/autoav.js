@@ -131,6 +131,14 @@ async function createBarChart() {
         // value
         ctx.font = "18px Arial";
         ctx.fillText(value, x + barWidth / 2, y - 5);
+        
+        //logoutbutton
+        const logoutButton = document.querySelector(".logout-button");
+        if (logoutButton) {
+            logoutButton.addEventListener("click", () => {
+                localStorage.removeItem("loggedInUser");
+                window.location.href = "http://localhost:3000/modulos/login/login.html";
+            });
+        }
     });
 }
-

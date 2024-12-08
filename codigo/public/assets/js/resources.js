@@ -3,31 +3,24 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const loggedInUser = JSON.parse(localStorage.getItem("loggedInUser"));
 
-
     if (loggedInUser) {
         if (loggedInUser.role !== "admin") {
-
             const adminButtons = document.querySelectorAll(".register-ebook-button, .add-video-button, .delete-button");
             adminButtons.forEach(button => button.style.display = "none");
         }
     } else {
-
         window.location.href = "http://localhost:3000/modulos/login/login.html";
     }
-
 
     fetch("http://localhost:3000/ebooks")
         .then(response => response.json())
         .then(ebooks => {
-
             ebooks.forEach(ebook => {
                 const ebookDiv = document.createElement("div");
                 ebookDiv.classList.add("ebook");
 
-
                 const isAdmin = loggedInUser && loggedInUser.role === "admin";
 
-      
                 ebookDiv.innerHTML = `
                     <img src="${ebook.capa}" alt="${ebook.titulo}">
                     <div class="ebook-content">
@@ -40,10 +33,8 @@ document.addEventListener("DOMContentLoaded", () => {
                         </div>
                     </div>
                 `;
-
                 ebookGrid.appendChild(ebookDiv);
             });
-
 
             const deleteButtons = document.querySelectorAll(".delete-button");
             deleteButtons.forEach(button => {
@@ -73,4 +64,12 @@ document.addEventListener("DOMContentLoaded", () => {
         .catch(error => {
             console.error("Erro ao buscar os ebooks:", error);
         });
+
+    const logoutButton = document.querySelector(".logout-button");
+    if (logoutButton) {
+        logoutButton.addEventListener("click", () => {
+            localStorage.removeItem("loggedInUser");
+            window.location.href = "http://localhost:3000/modulos/login/login.html";
+        });
+    }
 });
