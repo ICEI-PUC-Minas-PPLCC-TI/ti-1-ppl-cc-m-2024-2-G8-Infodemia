@@ -1,6 +1,20 @@
 document.addEventListener("DOMContentLoaded", () => {
     const ebookGrid = document.getElementById("ebookGrid");
 
+    const loggedInUser = JSON.parse(localStorage.getItem("loggedInUser"));
+
+
+    if (loggedInUser) {
+        if (loggedInUser.role !== "admin") {
+
+            const adminButtons = document.querySelectorAll(".register-ebook-button, .add-video-button, .delete-button");
+            adminButtons.forEach(button => button.style.display = "none");
+        }
+    } else {
+
+        window.location.href = "http://localhost:3000/modulos/login/login.html";
+    }
+
 
     fetch("http://localhost:3000/ebooks")
         .then(response => response.json())
@@ -10,6 +24,10 @@ document.addEventListener("DOMContentLoaded", () => {
                 const ebookDiv = document.createElement("div");
                 ebookDiv.classList.add("ebook");
 
+
+                const isAdmin = loggedInUser && loggedInUser.role === "admin";
+
+      
                 ebookDiv.innerHTML = `
                     <img src="${ebook.capa}" alt="${ebook.titulo}">
                     <div class="ebook-content">
@@ -17,16 +35,17 @@ document.addEventListener("DOMContentLoaded", () => {
                         <p class="ebook-author">${ebook.autores}</p>
                         <p class="ebook-summary">${ebook.sinopse}</p>
                         <div class="button-group">
-                            <a href="detalhes.html?id=${ebook.id}" class="download-button" >Saiba Mais</a>
-                            <a class="delete-button" data-id="${ebook.id}">Deletar</a>
+                            <a href="detalhes.html?id=${ebook.id}" class="download-button">Saiba Mais</a>
+                            ${isAdmin ? `<a class="delete-button" data-id="${ebook.id}">Deletar</a>` : ""}
                         </div>
                     </div>
                 `;
 
                 ebookGrid.appendChild(ebookDiv);
             });
+
+
             const deleteButtons = document.querySelectorAll(".delete-button");
-            console.log(deleteButtons)
             deleteButtons.forEach(button => {
                 button.addEventListener("click", (event) => {
                     event.preventDefault();
@@ -54,7 +73,4 @@ document.addEventListener("DOMContentLoaded", () => {
         .catch(error => {
             console.error("Erro ao buscar os ebooks:", error);
         });
-
-
-
 });
