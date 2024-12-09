@@ -140,7 +140,7 @@ main {
     display: inline-block;
     padding: 10px 20px;
     color: #FFFFFF;
-    background-color: #00C7BE;
+    background-color: #24f0c7;
     border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
@@ -213,7 +213,7 @@ main {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: #00C7BE;
+    background-color: #24f0c7;
     color: #fff;
     padding: 10px 20px;
     border-radius: 5px;
@@ -265,7 +265,7 @@ main {
 }
 
 #ebook-form button {
-    background-color: #00C7BE;
+    background-color: #24f0c7;
     color: #fff;
     font-weight: bold;
     border: none;
@@ -337,7 +337,7 @@ main {
 }
 
 .video-card button {
-    background-color: #00C7BE;
+    background-color: #24f0c7;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -346,6 +346,12 @@ main {
     font-size: 14px;
     margin-top: 10px;
     transition: background-color 0.3s;
+    
+}
+
+.video-card button:hover{
+
+    background-color: #00A59D;
 }
 
 .tags {
@@ -359,7 +365,7 @@ main {
     width: 162px;
     bottom: 80px;
     right: 20px;
-    background-color: #00C7BE;
+    background-color: #24f0c7;
     color: #fff;
     padding: 10px 20px;
     border-radius: 5px;
@@ -372,7 +378,7 @@ main {
 }
 
 .add-video-button:hover {
-    background-color: #00c7bdb0;
+    background-color: #009B96;
     transform: scale(1.05);
 }
 
@@ -394,13 +400,15 @@ main {
 }
 
 .trusted-links h2 {
+
     margin: 40px 0px;  
     font-size: 36px;
-    font-weight: 400;
+    font-weight: bold;
     line-height: 130%;
     color: #FFFFFF;
     text-align: center;
     margin-bottom: 40px;
+
 }
 
 .links-container {
