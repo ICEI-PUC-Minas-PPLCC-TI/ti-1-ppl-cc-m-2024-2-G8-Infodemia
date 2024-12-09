@@ -6,8 +6,16 @@ function getArticleIdFromUrl() {
 function carregarLivro() {
     const ebookId = getArticleIdFromUrl();
 
+    const userId = JSON.parse(localStorage.getItem('loggedInUser')).id;
+    console.log("ID: ", userId);
+    if (!userId) {
+        console.error('Nenhum usuário logado. Redirecionando para a página de login...');
+        window.location.href = '../../modules/login/login.html';
+        return;
+    }
+
     if (ebookId) {
-        fetch('http://localhost:3000/ebooks')
+        fetch('/ebooks')
             .then(response => response.json())
             .then(data => {
                 
@@ -23,7 +31,13 @@ function carregarLivro() {
                     document.getElementById("idioma-livro").textContent = ebook.idioma;
                     document.getElementById("editora-livro").textContent = ebook.editora;
                     document.getElementById("sinopse-livro").textContent = ebook.sinopse;
-                    document.getElementById("link-livro").href = ebook.link;
+                    //document.getElementById("link-livro").href = ebook.link;
+                    document.getElementById('link-livro').addEventListener('click', () => {
+                        event.preventDefault();
+                        marcarComoLido(userId, ebook.id);
+                        window.open(ebook.link, '_blank');
+                    });
+
                 } else {
                     document.getElementById("detalhes-container").innerHTML = "<p>Livro não encontrado.</p>";
                 }
@@ -35,6 +49,45 @@ function carregarLivro() {
     } else {
         document.getElementById('conteudo-livro').textContent = 'ID do livro inválido.';
     }
+}
+
+function marcarComoLido(userId, livroId) {
+    if (!userId || !livroId) {
+        console.error('ID do usuário ou do livro inválido.');
+        return;
+    }
+
+    fetch(`/usuarios/${userId}`)
+        .then(response => response.json())
+        .then(user => {
+            if (!user.livros) {
+                user.livros = [];
+            }
+
+            if (!user.livros.includes(livroId)) {
+                user.livros.push(livroId);
+                console.log(user.livros);
+
+                return fetch(`/usuarios/${userId}`, {
+                    method: 'PATCH',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ livros: user.livros }),
+                });
+            } else {
+                console.log('Livro já registrado como lido pelo usuário.');
+            }
+        })
+        .then(response => {
+            if (response && !response.ok) {
+                throw new Error('Erro ao registrar a leitura do livro.');
+            }
+            console.log('Livro registrado como lido pelo usuário.');
+        })
+        .catch(error => {
+            console.error('Erro ao registrar a leitura:', error);
+        });
 }
 
 
