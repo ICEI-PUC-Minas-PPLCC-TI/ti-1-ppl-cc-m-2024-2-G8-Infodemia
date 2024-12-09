@@ -89,10 +89,6 @@ async function startQuiz(quizId) {
     }
 }
 
-//async function createBarChart() {
-//    const response = await fetch('/quizzes');
-//    const quizzes = await response.json();
-//
 async function createBarChart(loggedInUser) {
     try {
         const userResponse = await fetch(`/usuarios/${loggedInUser.id}`);
