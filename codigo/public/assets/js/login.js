@@ -1,3 +1,11 @@
+window.onload = () => {
+  const currentUrl = window.location.href; // URL atual
+  const targetUrl = "http://localhost:3000/modulos/login/login.html"; // URL de destino
+
+  if (currentUrl !== targetUrl) {
+    window.location.href = targetUrl;
+  }
+};
 document.getElementById("login-form").addEventListener("submit", function (event) {
   event.preventDefault(); // Impede o envio do formulário
 
