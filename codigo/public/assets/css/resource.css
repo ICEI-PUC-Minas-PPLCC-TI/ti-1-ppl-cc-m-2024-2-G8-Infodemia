@@ -7,7 +7,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #2E2E2E;
+    background-color: #1a1a1a;
     color: #FFFFFF;
     margin: 0px 160px;
     text-align: center;
@@ -19,11 +19,21 @@ header {
     align-items: center;
     padding: 20px;
     background-color: #333;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    position: fixed;
+}
+main {
+    margin: 60px;
 }
 
 nav ul {
     display: flex;
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 nav ul li {
