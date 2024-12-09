@@ -1,0 +1,401 @@
+/* Geral do Body */
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 20px;
+    background-color: #1a1a1a;
+    color: #faf2f2;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 45px;
+
+
+}
+
+body {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+
+/* Cabeçalho */
+header {
+    display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        background-color: #333;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        position: fixed;
+}
+
+/* Navegação */
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    color: #1dcaff;
+}
+
+/* Ícones de Cabeçalho */
+.header-icons {
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    background-color: #555;
+    border-radius: 50%;
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.notification-icon::before,
+.user-icon::before {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-size: cover;
+}
+
+/* Container */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Bloco do Podcast */
+.podcast-item {
+    background-color: #2b2b2d;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Hover para Bloco de Podcast */
+.podcast-item:hover {
+    background-color: #2b2b2d;
+}
+
+/* Título e Informações do Podcast */
+.podcast-details h2 {
+    font-size: 1.1rem;
+    margin: 0 0 8px;
+    color: #fff;
+}
+
+.podcast-details p {
+    margin: 4px 0;
+    font-size: 0.85rem;
+}
+
+.podcast-details a {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 8px 16px;
+    background-color: #24f0c7;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover para botão do Podcast */
+.podcast-details a:hover {
+    background-color: #005f73;
+}
+
+/* CSS Notícia */
+.noticia {
+    display: block;
+    background-color: #2b2b2d;
+    overflow: auto;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    border-radius: 8px;
+}
+
+.noticia h2 {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+}
+
+.noticia p {
+    font-size: 1rem;
+    line-height: 1.2;
+}
+
+.noticia a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+
+.noticia a:hover {
+    text-decoration: underline;
+}
+
+.detalhes {
+    display: none;
+    margin-top: 10px;
+}
+
+/* Botões de Ação */
+.btn-ver-mais,
+.btn-voltar-direita,
+.btn-voltar-inferior,
+.btn,
+.btn-ver-mais {
+    padding: 10px 20px;
+    background-color: #24f0c7;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+    position: fixed;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+/* Botão "Ver Mais" */
+.btn-ver-mais {
+    bottom: 20px;
+    right: 20px;
+    border-radius: 50px;
+}
+
+.btn-ver-mais:hover {
+    background-color: #005f73;
+}
+
+/* Botão Voltar Direita */
+.btn-voltar-direita {
+    bottom: 20px;
+    right: 20px;
+}
+
+.btn-voltar-direita:hover {
+    background-color: #005f73;
+}
+
+/* Botão Voltar Inferior */
+.btn-voltar-inferior {
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.btn-voltar-inferior:hover {
+    background-color: #005f73;
+}
+
+/* Links com aparência de Botão */
+a.btn-ver-mais,
+a[target="_blank"] {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #24f0c7;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+a.btn-ver-mais:hover,
+a[target="_blank"]:hover {
+    background-color: #005f73;
+}
+
+.header-icons {
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    background-color: #2b2b2d;
+    border-radius: 50%;
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.notification-icon::before,
+.user-icon::before {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-size: cover;
+}
+
+
+#mais-artigos-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.artigo {
+    flex: 1 1 calc(31% - 20px);
+    max-width: 350px;
+    box-sizing: border-box;
+    background: #2b2b2d;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    position: relative;
+    font-size: 0.95rem;
+}
+
+.imagem-artigo img {
+    max-width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.conteudo-artigo {
+    text-align: left;
+    padding-bottom: 20px;
+}
+
+.conteudo-artigo h2 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.conteudo-artigo p {
+    font-size: 0.85rem;
+    margin: 5px 0;
+    color: #ddd;
+}
+
+.artigo .btn {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    padding: 8px 16px;
+    font-size: 0.85rem;
+}
+
+/* Botões */
+.btn,
+.btn-ver-mais,
+.btn-voltar-fixo {
+    padding: 8px 16px;
+    background-color: #24f0c7;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Botão "Voltar" dentro do artigo */
+.botao-voltar-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Botão "Ver Mais Notícias" */
+.btn-ver-mais {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+
+}
+
+/* Botão "Ver Mais Notícias" */
+.btn-ver-mais {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 50px;
+    z-index: 1000;
+}
+
+/*  "Ler Mais" */
+.link-saiba-mais {
+    color: #24f0c7;
+    text-decoration: underline;
+    margin-left: 5px;
+
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .artigo {
+        flex: 1 1 calc(45% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .artigo {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    .artigo .btn {
+        position: absolute;
+        bottom: 15px;
+        right: 15px;
+    }
+}
+
+.logout-button {
+    background-color: #f44336;
+
+    color: white;
+
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.logout-button:hover {
+    background-color: #d32f2f;
+
+}
