@@ -3,7 +3,54 @@ function getArticleIdFromUrl() {
     return params.get('id');  
 }
 
+function marcarComoLido(userId, artigoId) {
+    if (!userId || !artigoId) {
+        console.error('ID do usuário ou do artigo inválido.');
+        return;
+    }
+
+    fetch(`/usuarios/${userId}`)
+        .then(response => response.json())
+        .then(user => {
+            if (!user.artigos) {
+                user.artigos = [];
+            }
+
+            if (!user.artigos.includes(artigoId)) {
+                user.artigos.push(artigoId);
+                console.log(user.artigos);
+
+                return fetch(`/usuarios/${userId}`, {
+                    method: 'PATCH',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ artigos: user.artigos }),
+                });
+            } else {
+                console.log('Artigo já registrado como lido pelo usuário.');
+            }
+        })
+        .then(response => {
+            if (response && !response.ok) {
+                throw new Error('Erro ao registrar a leitura do artigo.');
+            }
+            console.log('Artigo registrado como lido pelo usuário.');
+        })
+        .catch(error => {
+            console.error('Erro ao registrar a leitura:', error);
+        });
+}
+
 function carregarArtigo() {
+    const userId = JSON.parse(localStorage.getItem('loggedInUser')).id;
+    console.log("ID: ", userId);
+    if (!userId) {
+        console.error('Nenhum usuário logado. Redirecionando para a página de login...');
+        window.location.href = '../../modules/login/login.html';
+        return;
+    }
+
     const artigoId = getArticleIdFromUrl();
 
     if (artigoId) {
@@ -18,7 +65,12 @@ function carregarArtigo() {
                     document.getElementById('data-artigo').textContent = artigo.data;
                     document.getElementById('decricao-artigo').textContent = artigo.descricao; 
                     document.getElementById('conteudo-artigo').innerHTML = artigo.conteudo; 
-                    document.getElementById('saiba-mais-link').href = artigo.saiba_mais; 
+                    document.getElementById('saiba-mais-link').href = artigo.saiba_mais;
+
+                    document.getElementById('saiba-mais-link').addEventListener('click', () => {
+                        marcarComoLido(userId, artigoId);
+                    });
+
                 } else {
                     document.getElementById('conteudo-artigo').textContent = 'Artigo não encontrado.';
                 }
@@ -32,5 +84,4 @@ function carregarArtigo() {
     }
 }
 
-// Carregar o artigo quando a página for carregada
 window.onload = carregarArtigo;

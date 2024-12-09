@@ -5,15 +5,33 @@ document.addEventListener('DOMContentLoaded', () => {
     if (quizId) {
         loadQuiz(quizId);
     }
+
+    const logoutButton = document.querySelector(".logout-button");
+    if (logoutButton) {
+        logoutButton.addEventListener("click", () => {
+            localStorage.removeItem("loggedInUser");
+            window.location.href = "/modulos/login/login.html";
+        });
+    }
 });
 
 async function loadQuiz(quizId) {
     try {
-        const response = await fetch(`http://localhost:3000/quizzes/${quizId}`);
-        const quiz = await response.json();
-        
+        const quizResponse = await fetch(`/quizzes/${quizId}`);
+        const quiz = await quizResponse.json();
+
+        const loggedInUser = JSON.parse(localStorage.getItem("loggedInUser"));
+        if (!loggedInUser || !loggedInUser.id) {
+            alert('Usuário não autenticado.');
+            return;
+        }
+
+        const userResponse = await fetch(`/usuarios/${loggedInUser.id}`);
+        const user = await userResponse.json();
+
+        const userQuizData = user.quiz?.find(q => q.id === quizId) || {};
         const quizContent = document.getElementById('quiz-content');
-        
+
         quizContent.innerHTML = `
             <div class="quiz-question">
                 <h2>${quiz.title}</h2>
@@ -21,13 +39,13 @@ async function loadQuiz(quizId) {
                 <p>${quiz.questions.question}</p>
                 <div class="answers">
                     ${quiz.questions.answers.map((answer, index) => `
-                        <div class="answer-option ${quiz.lastAnswer && quiz.lastAnswer.selectedAnswer === index ? (quiz.lastAnswer.isCorrect ? 'correct' : 'incorrect') : ''}" data-index="${index}">
+                        <div class="answer-option ${userQuizData.selectedAnswer === index ? (userQuizData.isCorrect ? 'correct' : 'incorrect') : ''}" data-index="${index}">
                             <span class="answer-icon">✓</span>
                             ${answer.text}
                         </div>
                     `).join('')}
                 </div>
-                <div class="answer-feedback">${quiz.lastAnswer ? (quiz.lastAnswer.isCorrect ? "Correto! " : "Incorreto.") : ''}</div>
+                <div class="answer-feedback">${userQuizData.isCorrect !== undefined ? (userQuizData.isCorrect ? "Correto! " : "Incorreto.") : ''}</div>
                 <div class="quiz-controls">
                     <button class="return-button">Voltar</button>
                     <button class="save-button">Salvar Resposta</button>
@@ -35,7 +53,7 @@ async function loadQuiz(quizId) {
             </div>
         `;
 
-        let selectedAnswerIndex = quiz.lastAnswer ? quiz.lastAnswer.selectedAnswer : null;
+        let selectedAnswerIndex = userQuizData.selectedAnswer ?? null;
 
         const answerOptions = document.querySelectorAll('.answer-option');
         answerOptions.forEach((option, index) => {
@@ -49,9 +67,10 @@ async function loadQuiz(quizId) {
             });
         });
 
-        document.querySelector('.return-button').addEventListener('click', async () => {
-             window.location.href = 'ferramentas.html';
+        document.querySelector('.return-button').addEventListener('click', () => {
+            window.location.href = 'ferramentas.html';
         });
+
         document.querySelector('.save-button').addEventListener('click', async () => {
             if (selectedAnswerIndex === null) {
                 alert('Por favor, selecione uma resposta antes de salvar.');
@@ -61,7 +80,6 @@ async function loadQuiz(quizId) {
             const isCorrect = quiz.questions.answers[selectedAnswerIndex].correct;
             const feedbackElement = document.querySelector('.answer-feedback');
             
-            // Show feedback
             feedbackElement.classList.add('visible');
             feedbackElement.textContent = isCorrect
                 ? `Correto! ${quiz.questions.answers[selectedAnswerIndex].explanation}`
@@ -69,19 +87,31 @@ async function loadQuiz(quizId) {
             feedbackElement.className = `answer-feedback visible ${isCorrect ? 'correct' : 'incorrect'}`;
 
             try {
-                await fetch(`http://localhost:3000/quizzes/${quizId}`, {
+                if (!user.quiz) {
+                    user.quiz = [];
+                }
+
+                const existingQuizIndex = user.quiz.findIndex(q => q.id === quizId);
+                if (existingQuizIndex !== -1) {
+                    user.quiz[existingQuizIndex] = {
+                        id: quizId,
+                        selectedAnswer: selectedAnswerIndex,
+                        isCorrect: isCorrect
+                    };
+                } else {
+                    user.quiz.push({
+                        id: quizId,
+                        selectedAnswer: selectedAnswerIndex,
+                        isCorrect: isCorrect
+                    });
+                }
+
+                await fetch(`/usuarios/${loggedInUser.id}`, {
                     method: 'PATCH',
                     headers: {
                         'Content-Type': 'application/json'
                     },
-                    body: JSON.stringify({
-                        completed: true,
-                        lastAnswer: {
-                            selectedAnswer: selectedAnswerIndex,
-                            isCorrect: isCorrect,
-                            timestamp: new Date().toISOString()
-                        }
-                    })
+                    body: JSON.stringify({ quiz: user.quiz })
                 });
 
             } catch (error) {
