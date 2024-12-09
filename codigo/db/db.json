@@ -2,14 +2,41 @@
   "usuarios": [
     {
       "id": 1,
+      "artigos": [
+        "1",
+        "3"
+      ],
       "login": "admin",
       "senha": "123",
       "nome": "Administrador do Sistema",
       "email": "admin@abc.com",
-      "role": "admin"
+      "role": "admin",
+      "livros": [
+        "1",
+        "4"
+      ],
+      "quiz": [
+        {
+          "id": "1",
+          "selectedAnswer": 0,
+          "isCorrect": true
+        },
+        {
+          "id": "2",
+          "selectedAnswer": 1,
+          "isCorrect": false
+        }
+      ],
+      "podcasts": [
+        "8218"
+      ],
+      "videos": [
+        "57b0"
+      ]
     },
     {
       "id": 2,
+      "artigos": [],
       "login": "user",
       "senha": "123",
       "nome": "Usuario Comum",
@@ -18,6 +45,7 @@
     },
     {
       "id": 3,
+      "artigos": [],
       "login": "rommel",
       "senha": "123",
       "nome": "Rommel",
@@ -533,11 +561,6 @@
       "title": "Quiz 1: Fundamentos da Infodemia",
       "completed": true,
       "img": "./assets/images/fakenews.png",
-      "lastAnswer": {
-        "selectedAnswer": 0,
-        "isCorrect": true,
-        "timestamp": "2024-12-05T01:49:01.403Z"
-      },
       "questions": {
         "question": "Qual é o principal impacto da infodemia na sociedade atual?",
         "answers": [
@@ -569,11 +592,6 @@
       "title": "Quiz 2: Verificação de Fontes",
       "completed": true,
       "img": "./assets/images/besmart.png",
-      "lastAnswer": {
-        "selectedAnswer": 3,
-        "isCorrect": false,
-        "timestamp": "2024-12-05T02:11:12.468Z"
-      },
       "questions": {
         "question": "Qual é a primeira medida ao verificar a confiabilidade de uma fonte de informação?",
         "answers": [
@@ -605,11 +623,6 @@
       "title": "Quiz 3: Redes Sociais e Desinformação",
       "completed": true,
       "img": "./assets/images/socialmedia.png",
-      "lastAnswer": {
-        "selectedAnswer": 2,
-        "isCorrect": false,
-        "timestamp": "2024-12-05T02:11:15.172Z"
-      },
       "questions": {
         "question": "Por que as redes sociais são um ambiente propício para a disseminação de desinformação?",
         "answers": [
@@ -641,11 +654,6 @@
       "title": "Quiz 4: Fact-Checking",
       "completed": true,
       "img": "./assets/images/factcheck.png",
-      "lastAnswer": {
-        "selectedAnswer": 0,
-        "isCorrect": true,
-        "timestamp": "2024-12-05T02:11:17.748Z"
-      },
       "questions": {
         "question": "Qual é o papel principal do fact-checking no combate à desinformação?",
         "answers": [
@@ -677,7 +685,6 @@
       "title": "Quiz 5: Viés de Confirmação",
       "completed": false,
       "img": "./assets/images/ignorance.png",
-      "lastAnswer": null,
       "questions": {
         "question": "Como o viés de confirmação afeta nossa percepção das informações?",
         "answers": [
@@ -709,7 +716,6 @@
       "title": "Quiz 6: Análise Crítica",
       "completed": false,
       "img": "./assets/images/critical.png",
-      "lastAnswer": null,
       "questions": {
         "question": "Qual é a importância do pensamento crítico no consumo de informações?",
         "answers": [
@@ -741,7 +747,6 @@
       "title": "Quiz 7: Combate à Desinformação",
       "completed": false,
       "img": "./assets/images/misinfo.png",
-      "lastAnswer": null,
       "questions": {
         "question": "Qual é a melhor estratégia para combater a desinformação?",
         "answers": [
@@ -773,7 +778,6 @@
       "title": "Quiz 8: Segurança Digital",
       "completed": false,
       "img": "./assets/images/digitalsecurity.png",
-      "lastAnswer": null,
       "questions": {
         "question": "Qual é a relação entre segurança digital e desinformação?",
         "answers": [
@@ -805,11 +809,6 @@
       "title": "Quiz 9: Ética na Internet",
       "completed": true,
       "img": "./assets/images/internetethics.png",
-      "lastAnswer": {
-        "selectedAnswer": 2,
-        "isCorrect": false,
-        "timestamp": "2024-12-05T02:11:19.944Z"
-      },
       "questions": {
         "question": "Por que a ética é importante no ambiente digital?",
         "answers": [
