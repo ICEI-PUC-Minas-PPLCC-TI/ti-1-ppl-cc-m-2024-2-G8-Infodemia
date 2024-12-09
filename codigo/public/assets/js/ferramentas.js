@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const loggedInUser = JSON.parse(localStorage.getItem("loggedInUser"));
     if (!loggedInUser || !loggedInUser.id) {
         alert('Usuário não autenticado.');
+        window.location.href = "/modulos/login/login.html";
         return;
     }
 

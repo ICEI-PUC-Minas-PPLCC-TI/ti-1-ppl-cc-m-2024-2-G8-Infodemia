@@ -3,6 +3,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const loggedInUser = JSON.parse(localStorage.getItem("loggedInUser"));
 
+    const logoutButton = document.querySelector(".logout-button");
+    if (!loggedInUser && logoutButton) {
+        logoutButton.style.display = "none";
+    }
+
     if (loggedInUser) {
         if (loggedInUser.role !== "admin") {
             const adminButtons = document.querySelectorAll(".register-ebook-button, .add-video-button, .delete-button");
@@ -65,7 +70,6 @@ document.addEventListener("DOMContentLoaded", () => {
             console.error("Erro ao buscar os ebooks:", error);
         });
 
-    const logoutButton = document.querySelector(".logout-button");
     if (logoutButton) {
         logoutButton.addEventListener("click", () => {
             localStorage.removeItem("loggedInUser");
