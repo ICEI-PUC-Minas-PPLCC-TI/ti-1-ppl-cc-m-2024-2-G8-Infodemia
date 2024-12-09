@@ -28,8 +28,8 @@ header {
         width: 100%;
         top: 0;
         left: 0;
-        z-index: 100;
         position: fixed;
+        z-index: 1000;
 }
 
 /* Navegação */
@@ -186,7 +186,7 @@ nav ul li a:hover {
     border-radius: 5px;
     font-size: 1em;
     position: fixed;
-    z-index: 1000;
+    z-index: 100;
     transition: background-color 0.3s ease;
 }
 
@@ -353,7 +353,7 @@ a[target="_blank"]:hover {
     bottom: 20px;
     right: 20px;
     border-radius: 50px;
-    z-index: 1000;
+    z-index: 100;
 }
 
 /*  "Ler Mais" */
