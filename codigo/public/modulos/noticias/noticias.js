@@ -6,7 +6,7 @@ fetch('http://localhost:3000/noticias')
         return response.json();
     })
     .then(data => {
-        
+
         exibirNoticias(data);
     })
     .catch(error => console.error('Erro ao carregar o JSON:', error));
@@ -21,14 +21,14 @@ function exibirNoticias(noticias) {
     noticias.forEach(noticia => {
         const noticiaDiv = document.createElement('div');
         noticiaDiv.className = 'noticia';
-        
+
         noticiaDiv.innerHTML = `
             <h2>${noticia.titulo}</h2>
             <p><strong>Fonte:</strong> ${noticia.fonte} | <strong>Data:</strong> ${noticia.data} | <strong>Autor:</strong> ${noticia.autor}</p>
             <!--<a href="${noticia.link}" target="_blank" id="ler-noticia-${noticia.id}">Leia mais</a>-->
             <!--nao sei pq isso n funciona, dai fiz abaixo.-->
         `;
-        
+
         const link = document.createElement('a');
         link.href = noticia.link;
         link.target = '_blank';
@@ -38,11 +38,11 @@ function exibirNoticias(noticias) {
             marcarNoticiaLida(userId, noticia.id);
             window.open(noticia.link, '_blank');
         });
-        noticiaDiv.appendChild(link);        
+        noticiaDiv.appendChild(link);
 
         container.appendChild(noticiaDiv);
     });
-} 
+}
 
 function marcarNoticiaLida(userId, noticiaId) {
     if (!userId || !noticiaId) {

@@ -1,6 +1,6 @@
 function getArticleIdFromUrl() {
     const params = new URLSearchParams(window.location.search);
-    return params.get('id');  
+    return params.get('id');
 }
 
 function marcarComoLido(userId, artigoId) {
@@ -57,14 +57,14 @@ function carregarArtigo() {
         fetch('/artigos')
             .then(response => response.json())
             .then(data => {
-                const artigo = data[artigoId - 1]; 
-                
+                const artigo = data[artigoId - 1];
+
                 if (artigo) {
                     document.getElementById('titulo-artigo').textContent = artigo.titulo;
                     document.getElementById('autor-artigo').textContent = artigo.autor;
                     document.getElementById('data-artigo').textContent = artigo.data;
-                    document.getElementById('decricao-artigo').textContent = artigo.descricao; 
-                    document.getElementById('conteudo-artigo').innerHTML = artigo.conteudo; 
+                    document.getElementById('decricao-artigo').textContent = artigo.descricao;
+                    document.getElementById('conteudo-artigo').innerHTML = artigo.conteudo;
                     document.getElementById('saiba-mais-link').href = artigo.saiba_mais;
 
                     document.getElementById('saiba-mais-link').addEventListener('click', () => {

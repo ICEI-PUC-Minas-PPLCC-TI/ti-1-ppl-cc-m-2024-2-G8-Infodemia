@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const urlParams = new URLSearchParams(window.location.search);
     const quizId = urlParams.get('id');
-    
+
     if (quizId) {
         loadQuiz(quizId);
     }
@@ -79,7 +79,7 @@ async function loadQuiz(quizId) {
 
             const isCorrect = quiz.questions.answers[selectedAnswerIndex].correct;
             const feedbackElement = document.querySelector('.answer-feedback');
-            
+
             feedbackElement.classList.add('visible');
             feedbackElement.textContent = isCorrect
                 ? `Correto! ${quiz.questions.answers[selectedAnswerIndex].explanation}`

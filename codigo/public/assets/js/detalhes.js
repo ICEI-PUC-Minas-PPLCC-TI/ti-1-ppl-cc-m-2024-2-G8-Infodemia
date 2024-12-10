@@ -1,6 +1,6 @@
 function getArticleIdFromUrl() {
     const params = new URLSearchParams(window.location.search);
-    return params.get('id');  
+    return params.get('id');
 }
 
 function carregarLivro() {
@@ -18,9 +18,9 @@ function carregarLivro() {
         fetch('/ebooks')
             .then(response => response.json())
             .then(data => {
-                
-                const ebook = data.find(b => b.id == ebookId); 
-                
+
+                const ebook = data.find(b => b.id == ebookId);
+
                 if (ebook) {
                     document.getElementById("capa-livro").src = ebook.capa;
                     document.getElementById("titulo-livro").textContent = ebook.titulo;

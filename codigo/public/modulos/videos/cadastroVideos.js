@@ -1,6 +1,6 @@
-const API_URL = '/videos'; // Endpoint da API REST para os vídeos
+const API_URL = '/videos';
 
-// Carrega todos os vídeos ao inicializar
+
 async function loadVideos() {
     try {
         const response = await fetch(API_URL);
@@ -15,7 +15,6 @@ async function loadVideos() {
     }
 }
 
-// Exibe a lista de vídeos
 function displayVideos(videos) {
     const container = document.getElementById('videos');
     container.innerHTML = '';
@@ -34,7 +33,6 @@ function displayVideos(videos) {
     });
 }
 
-// Salva ou atualiza um vídeo
 async function saveVideo(event) {
     event.preventDefault();
 
@@ -68,7 +66,7 @@ async function saveVideo(event) {
     }
 }
 
-// Exclui um vídeo
+
 async function deleteVideo(id) {
     try {
         const response = await fetch(`${API_URL}/${id}`, { method: 'DELETE' });
@@ -82,7 +80,7 @@ async function deleteVideo(id) {
     }
 }
 
-// Preenche o formulário para edição
+
 async function editVideo(id) {
     try {
         const response = await fetch(`${API_URL}/${id}`);
@@ -102,11 +100,11 @@ async function editVideo(id) {
     }
 }
 
-// Listeners
+
 document.getElementById('video-form').addEventListener('submit', saveVideo);
 document.getElementById('cancel-btn').addEventListener('click', () => {
     document.getElementById('video-form').reset();
 });
 
-// Inicialização
+
 loadVideos();

@@ -8,7 +8,7 @@ function carregarMaisArtigos() {
                 artigosExtras.forEach((artigo, index) => {
                     const artigoCard = document.createElement('div');
                     artigoCard.classList.add('artigo');
-                    
+
                     artigoCard.innerHTML = `
                         <div class="imagem-artigo">
                             <img src="${artigo.imagem}" alt="Imagem do Artigo">

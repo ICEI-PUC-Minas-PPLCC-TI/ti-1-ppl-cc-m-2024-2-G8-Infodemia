@@ -1,18 +1,18 @@
 function carregarArtigosIniciais() {
     fetch('/artigos')
         .then(response => {
-          if (!response.ok) throw new Error('Erro ao acessar os dados');
-              return response.json();
+            if (!response.ok) throw new Error('Erro ao acessar os dados');
+            return response.json();
         })
         .then(data => {
             const container = document.getElementById('mais-artigos-container');
             container.innerHTML = '';
-            const artigosIniciais = data.slice(0, 8); 
+            const artigosIniciais = data.slice(0, 8);
 
             artigosIniciais.forEach((artigo, index) => {
                 const artigoCard = document.createElement('div');
                 artigoCard.className = 'artigo';
-                
+
                 artigoCard.innerHTML = `
                     <div class="imagem-artigo">
                         <img src="${artigo.imagem}" alt="imagens-artigos">
