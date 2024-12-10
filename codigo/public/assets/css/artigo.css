@@ -1,0 +1,189 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0 40px;
+    padding: 0;
+    background-color: #333;
+    color: #fff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    color: #1dcaff;
+}
+
+.header-icons {
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    background-color: #2b2b2d;
+    border-radius: 50%;
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.notification-icon::before,
+.user-icon::before {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-size: cover;
+}
+
+#mais-artigos-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.artigo {
+    flex: 1 1 calc(31% - 20px);
+    max-width: 350px;
+    box-sizing: border-box;
+    background: #2b2b2d;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    position: relative;
+    font-size: 0.95rem;
+}
+
+.imagem-artigo img {
+    max-width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.conteudo-artigo {
+    text-align: left;
+    padding-bottom: 20px;
+}
+
+.conteudo-artigo h2 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.conteudo-artigo p {
+    font-size: 0.85rem;
+    margin: 5px 0;
+    color: #ddd;
+}
+
+.artigo .btn {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    padding: 8px 16px;
+    font-size: 0.85rem;
+}
+
+
+.btn,
+.btn-ver-mais,
+.btn-voltar-fixo {
+    padding: 8px 16px;
+    background-color: #24f0c7;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 40px;
+}
+
+
+.botao-voltar-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.btn-ver-mais {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+
+}
+
+
+.btn-ver-mais {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 50px;
+    z-index: 1000;
+}
+
+.link-saiba-mais {
+    color: #24f0c7;
+    text-decoration: underline;
+    margin-left: 5px;
+
+}
+
+
+@media (max-width: 768px) {
+    .artigo {
+        flex: 1 1 calc(45% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .artigo {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    .artigo .btn {
+        position: absolute;
+        bottom: 15px;
+        right: 15px;
+    }
+}
+
+.logout-button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.logout-button:hover {
+    background-color: #d32f2f;
+}
