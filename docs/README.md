@@ -288,7 +288,7 @@ O vídeo a seguir traz uma apresentação do problema que a equipe está tratand
 
 Esta seção apresenta as funcionalidades da solução.
 
-##### Funcionalidade 1 - Artigos Educativos
+### Funcionalidade 1 - Artigos Educativos
 
 Permite a visualização de uma lista de artigos educativos, com a opção de acessar informações detalhadas de cada artigo.
 
@@ -296,10 +296,11 @@ Permite a visualização de uma lista de artigos educativos, com a opção de ac
 * **Instruções de acesso:**
   * Abra o site na página Informações.
   * Descrição: Nesta funcionalidade, os usuários podem visualizar uma lista de artigos educativos com informações como título, autor(es) e data de publicação. Ao clicar no botão "Ler Mais" de um artigo específico, o usuário será direcionado para uma página detalhada que apresenta um resumo do artigo e um link para acessá-lo externamente.
-* **Tela da funcionalidade**: 
+* **Tela da funcionalidade**: Artigos e Ler Mais.
 ![Tela de Funcionalidade](./files/artigos.png)
+![Tela de Funcionalidade](./files/artigos_mais.png)
 
-##### Funcionalidade 2 - Podcasts
+### Funcionalidade 2 - Podcasts
 
 Permite a visualização de uma lista de podcasts educativos, com a opção de acessar descrições detalhadas de cada episódio e um link para ouvir.
 
@@ -309,7 +310,9 @@ Permite a visualização de uma lista de podcasts educativos, com a opção de a
   * Descrição: Nesta funcionalidade, os usuários podem explorar uma lista de episódios de podcasts com informações como título, autor e duração. Ao clicar no botão "Ler Descrição" de um episódio específico, o usuário será direcionado para uma página detalhada com a descrição completa do conteúdo e um link para ouvir o podcast externamente.
 * **Tela da funcionalidade**:
 ![Tela de Funcionalidade](./files/podcasts.png)
-##### Funcionalidade 3 - Notícias
+![Tela de Funcionalidade](./files/podcasts_mais.png)
+
+### Funcionalidade 3 - Notícias
 
 Permite a visualização de uma lista de notícias relacionadas à saúde mental e redes sociais, com links para acesso externo ao conteúdo completo.
 
@@ -320,7 +323,7 @@ Permite a visualização de uma lista de notícias relacionadas à saúde mental
 * **Tela da funcionalidade**:
 ![Tela de Funcionalidade](./files/noticias.png)
 
-##### Funcionalidade 4 - Livros
+### Funcionalidade 4 - Livros
 
 Permite a visualização de uma lista de livros relacionados ao tema da infodemia, com a opção de acessar informações detalhadas e links para aquisição ou leitura adicional.
 
@@ -330,8 +333,9 @@ Permite a visualização de uma lista de livros relacionados ao tema da infodemi
   * Descrição: Nesta funcionalidade, os usuários podem explorar uma coleção de livros com informações como título, autor(es), temas, idioma, número de páginas e data de publicação. Cada livro apresenta um botão "Saiba Mais" que direciona para uma página com detalhes adicionais e um link para adquirir ou acessar o livro externamente.
 * **Tela da funcionalidade**:
 ![Tela de Funcionalidade](./files/livros.png)
+![Tela de Funcionalidade](./files/livros_mais.png)
 
-##### Funcionalidade 5 - Vídeos
+### Funcionalidade 5 - Vídeos
 
 Permite a visualização de uma lista de vídeos relacionados à infodemia e saúde mental, com links para assistir aos vídeos em plataformas externas.
 
@@ -342,7 +346,7 @@ Permite a visualização de uma lista de vídeos relacionados à infodemia e sa�
 * **Tela da funcionalidade**:
 ![Tela de Funcionalidade](./files/videos.png)
 
-##### Funcionalidade 6 - Links Confiáveis e Perguntas Frequentes
+### Funcionalidade 6 - Links Confiáveis e Perguntas Frequentes
 
 Oferece uma seção de links confiáveis para fontes de notícias e uma lista de perguntas frequentes (FAQ) relacionadas à infodemia e saúde mental.
 
@@ -353,7 +357,7 @@ Oferece uma seção de links confiáveis para fontes de notícias e uma lista de
 * **Tela da funcionalidade**:
 ![Tela de Funcionalidade](./files/links_faq.png)
 
-##### Funcionalidade 7 - Cadastro de Vídeos
+### Funcionalidade 7 - Cadastro de Vídeos
 
 Permite que administradores registrem, editem e excluam vídeos na plataforma.
 
@@ -363,9 +367,9 @@ Permite que administradores registrem, editem e excluam vídeos na plataforma.
   * Abra o site na página Recursos e selecione Adicionar de Vídeo.
   * Descrição: Nesta funcionalidade, os administradores podem adicionar novos vídeos preenchendo campos como título, URL, descrição e tags. Após o cadastro, os vídeos aparecem listados na seção abaixo, onde podem ser visualizados, editados ou excluídos conforme necessário. Cada vídeo listado inclui um botão para assistir, editar ou excluir, juntamente com as tags associadas.
 * **Tela da funcionalidade**:
-![Tela de Funcionalidade](./files/cadastro_videos.png)
+![Tela de Funcionalidade](./files/cadastro_video.png)
 
-##### Funcionalidade 8 - Cadastro de Livros/E-Books
+### Funcionalidade 8 - Cadastro de Livros/E-Books
 
 Permite que administradores registrem novos livros ou e-books na plataforma.
 
@@ -375,9 +379,9 @@ Permite que administradores registrem novos livros ou e-books na plataforma.
   * Abra o site na página Recursos e selecione Registrar E-Books.
   * Descrição: Nesta funcionalidade, os administradores podem adicionar novos livros ou e-books preenchendo campos como título, autores, sinopse, link do e-book, tema, data de publicação, número de páginas, idioma, editora e URL da capa. Após inserir os dados necessários, o botão "Registrar E-Book" permite salvar o item no sistema.
 * **Tela da funcionalidade**:
-![Tela de Funcionalidade](./files/cadastro_livros.png)
+![Tela de Funcionalidade](./files/cadastro_livro.png)
 
-##### Funcionalidade 9 - Autoavaliação
+### Funcionalidade 9 - Autoavaliação
 
 Permite que os usuários realizem quizzes relacionados à infodemia e o acompanhamento do progresso de suas atividades no site.
 
@@ -387,6 +391,7 @@ Permite que os usuários realizem quizzes relacionados à infodemia e o acompanh
   * Descrição: Nesta funcionalidade, os usuários podem acessar uma lista de quizzes sobre temas relacionados à infodemia. Cada quiz apresenta uma descrição e opções de respostas. Quando o quiz é concluído corretamente, o progresso do usuário é registrado no gráfico de progresso na parte inferior da página. O gráfico acompanha o desempenho geral em vídeos, notícias, artigos, livros, quizzes e podcasts.
 * **Tela da funcionalidade**:
 ![Tela de Funcionalidade](./files/ferramentas.png)
+![Tela de Funcionalidade](./files/quiz_mais.png)
 
 ## Estruturas de Dados
 
