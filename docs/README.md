@@ -409,7 +409,7 @@ Registro dos usuários do sistema utilizados para login e para o perfil do siste
     "podcasts": [],
     "noticias": [],
     "quiz": [],
-    "livros" [],
+    "livros": [],
     "videos": []
 
   }
@@ -511,8 +511,8 @@ Registro de podcasts informativos
   
 ```
 
+#### ti_ed_quizzes
 Registro de quizzes e perguntas para o usuário 
-#ti_ed_quizzes
 ```json
   {
     "id": "1",
