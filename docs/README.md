@@ -86,19 +86,19 @@ Todas as personas do nosso projeto são jovens adultos com algumas dores em comu
 1 - Túlio Trindade: É um jovem adulto, estudante e estagiário que tem diversos hobbies, como jogar jogos online e rpg de mesa. Além disso, tem problemas em balancear os estudos, estágio e seu lazer, muitas vezes se distraindo com o celular além de ansiedade. 
 ![Persona 1](./files/persona_1.png)
 <br/><br/> 
-\pagebreak
+
 
 #### Persona 2 
 2 - Maria Júlia: É uma jovem adulta, estudante, que adora tocar piano e se dedicar ao estudo da língua inglesa e aprender coisas novas. Também é uma pessoa ansiosa e sempre atenta a redes sociais o que acaba consumindo seu tempo.  
 ![Persona 2](./files/persona_2.png)
 <br/><br/> 
-\pagebreak
+
 
 #### Persona 3  
 3 - Augusto Silva: É um jovem adulto, desempregado, apaixonado por música, jogos e principalmente bateria. Ele utiliza o computador para tudo e leva o celular para todo lugar além de uma power bank para garantir que vai estar conectado. Todavia, Augusto tem dificuldade em manter atenção em suas tarefas e se frustra quando as coisa dão errado.  
 ![Persona 3](./files/persona_2.png)
 <br/><br/> 
-\pagebreak
+
 
 # Product Design
 
@@ -137,7 +137,6 @@ Proposta de valor Maria Júlia
 ![Proposta de Valor 2](./files/proposta_valor2.png)
 <br/><br/> 
 
-\pagebreak
 Proposta de valor Augusto Silva  
 <br/><br/> 
 <br/><br/> 
