@@ -1,114 +1,112 @@
-/* Fundo do site */
 body {
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
-    background-color: #333;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-  }
-  
-  /* Container principal */
-  .login-container {
-    display: flex;
-    flex-direction: row; /* Mantém a imagem e o formulário lado a lado */
-    justify-content: center;
-    align-items: center;
-    gap: 20px; /* Ajuste a distância entre a imagem e o formulário */
-    width: 100%;
-    max-width: 1200px;
-    padding: 20px; /* Ajuste o preenchimento para melhor controle */
-  }
-  
-  /* Seção de imagem */
-  .image-section {
-    display: flex;
-    justify-content: flex-end; /* Mantém a imagem alinhada à direita */
-  }
-  
-  .image-section img {
-    width: 350px; /* Ajusta o tamanho da imagem */
-    height: auto;
-    border-radius: 10px;
-  }
-  
-  /* Seção do formulário */
-  .form-section {
-    background-color: #ffffff;
-    color: #333;
-    border-radius: 20px; /* Card mais arredondado */
-    padding: 40px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    width: 350px; /* Aumenta a largura do card */
-    max-height: 600px; /* Ajuste a altura do card */
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start; /* Ajusta a disposição dos itens dentro do card */
-    align-items: center; /* Garante que os itens sejam centralizados */
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
 
-  }
-  
-  /* Cabeçalho do formulário */
-  .form-section h3 {
-    margin-bottom: 30px; /* Aumentado o espaçamento do título */
-    font-size: 2em;
-    text-align: center; /* Centraliza o título */
-    width: 100%; /* Garante que o título ocupe toda a largura */
-  }
-  
-  /* Campos do formulário */
-  .form-group {
-    margin-bottom: 20px; /* Aumentado o espaçamento entre os campos */
-  }
-  
-  .form-group label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: 600;
-    color: #7C838A; /* Cor cinza claro para o texto */
-    text-align: left; /* Alinha as labels à esquerda */
-  }
-  
-  .form-group input {
-    width: 100%;
-    padding: 16px;
-    border: 0px solid #ccc;
-    border-radius: 10px; /* Caixa de texto mais arredondada */
-    font-size: 16px;
-    background-color: rgba(176, 186, 195, 0.4); /* Cor com opacidade de 40% */
-    color: #333;
-  }
-  
-  /* Botão de enviar */
-  .btn-primary {
-    background-color: #DEE3E7;
-    border: none;
-    color: black;
-    padding: 16px;
-    font-size: 18px;
-    font-weight: bold;
-    width: 80%; /* Ajuste a largura do botão */
-    border-radius: 10px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    display: block; /* Faz o botão se comportar como um bloco */
-    margin: 20px auto; /* Centraliza o botão horizontalmente */
-    z-index: 10;
-  }
-  
-  .btn-primary:hover {
-    background-color: #B0BAC3;
-  }
-  
-  /* Links */
-  .form-section a {
-    color: #00C7BE;
-    text-decoration: none;
-  }
-  
-  .form-section a:hover {
-    text-decoration: underline;
-  }
+
+.login-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+}
+
+
+.image-section {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.image-section img {
+  width: 350px;
+  height: auto;
+  border-radius: 10px;
+}
+
+
+.form-section {
+  background-color: #ffffff;
+  color: #333;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  width: 350px;
+  max-height: 600px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+}
+
+.form-section h3 {
+  margin-bottom: 30px;
+  font-size: 2em;
+  text-align: center;
+  width: 100%;
+}
+
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: #7C838A;
+  text-align: left;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 16px;
+  border: 0px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+  background-color: rgba(176, 186, 195, 0.4);
+  color: #333;
+}
+
+
+.btn-primary {
+  background-color: #DEE3E7;
+  border: none;
+  color: black;
+  padding: 16px;
+  font-size: 18px;
+  font-weight: bold;
+  width: 80%;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: block;
+  margin: 20px auto;
+  z-index: 10;
+}
+
+.btn-primary:hover {
+  background-color: #B0BAC3;
+}
+
+
+.form-section a {
+  color: #00C7BE;
+  text-decoration: none;
+}
+
+.form-section a:hover {
+  text-decoration: underline;
+}

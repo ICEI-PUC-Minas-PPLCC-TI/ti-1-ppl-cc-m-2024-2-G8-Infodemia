@@ -1,4 +1,4 @@
-/* Definindo a fonte global para Poppins */
+/* não está sendo utilizado mas pode ser relevante*/
 body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
@@ -7,47 +7,47 @@ body {
     padding: 20px;
 }
 
-/* Container principal - diminuindo largura em 1/4 */
+
 .container {
-    max-width: 600px; /* Diminui a largura do container */
+    max-width: 600px; 
     margin: 0 auto;
     padding: 20px;
     background-color: #fff;
-    border-radius: 20px; /* Aumentando o border-radius da caixa principal */
+    border-radius: 20px; 
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Título principal */
+
 h1 {
-    font-family: 'Poppins', sans-serif; /* Fonte Poppins */
+    font-family: 'Poppins', sans-serif; 
     font-size: 32px;
     text-align: center;
-    color: black; /* Título agora em preto */
+    color: black; 
     margin-bottom: 20px;
 }
 
-/* Estilo do formulário */
+
 form {
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
 
-/* Estilo do grupo de campos do formulário */
+
 .form-group {
     display: flex;
     flex-direction: column;
 }
 
-/* Estilo da legenda (label) */
+
 label {
     font-size: 16px;
     font-weight: normal;
-    color: black; /* Texto das legendas em preto */
+    color: black; 
     margin-bottom: 5px;
 }
 
-/* Estilo do campo de entrada (input) */
+
 input[type="text"],
 input[type="email"],
 input[type="number"],
@@ -59,7 +59,7 @@ select {
     border: 1px solid #ccc;
     border-radius: 10px;
     font-size: 16px;
-    color: black; /* Texto das caixas de entrada em preto */
+    color: black; 
     box-sizing: border-box;
 }
 
@@ -67,34 +67,34 @@ button {
     background-color: rgba(176, 186, 195, 0.4);
     border: none;
     border-radius: 20px;
-    width: 300px; /* Aumentando a largura */
-    height: 60px; /* Aumentando a altura */
-    font-size: 22px; /* Aumentando o tamanho da fonte */
-    font-weight: bold; /* Texto em negrito */
-    color: black; /* Cor do texto em preto */
+    width: 300px; 
+    height: 60px; 
+    font-size: 22px; 
+    font-weight: bold; 
+    color: black; 
     cursor: pointer;
     transition: background-color 0.3s ease;
     margin-top: 20px;
     display: block;
     margin-left: auto;
-    margin-right: auto; /* Centralizando horizontalmente */
+    margin-right: auto; 
     text-align: center;
 }
 
 button:hover {
-    background-color: rgba(176, 186, 195, 0.6); /* Cor de fundo no hover */
+    background-color: rgba(176, 186, 195, 0.6); 
 }
 box */{
-    color: black; /* Texto do botão em preto */
+    color: black; 
     font-size: 18px;
     border: 1px solid #ccc;
     border-radius: 10px;
     cursor: pointer;
     margin-top: 20px;
-    align-self: center; /* Alinhando o botão ao centro */
-    text-align: center; /* Centraliza o texto no botão */
+    align-self: center; 
+    text-align: center; 
 }
 
 button:hover {
-    background-color: rgba(160, 170, 180, 0.6); /* Cor de hover para o botão */
+    background-color: rgba(160, 170, 180, 0.6); 
 }

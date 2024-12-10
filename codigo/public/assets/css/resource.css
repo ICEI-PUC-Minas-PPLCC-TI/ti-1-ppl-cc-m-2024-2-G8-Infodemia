@@ -1,4 +1,4 @@
-/*Geral*/
+
 * {
     margin: 0;
     padding: 0;
@@ -478,7 +478,7 @@ main {
     }
 }
 
-/*FAQ*/
+
 #faqContainer {
     display: flex;
     flex-direction: column;
