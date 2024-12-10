@@ -340,7 +340,7 @@ Permite a visualização de uma lista de vídeos relacionados à infodemia e sa�
 
 * **Estrutura de dados:** [Vídeos](#ti_ed_videos)
 * **Instruções de acesso:**
-  * Abra o site na página Vídeos.
+  * Abra o site na página Recursos.
   * Descrição: Nesta funcionalidade, os usuários podem explorar uma galeria de vídeos com informações como título e uma breve descrição do conteúdo. Cada vídeo apresenta um botão "Veja Mais" que redireciona para a plataforma externa onde o vídeo pode ser assistido.
 * **Tela da funcionalidade**:
 ![Tela de Funcionalidade](./files/videos.png)
@@ -351,7 +351,7 @@ Oferece uma seção de links confiáveis para fontes de notícias e uma lista de
 
 * **Estrutura de dados:** [Links e FAQ](#ti_ed_links_faq)
 * **Instruções de acesso:**
-  * Abra o site na página Links Confiáveis e Perguntas Frequentes.
+  * Abra o site na página Recursos.
   * Descrição: Nesta funcionalidade, os usuários podem acessar rapidamente links confiáveis para portais de notícias reconhecidos, como G1, UOL, e Folha de S.Paulo. Abaixo dos links, há uma seção de Perguntas Frequentes, onde os usuários podem expandir as perguntas para visualizar respostas detalhadas sobre tópicos relacionados à infodemia, saúde mental e identificação de notícias falsas.
 * **Tela da funcionalidade**:
 ![Tela de Funcionalidade](./files/links_faq.png)
@@ -362,7 +362,7 @@ Permite que administradores registrem, editem e excluam vídeos na plataforma.
 
 * **Estrutura de dados:** [Cadastro de Vídeos](#ti_ed_videos)
 * **Instruções de acesso:**
-  * Acesse esta funcionalidade apenas se for administrador.
+  * Disponível apenas para administradores.
   * Abra o site na página Recursos e selecione Adicionar de Vídeo.
   * Descrição: Nesta funcionalidade, os administradores podem adicionar novos vídeos preenchendo campos como título, URL, descrição e tags. Após o cadastro, os vídeos aparecem listados na seção abaixo, onde podem ser visualizados, editados ou excluídos conforme necessário. Cada vídeo listado inclui um botão para assistir, editar ou excluir, juntamente com as tags associadas.
 * **Tela da funcionalidade**:
@@ -374,7 +374,7 @@ Permite que administradores registrem novos livros ou e-books na plataforma.
 
 * **Estrutura de dados:** [Cadastro de Livros/E-Books](#ti_ed_livros)
 * **Instruções de acesso:**
-  * Acesse esta funcionalidade apenas se for administrador.
+  * Disponível apenas para administradores.
   * Abra o site na página Recursos e selecione Registrar E-Books.
   * Descrição: Nesta funcionalidade, os administradores podem adicionar novos livros ou e-books preenchendo campos como título, autores, sinopse, link do e-book, tema, data de publicação, número de páginas, idioma, editora e URL da capa. Após inserir os dados necessários, o botão "Registrar E-Book" permite salvar o item no sistema.
 * **Tela da funcionalidade**:
