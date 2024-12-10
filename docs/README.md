@@ -361,7 +361,7 @@ Oferece uma seção de links confiáveis para fontes de notícias e uma lista de
 
 Permite que administradores registrem, editem e excluam vídeos na plataforma.
 
-* **Estrutura de dados:** [Cadastro de Vídeos](#ti_ed_cadastro_videos)
+* **Estrutura de dados:** [Cadastro de Vídeos](#ti_ed_videos)
 * **Instruções de acesso:**
   * Acesse esta funcionalidade apenas se for administrador.
   * Abra o site na página Recursos e selecione Adicionar de Vídeo.
@@ -373,7 +373,7 @@ Permite que administradores registrem, editem e excluam vídeos na plataforma.
 
 Permite que administradores registrem novos livros ou e-books na plataforma.
 
-* **Estrutura de dados:** [Cadastro de Livros/E-Books](#ti_ed_cadastro_livros_ebooks)
+* **Estrutura de dados:** [Cadastro de Livros/E-Books](#ti_ed_livros)
 * **Instruções de acesso:**
   * Acesse esta funcionalidade apenas se for administrador.
   * Abra o site na página Recursos e selecione Registrar E-Books.
@@ -416,6 +416,7 @@ Registro dos usuários do sistema utilizados para login e para o perfil do siste
   
 ```
 
+#### ti_ed_videos
 Registro de vídeos informativos fornecidos no site 
 
 ```json
@@ -434,6 +435,7 @@ Registro de vídeos informativos fornecidos no site
   
 ```
 
+#### ti_ed_links_faq
 Registro de FAQS de perguntas dos usuários 
 
 ```json
@@ -445,6 +447,7 @@ Registro de FAQS de perguntas dos usuários
   
 ```
 
+#### ti_ed_livros
 Registro de eBooks informativos
 
 ```json
@@ -464,6 +467,7 @@ Registro de eBooks informativos
   
 ```
 
+#### ti_ed_noticias
 Registro de notícias 
 
 ```json
@@ -479,6 +483,7 @@ Registro de notícias
   
 ```
 
+#### ti_ed_artigos
 Registro de artigos informativos
 
 ```json
@@ -495,6 +500,7 @@ Registro de artigos informativos
   
 ```
 
+#### ti_ed_podcasts
 Registro de podcasts informativos
 
 ```json
