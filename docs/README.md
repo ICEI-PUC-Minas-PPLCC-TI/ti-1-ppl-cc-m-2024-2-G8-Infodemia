@@ -280,38 +280,113 @@ Nossa solução para enfrentar os desafios da infodemia foi desenvolver um site 
 
 ## Vídeo do Projeto
 
-O vídeo a seguir traz uma apresentação do problema que a equipe está tratando e a proposta de solução. ⚠️ EXEMPLO ⚠️
+O vídeo a seguir traz uma apresentação do problema que a equipe está tratando e a proposta de solução.
 
-[![Vídeo do projeto](images/video.png)](https://www.youtube.com/embed/70gGoFyGeqQ)
-
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> O video de apresentação é voltado para que o público externo possa conhecer a solução. O formato é livre, sendo importante que seja apresentado o problema e a solução numa linguagem descomplicada e direta.
->
-> Inclua um link para o vídeo do projeto.
+[![Vídeo do projeto](images/video.png)](https://www.youtube.com/watch?v=LNxV46wO6O8)
 
 ## Funcionalidades
 
-Esta seção apresenta as funcionalidades da solução.Info
+Esta seção apresenta as funcionalidades da solução.
 
-##### Funcionalidade 1 - Cadastro de Contatos ⚠️ EXEMPLO ⚠️
+##### Funcionalidade 1 - Artigos Educativos
 
-Permite a inclusão, leitura, alteração e exclusão de contatos para o sistema
+Permite a visualização de uma lista de artigos educativos, com a opção de acessar informações detalhadas de cada artigo.
 
-* **Estrutura de dados:** [Contatos](#ti_ed_contatos)
+* **Estrutura de dados:** [Artigos](#ti_ed_artigos)
 * **Instruções de acesso:**
-  * Abra o site e efetue o login
-  * Acesse o menu principal e escolha a opção Cadastros
-  * Em seguida, escolha a opção Contatos
+  * Abra o site na página Informações.
+  * Descrição: Nesta funcionalidade, os usuários podem visualizar uma lista de artigos educativos com informações como título, autor(es) e data de publicação. Ao clicar no botão "Ler Mais" de um artigo específico, o usuário será direcionado para uma página detalhada que apresenta um resumo do artigo e um link para acessá-lo externamente.
+* **Tela da funcionalidade**: 
+![Tela de Funcionalidade](./files/artigos.png)
+
+##### Funcionalidade 2 - Podcasts
+
+Permite a visualização de uma lista de podcasts educativos, com a opção de acessar descrições detalhadas de cada episódio e um link para ouvir.
+
+* **Estrutura de dados:** [Podcasts](#ti_ed_podcasts)
+* **Instruções de acesso:**
+  * Abra o site na página Informações.
+  * Descrição: Nesta funcionalidade, os usuários podem explorar uma lista de episódios de podcasts com informações como título, autor e duração. Ao clicar no botão "Ler Descrição" de um episódio específico, o usuário será direcionado para uma página detalhada com a descrição completa do conteúdo e um link para ouvir o podcast externamente.
 * **Tela da funcionalidade**:
+![Tela de Funcionalidade](./files/podcasts.png)
+##### Funcionalidade 3 - Notícias
 
-![Tela de Funcionalidade](images/exemplo-funcionalidade.png)
+Permite a visualização de uma lista de notícias relacionadas à saúde mental e redes sociais, com links para acesso externo ao conteúdo completo.
 
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Apresente cada uma das funcionalidades que a aplicação fornece tanto para os usuários quanto aos administradores da solução.
->
-> Inclua, para cada funcionalidade, itens como: (1) titulos e descrição da funcionalidade; (2) Estrutura de dados associada; (3) o detalhe sobre as instruções de acesso e uso.
+* **Estrutura de dados:** [Notícias](#ti_ed_noticias)
+* **Instruções de acesso:**
+  * Abra o site na página Informações.
+  * Descrição: Nesta funcionalidade, os usuários podem acessar uma lista de notícias com informações como título, fonte, data e autor. Ao clicar no botão "Leia mais" de uma notícia específica, o usuário será redirecionado para uma página externa contendo o conteúdo completo da notícia.
+* **Tela da funcionalidade**:
+![Tela de Funcionalidade](./files/noticias.png)
+
+##### Funcionalidade 4 - Livros
+
+Permite a visualização de uma lista de livros relacionados ao tema da infodemia, com a opção de acessar informações detalhadas e links para aquisição ou leitura adicional.
+
+* **Estrutura de dados:** [Livros](#ti_ed_livros)
+* **Instruções de acesso:**
+  * Abra o site na página Recursos.
+  * Descrição: Nesta funcionalidade, os usuários podem explorar uma coleção de livros com informações como título, autor(es), temas, idioma, número de páginas e data de publicação. Cada livro apresenta um botão "Saiba Mais" que direciona para uma página com detalhes adicionais e um link para adquirir ou acessar o livro externamente.
+* **Tela da funcionalidade**:
+![Tela de Funcionalidade](./files/livros.png)
+
+##### Funcionalidade 5 - Vídeos
+
+Permite a visualização de uma lista de vídeos relacionados à infodemia e saúde mental, com links para assistir aos vídeos em plataformas externas.
+
+* **Estrutura de dados:** [Vídeos](#ti_ed_videos)
+* **Instruções de acesso:**
+  * Abra o site na página Vídeos.
+  * Descrição: Nesta funcionalidade, os usuários podem explorar uma galeria de vídeos com informações como título e uma breve descrição do conteúdo. Cada vídeo apresenta um botão "Veja Mais" que redireciona para a plataforma externa onde o vídeo pode ser assistido.
+* **Tela da funcionalidade**:
+![Tela de Funcionalidade](./files/videos.png)
+
+##### Funcionalidade 6 - Links Confiáveis e Perguntas Frequentes
+
+Oferece uma seção de links confiáveis para fontes de notícias e uma lista de perguntas frequentes (FAQ) relacionadas à infodemia e saúde mental.
+
+* **Estrutura de dados:** [Links e FAQ](#ti_ed_links_faq)
+* **Instruções de acesso:**
+  * Abra o site na página Links Confiáveis e Perguntas Frequentes.
+  * Descrição: Nesta funcionalidade, os usuários podem acessar rapidamente links confiáveis para portais de notícias reconhecidos, como G1, UOL, e Folha de S.Paulo. Abaixo dos links, há uma seção de Perguntas Frequentes, onde os usuários podem expandir as perguntas para visualizar respostas detalhadas sobre tópicos relacionados à infodemia, saúde mental e identificação de notícias falsas.
+* **Tela da funcionalidade**:
+![Tela de Funcionalidade](./files/links_faq.png)
+
+##### Funcionalidade 7 - Cadastro de Vídeos
+
+Permite que administradores registrem, editem e excluam vídeos na plataforma.
+
+* **Estrutura de dados:** [Cadastro de Vídeos](#ti_ed_cadastro_videos)
+* **Instruções de acesso:**
+  * Acesse esta funcionalidade apenas se for administrador.
+  * Abra o site na página Recursos e selecione Adicionar de Vídeo.
+  * Descrição: Nesta funcionalidade, os administradores podem adicionar novos vídeos preenchendo campos como título, URL, descrição e tags. Após o cadastro, os vídeos aparecem listados na seção abaixo, onde podem ser visualizados, editados ou excluídos conforme necessário. Cada vídeo listado inclui um botão para assistir, editar ou excluir, juntamente com as tags associadas.
+* **Tela da funcionalidade**:
+![Tela de Funcionalidade](./files/cadastro_videos.png)
+
+##### Funcionalidade 8 - Cadastro de Livros/E-Books
+
+Permite que administradores registrem novos livros ou e-books na plataforma.
+
+* **Estrutura de dados:** [Cadastro de Livros/E-Books](#ti_ed_cadastro_livros_ebooks)
+* **Instruções de acesso:**
+  * Acesse esta funcionalidade apenas se for administrador.
+  * Abra o site na página Recursos e selecione Registrar E-Books.
+  * Descrição: Nesta funcionalidade, os administradores podem adicionar novos livros ou e-books preenchendo campos como título, autores, sinopse, link do e-book, tema, data de publicação, número de páginas, idioma, editora e URL da capa. Após inserir os dados necessários, o botão "Registrar E-Book" permite salvar o item no sistema.
+* **Tela da funcionalidade**:
+![Tela de Funcionalidade](./files/cadastro_livros.png)
+
+##### Funcionalidade 9 - Autoavaliação
+
+Permite que os usuários realizem quizzes relacionados à infodemia e o acompanhamento do progresso de suas atividades no site.
+
+* **Estrutura de dados:** [Quizzes](#ti_ed_quizzes)
+* **Instruções de acesso:**
+  * Abra o site na página Ferramentas.
+  * Descrição: Nesta funcionalidade, os usuários podem acessar uma lista de quizzes sobre temas relacionados à infodemia. Cada quiz apresenta uma descrição e opções de respostas. Quando o quiz é concluído corretamente, o progresso do usuário é registrado no gráfico de progresso na parte inferior da página. O gráfico acompanha o desempenho geral em vídeos, notícias, artigos, livros, quizzes e podcasts.
+* **Tela da funcionalidade**:
+![Tela de Funcionalidade](./files/ferramentas.png)
 
 ## Estruturas de Dados
 
@@ -324,7 +399,14 @@ Registro dos usuários do sistema utilizados para login e para o perfil do siste
     "senha": "123",
     "nome": "Administrador do Sistema",
     "email": "admin@abc.com",
-    "role": "admin"
+    "role": "admin",
+    "artigos": [],
+    "podcasts": [],
+    "noticias": [],
+    "quiz": [],
+    "livros" [],
+    "videos": []
+
   }
   
 ```
