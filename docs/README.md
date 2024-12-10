@@ -3,7 +3,7 @@
 Informações básicas do projeto.
 
 * **Projeto:** Dopamina em tempos de Infodemia
-* **Repositório GitHub:** [T1-1-PPL-CC-M-2024-2-Ghost](https://github.com/ICEI-PUC-Minas-PPLCC-TI/ti-1-ppl-cc-m-2024-2-G8-Infodemia)
+* **Repositório GitHub:** [T1-1-PPL-CC-M-2024-2-G8-Infodemia](https://github.com/ICEI-PUC-Minas-PPLCC-TI/ti-1-ppl-cc-m-2024-2-G8-Infodemia)
 * **Membros da equipe:**
 
   * [Diego Henrique Xavier dos Santos](https://github.com/Diego-Hxs) 
@@ -24,7 +24,7 @@ A documentação do projeto é estruturada da seguinte forma:
 7. Referências Bibliográficas
 
 ![Documentação de Design Thinking (MIRO)](files/design_thinking.pdf)
-<br/><br/>
+
 
 # Contexto
 
@@ -55,12 +55,12 @@ O público-alvo deste estudo são os jovens adultos e estudantes, especialmente 
 Através da ferramenta *Miro*, e da metologia [Design Thinking](https://www.dtgbrasil.com.br/), cria-se a matriz de alinhamento CSD e o mapa de stakeholders conforme o arquivo abaixo, que proporciona uma base para execução das entrevistas qualitativas.
 
 ![ETAPA ENTENDIMENTO - INFODEMIA](./files/entendimento1.png)
-<br/><br/>
+
 
 ### Entrevistas Qualitativas
 Todas as entrevistas estão no arquivo:   
 ![Entrevistas](./files/entrevistas.pdf)
-<br/><br/> 
+ 
 
 1. Como você se sente com a grande quantidade de informações que você recebe na internet?
     - Os entrevistados relataram se sentir sobrecarregados e até mesmo sem controle do que estão fazendo com o bombardeamento de informações que recebem diariamente. Muito do conteúdo que é promovido não se encaixa no perfil dos participantes, que acreditam que isso possa ser um gatilho para pessoas mais sensíveis. Existe, ainda, a ideia de que, com os instrumentos corretos, a internet é um lugar que agrega no seu aprendizado.
@@ -85,19 +85,19 @@ Todas as personas do nosso projeto são jovens adultos com algumas dores em comu
 #### Persona 1
 1 - Túlio Trindade: É um jovem adulto, estudante e estagiário que tem diversos hobbies, como jogar jogos online e rpg de mesa. Além disso, tem problemas em balancear os estudos, estágio e seu lazer, muitas vezes se distraindo com o celular além de ansiedade. 
 ![Persona 1](./files/persona_1.png)
-<br/><br/> 
+ 
 
 
 #### Persona 2 
 2 - Maria Júlia: É uma jovem adulta, estudante, que adora tocar piano e se dedicar ao estudo da língua inglesa e aprender coisas novas. Também é uma pessoa ansiosa e sempre atenta a redes sociais o que acaba consumindo seu tempo.  
 ![Persona 2](./files/persona_2.png)
-<br/><br/> 
+ 
 
 
 #### Persona 3  
 3 - Augusto Silva: É um jovem adulto, desempregado, apaixonado por música, jogos e principalmente bateria. Ele utiliza o computador para tudo e leva o celular para todo lugar além de uma power bank para garantir que vai estar conectado. Todavia, Augusto tem dificuldade em manter atenção em suas tarefas e se frustra quando as coisa dão errado.  
 ![Persona 3](./files/persona_2.png)
-<br/><br/> 
+ 
 
 
 # Product Design
@@ -124,25 +124,25 @@ Com base na análise das personas foram identificadas as seguintes histórias de
 ## Proposta de Valor
 
 Proposta de Valor Túlio Trindade  
-<br/><br/>
-<br/><br/>
-<br/><br/>
+
+
+
 ![Proposta de Valor Túlio Trindade](./files/proposta_valor1.png)
-<br/><br/> 
+ 
 
 Proposta de valor Maria Júlia  
-<br/><br/> 
-<br/><br/> 
-<br/><br/> 
+ 
+ 
+ 
 ![Proposta de Valor 2](./files/proposta_valor2.png)
-<br/><br/> 
+ 
 
 Proposta de valor Augusto Silva  
-<br/><br/> 
-<br/><br/> 
-<br/><br/> 
+ 
+ 
+ 
 ![Proposta de Valor 3](./files/proposta_valor3.png)
-<br/><br/> 
+ 
 
 ## Requisitos
 
@@ -195,54 +195,54 @@ Artefatos relacionados com a interface e a interacão do usuário na proposta de
 A tela de ínicio do nosso site.
 
 ![Tela 1](./files/Wireframes/01.png)
-<br/><br/> 
+ 
 
 #### TELA LOGIN
 
 A tela de login para entrar em nosso site.
 
 ![Tela 2](./files/Wireframes/02.png)
-<br/><br/> 
+ 
 
 #### TELA CADASTRO
 
 A tela de cadastro para se cadastrar em nosso site.
 
 ![Tela 3](./files/Wireframes/03.png)
-<br/><br/> 
+ 
 
 #### TELA COMUNIDADE
 
 Uma parte do site de comunidade, para encontrar suporte caso o usuário precise. 
 
 ![Tela 4](./files/Wireframes/04.jpeg)
-<br/><br/> 
+ 
 
 #### TELA AUTOAVALIAÇÃO
 
 Uma parte do site onde o usuário pode fazer uma auto avaliação de como a infodemia o afeta.
 
 ![Tela 5](./files/Wireframes/05.jpeg)
-<br/><br/> 
+ 
 
 #### TELA RECURSOS
 
 Uma parte do site destinada a diversos conteúdos informativos como vídeos e e-books, e dúvidas frequentes.
 
 ![Tela 6](./files/Wireframes/06.jpeg)
-<br/><br/> 
+ 
 
 #### TELA CONTEÚDO INFORMATIVO
 
 Uma parte do site com artigos, notícias e podcasts para informar o usuário. 
 
 ![Tela 7](./files/Wireframes/07.jpeg)
-<br/><br/> 
+ 
 
 ### User Flow
 
 ![Userflow](./files/userflow.png)
-<br/><br/>
+
 
 ### Protótipo Interativo
 
