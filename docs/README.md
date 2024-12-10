@@ -296,7 +296,7 @@ Permite a visualização de uma lista de artigos educativos, com a opção de ac
 * **Instruções de acesso:**
   * Abra o site na página Informações.
   * Descrição: Nesta funcionalidade, os usuários podem visualizar uma lista de artigos educativos com informações como título, autor(es) e data de publicação. Ao clicar no botão "Ler Mais" de um artigo específico, o usuário será direcionado para uma página detalhada que apresenta um resumo do artigo e um link para acessá-lo externamente.
-* **Tela da funcionalidade**: Artigos e Ler Mais.
+* **Tela da funcionalidade**:
 ![Tela de Funcionalidade](./files/artigos.png)
 ![Tela de Funcionalidade](./files/artigos_mais.png)
 
@@ -310,7 +310,7 @@ Permite a visualização de uma lista de podcasts educativos, com a opção de a
   * Descrição: Nesta funcionalidade, os usuários podem explorar uma lista de episódios de podcasts com informações como título, autor e duração. Ao clicar no botão "Ler Descrição" de um episódio específico, o usuário será direcionado para uma página detalhada com a descrição completa do conteúdo e um link para ouvir o podcast externamente.
 * **Tela da funcionalidade**:
 ![Tela de Funcionalidade](./files/podcasts.png)
-![Tela de Funcionalidade](./files/podcasts_mais.png)
+![Tela de Funcionalidade](./files/podcast_mais.png)
 
 ### Funcionalidade 3 - Notícias
 
@@ -512,18 +512,12 @@ Registro de podcasts informativos
 ```
 
 Registro de quizzes e perguntas para o usuário 
-
+#ti_ed_quizzes
 ```json
   {
-"id": "1",
+    "id": "1",
     "title": "Quiz 1: Fundamentos da Infodemia",
-    "completed": true,
     "img": "./assets/images/fakenews.png",
-    "lastAnswer": {
-    "selectedAnswer": 0,
-    "isCorrect": true,
-    "timestamp": "2024-12-05T01:49:01.403Z"
-    },
     "questions": {
     "question": "Qual é o principal impacto da infodemia na sociedade atual?",
     "answers": [
@@ -557,34 +551,29 @@ Registro de quizzes e perguntas para o usuário
 
 Esta seção apresenta os módulos e APIs utilizados na solução
 
-**Images**:
-
-* Unsplash - [https://unsplash.com/](https://unsplash.com/) ⚠️ EXEMPLO ⚠️
-
 **Fonts:**
 
-* Icons Font Face - [https://fontawesome.com/](https://fontawesome.com/) ⚠️ EXEMPLO ⚠️
+* Material Icons Font - [https://fonts.google.com/icons](https://fonts.google.com/icons)
+* Google Fonts (Poppins e Fredoka One) - [https://fonts.google.com/](https://fonts.google.com/)
 
 **Scripts:**
 
-* jQuery - [http://www.jquery.com/](http://www.jquery.com/) ⚠️ EXEMPLO ⚠️
-* Bootstrap 4 - [http://getbootstrap.com/](http://getbootstrap.com/) ⚠️ EXEMPLO ⚠️
+* Bootstrap - [https://getbootstrap.com/](https://getbootstrap.com/)
+* npm (Node Package Manager) - [https://www.npmjs.com/](https://www.npmjs.com/)
+* json-server - [https://www.npmjs.com/package/json-server](https://www.npmjs.com/package/json-server)
 
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Apresente os módulos e APIs utilizados no desenvolvimento da solução. Inclua itens como: (1) Frameworks, bibliotecas, módulos, etc. utilizados no desenvolvimento da solução; (2) APIs utilizadas para acesso a dados, serviços, etc.
+**Images:**
+
+* MidJourney - [https://www.midjourney.com/](https://www.midjourney.com/)
+* Bing Image Creator - [https://www.bing.com/images/create](https://www.bing.com/images/create)
 
 # Referências
 
 As referências utilizadas no trabalho foram:
 
-* SOBRENOME, Nome do autor. Título da obra. 8. ed. Cidade: Editora, 2000. 287 p ⚠️ EXEMPLO ⚠️
+DESIGN THINKERS GROUP. Design Thinkers Group. Disponível em: <https://www.designthinkersgroup.com/>. Acesso em: 9 dez. 2024.
+NODE.JS. Node.js. Plataforma de execução de código JavaScript no lado do servidor. Disponível em: <https://nodejs.org/>. Acesso em: 9 dez. 2024.
 
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Inclua todas as referências (livros, artigos, sites, etc) utilizados no desenvolvimento do trabalho.
->
-> **Orientações**:
->
-> - [Formato ABNT](https://www.normastecnicas.com/abnt/trabalhos-academicos/referencias/)
-> - [Referências Bibliográficas da ABNT](https://comunidade.rockcontent.com/referencia-bibliografica-abnt/)
+NPM. npm - Node Package Manager. Gerenciador de pacotes para a plataforma Node.js. Disponível em: <https://www.npmjs.com/>. Acesso em: 9 dez. 2024.
+
+JSON-SERVER. json-server. Ferramenta para simulação de APIs REST com base em arquivos JSON. Disponível em: <https://www.npmjs.com/package/json-server>. Acesso em: 9 dez. 2024.
