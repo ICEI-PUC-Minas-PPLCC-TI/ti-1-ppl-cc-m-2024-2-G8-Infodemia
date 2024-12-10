@@ -1,14 +1,18 @@
-onst API_URL = '/videos'; // Endpoint da API REST para os vídeos
+const API_URL = '/videos'; // Endpoint da API REST para os vídeos
 
 // Carrega todos os vídeos ao inicializar
 async function loadVideos() {
-    const response = await fetch(API_URL);
-    if (!response.ok) {
-        console.error('Erro ao carregar vídeos:', response.statusText);
-        return;
+    try {
+        const response = await fetch(API_URL);
+        if (!response.ok) {
+            console.error('Erro ao carregar vídeos:', response.statusText);
+            return;
+        }
+        const videos = await response.json();
+        displayVideos(videos);
+    } catch (error) {
+        console.error('Erro ao carregar vídeos:', error);
     }
-    const videos = await response.json();
-    displayVideos(videos);
 }
 
 // Exibe a lista de vídeos
@@ -43,47 +47,59 @@ async function saveVideo(event) {
     };
 
     const method = id ? 'PUT' : 'POST';
-    const endpoint = id ? ${API_URL}/${id} : API_URL;
+    const endpoint = id ? `${API_URL}/${id}` : API_URL;
 
-    const response = await fetch(endpoint, {
-        method,
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(video),
-    });
+    try {
+        const response = await fetch(endpoint, {
+            method,
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(video),
+        });
 
-    if (!response.ok) {
-        console.error('Erro ao salvar vídeo:', response.statusText);
-        return;
+        if (!response.ok) {
+            console.error('Erro ao salvar vídeo:', response.statusText);
+            return;
+        }
+
+        document.getElementById('video-form').reset();
+        loadVideos();
+    } catch (error) {
+        console.error('Erro ao salvar vídeo:', error);
     }
-
-    document.getElementById('video-form').reset();
-    loadVideos();
 }
 
 // Exclui um vídeo
 async function deleteVideo(id) {
-    const response = await fetch(${API_URL}/${id}, { method: 'DELETE' });
-    if (!response.ok) {
-        console.error('Erro ao excluir vídeo:', response.statusText);
-        return;
+    try {
+        const response = await fetch(`${API_URL}/${id}`, { method: 'DELETE' });
+        if (!response.ok) {
+            console.error('Erro ao excluir vídeo:', response.statusText);
+            return;
+        }
+        loadVideos();
+    } catch (error) {
+        console.error('Erro ao excluir vídeo:', error);
     }
-    loadVideos();
 }
 
 // Preenche o formulário para edição
 async function editVideo(id) {
-    const response = await fetch(${API_URL}/${id});
-    if (!response.ok) {
-        console.error('Erro ao carregar vídeo para edição:', response.statusText);
-        return;
-    }
+    try {
+        const response = await fetch(`${API_URL}/${id}`);
+        if (!response.ok) {
+            console.error('Erro ao carregar vídeo para edição:', response.statusText);
+            return;
+        }
 
-    const video = await response.json();
-    document.getElementById('video-id').value = video.id;
-    document.getElementById('title').value = video.title;
-    document.getElementById('url').value = video.url;
-    document.getElementById('description').value = video.description;
-    document.getElementById('tags').value = video.tags.join(', ');
+        const video = await response.json();
+        document.getElementById('video-id').value = video.id;
+        document.getElementById('title').value = video.title;
+        document.getElementById('url').value = video.url;
+        document.getElementById('description').value = video.description;
+        document.getElementById('tags').value = video.tags.join(', ');
+    } catch (error) {
+        console.error('Erro ao carregar vídeo para edição:', error);
+    }
 }
 
 // Listeners
