@@ -333,7 +333,7 @@ Permite a visualização de uma lista de livros relacionados ao tema da infodemi
   * Descrição: Nesta funcionalidade, os usuários podem explorar uma coleção de livros com informações como título, autor(es), temas, idioma, número de páginas e data de publicação. Cada livro apresenta um botão "Saiba Mais" que direciona para uma página com detalhes adicionais e um link para adquirir ou acessar o livro externamente.
 * **Tela da funcionalidade**:
 ![Tela de Funcionalidade](./files/livros.png)
-![Tela de Funcionalidade](./files/livros_mais.png)
+![Tela de Funcionalidade](./files/ebook_mais.png)
 
 ### Funcionalidade 5 - Vídeos
 
